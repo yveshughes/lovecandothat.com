@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Love Can Do That</title>
+<meta name="description" content="Licensed psilocybin facilitation. Private sessions with preparation, supervised administration, and integration.">
+<meta property="og:title" content="Love Can Do That">
+<meta property="og:description" content="Licensed psilocybin facilitation. Doorways to possibility you could not see before.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF8F2;
+    --sand:#F2EBE0;
+    --linen:#E7DDCD;
+    --tan:#D3C2AA;
+    --clay:#A8815C;
+    --cocoa:#6E5A48;
+    --bark:#3B2F26;
+    --ink:#2C231C;
+    --muted:#71645A;
+    --line:rgba(59,47,38,.16);
+    --serif:"Cormorant Garamond",Iowan Old Style,Palatino,Georgia,serif;
+    --sans:"Jost",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-weight:300;font-size:17.5px;line-height:1.8;
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  img{display:block;width:100%;height:100%;object-fit:cover}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 34px;position:relative}
+  @media(max-width:600px){.wrap{padding:0 24px}}
+
+  /* ---------- type ---------- */
+  h1,h2,h3{font-family:var(--sans);font-weight:300;letter-spacing:-.02em;line-height:1.1}
+  h1{font-size:clamp(2.5rem,6.4vw,4.9rem);line-height:1.06}
+  h2{font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.14}
+  h3{font-family:var(--sans);font-size:1.02rem;font-weight:400;letter-spacing:.02em;line-height:1.4}
+  i,em,.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;font-size:1.09em}
+  p{max-width:60ch}
+  p+p{margin-top:1.3em}
+  a{color:inherit}
+  .eyebrow{font-size:.7rem;font-weight:400;letter-spacing:.3em;text-transform:uppercase;color:var(--clay)}
+  .lede{font-size:clamp(1.1rem,2.2vw,1.35rem);line-height:1.7;color:var(--cocoa);max-width:42ch;font-weight:300}
+  .dim{color:var(--muted)}
+
+  section{padding:clamp(80px,12vh,140px) 0}
+  .band{background:var(--sand)}
+  .rule{height:1px;background:var(--line);border:0}
+
+  /* ---------- reveal ---------- */
+  .rv{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+  /* ---------- swirl ---------- */
+  .swirl{position:absolute;pointer-events:none;opacity:.16;color:var(--clay)}
+  .swirl svg{width:100%;height:auto;display:block}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(90px,13vh,150px) 0 0;position:relative;overflow:hidden}
+  .hero .swirl{top:-6vh;right:-9vw;width:min(46vw,520px)}
+  .hero h1{max-width:16ch;margin:26px 0 32px}
+  .facts{
+    margin-top:46px;padding-top:22px;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:9px 34px;
+    font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
+  }
+  .herofig{margin-top:clamp(56px,9vh,96px);aspect-ratio:3/2;background:var(--linen);overflow:hidden}
+  .herofig img{filter:saturate(.93) contrast(1.02)}
+
+  /* ---------- layout ---------- */
+  .split{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.5fr);gap:clamp(26px,6vw,90px);align-items:start}
+  @media(max-width:880px){.split{grid-template-columns:1fr;gap:22px}}
+
+  .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,4.5vw,66px);align-items:start}
+  .duo .fig{aspect-ratio:3/4;background:var(--linen);overflow:hidden}
+  .duo .fig img{object-position:center 24%}
+  /* wide-l = photo on the left, copy on the right */
+  .duo.wide-l{grid-template-columns:minmax(0,.86fr) minmax(0,1fr)}
+  /* wide-r = copy on the left, photo on the right */
+  .duo.wide-r{grid-template-columns:minmax(0,1fr) minmax(0,.86fr)}
+  .duo p{max-width:none}
+  /* long sections used to leave a dead column beside the copy once the photo ended.
+     the photo now travels with the text instead of stopping short of it. */
+  .duo .fig{position:sticky;top:clamp(20px,9vh,86px);align-self:start}
+  /* for pairings where the copy is short, centre it against the photo instead of
+     leaving a column of dead space underneath it */
+  .duo.mid{align-items:center}
+  @media(max-width:980px){
+    .duo,.duo.wide-l,.duo.wide-r{grid-template-columns:1fr;gap:40px}
+    .duo .fig{aspect-ratio:4/5;max-width:560px;position:static}
+    .duo.wide-r .fig{order:2}
+  }
+
+  /* ---------- identity wheel ---------- */
+  /* the wheel sits in the middle and the nine facets wrap around it:
+     three across the top, three down each side */
+  .wheelwrap{display:grid;
+    grid-template-columns:minmax(0,.88fr) minmax(360px,1.7fr) minmax(0,.88fr);
+    column-gap:clamp(22px,3vw,54px);row-gap:clamp(20px,2.6vw,34px);
+    margin-top:clamp(46px,7vh,78px)}
+  .wheel{grid-column:2;grid-row:2 / span 3;align-self:center;color:var(--clay)}
+  .wheel svg{width:100%;height:auto;display:block;overflow:visible}
+  .wheel .wl text{font-family:var(--sans);font-size:12.5px;font-weight:400;letter-spacing:.15em;fill:var(--cocoa)}
+  .wheel .wc{font-family:var(--serif);font-style:italic;font-size:20px;fill:var(--clay)}
+
+  .facets{display:contents;list-style:none}
+  .facets li{max-width:31ch}
+  .facets .k{display:block;margin-bottom:5px;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
+  .facets .v{display:block;font-size:.88rem;line-height:1.65;color:var(--muted)}
+
+  /* across the top */
+  .facets li:nth-child(1){grid-column:1;grid-row:1;text-align:right;justify-self:end}
+  .facets li:nth-child(2){grid-column:2;grid-row:1;text-align:center;justify-self:center}
+  .facets li:nth-child(3){grid-column:3;grid-row:1;text-align:left;justify-self:start}
+  /* down the left */
+  .facets li:nth-child(4){grid-column:1;grid-row:2;text-align:right;justify-self:end}
+  .facets li:nth-child(5){grid-column:1;grid-row:3;text-align:right;justify-self:end}
+  .facets li:nth-child(6){grid-column:1;grid-row:4;text-align:right;justify-self:end}
+  /* down the right */
+  .facets li:nth-child(7){grid-column:3;grid-row:2;text-align:left;justify-self:start}
+  .facets li:nth-child(8){grid-column:3;grid-row:3;text-align:left;justify-self:start}
+  .facets li:nth-child(9){grid-column:3;grid-row:4;text-align:left;justify-self:start}
+
+  @media(max-width:980px){
+    /* stack it: wheel first, then the nine read straight down */
+    .wheelwrap{display:block}
+    .wheel{max-width:520px;margin:0 auto 40px;width:100%}
+    .facets{display:block}
+    .facets li{max-width:none;text-align:left!important;padding:14px 0;border-bottom:1px solid var(--line)}
+    .facets li:first-of-type{border-top:1px solid var(--line)}
+    .facets .v{font-size:.94rem}
+  }
+
+  /* ---------- doors ---------- */
+  .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--line)}
+  .door{padding:40px 36px 46px;border-right:1px solid var(--line)}
+  .door:last-child{border-right:0}
+  .door .n{font-family:var(--serif);font-style:italic;font-size:2.5rem;color:var(--clay);line-height:1;display:block;margin-bottom:16px}
+  .door h3{margin-bottom:14px;font-size:1.22rem;font-weight:400}
+  .door p{font-size:.95rem;color:var(--muted);max-width:40ch;line-height:1.75}
+  @media(max-width:880px){
+    .doors{grid-template-columns:1fr;margin-top:46px}
+    .door{border-right:0;border-bottom:1px solid var(--line);padding:34px 0 36px}
+    .door:last-child{border-bottom:0}
+  }
+
+  /* ---------- words strip ---------- */
+  .words{padding:clamp(64px,10vh,110px) 0;text-align:center}
+  .words ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 46px}
+  .words li{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3.4vw,2.3rem);color:var(--cocoa);font-weight:300}
+  .words li:nth-child(even){color:var(--clay)}
+
+  /* ---------- lists ---------- */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);margin-top:56px}
+  @media(max-width:760px){.cols{grid-template-columns:1fr;gap:46px}}
+  .plain{list-style:none;margin-top:22px}
+  .plain li{padding:14px 0;border-bottom:1px solid var(--line);font-size:.96rem;color:var(--muted);max-width:44ch;line-height:1.7}
+  .plain li:last-child{border-bottom:0}
+
+  /* ---------- citations ---------- */
+  .cites{list-style:none;margin-top:44px;border-top:1px solid var(--line);max-width:780px}
+  .cites li{border-bottom:1px solid var(--line);padding:24px 0}
+  .cites a{display:block;text-decoration:none}
+  .cites .t{display:block;font-size:1.04rem;line-height:1.5;color:var(--ink);max-width:56ch;transition:color .3s ease}
+  .cites a:hover .t{color:var(--clay)}
+  .cites .s{display:block;margin-top:8px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);opacity:.85}
+  .cites .f{display:block;margin-top:10px;font-size:.93rem;color:var(--muted);max-width:60ch;line-height:1.7}
+
+  /* ---------- pull ---------- */
+  .pull{text-align:center;padding:clamp(90px,15vh,170px) 0;position:relative;overflow:hidden}
+  .pull .swirl{bottom:-14vh;left:-8vw;width:min(38vw,420px);opacity:.13}
+  .pull p{
+    font-family:var(--serif);font-size:clamp(1.8rem,4.4vw,3rem);line-height:1.3;
+    max-width:22ch;margin:0 auto;color:var(--bark);font-weight:300;
+  }
+  .pull .attrib{margin-top:28px;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);font-family:var(--sans);font-style:normal;max-width:none}
+
+  /* ---------- form ---------- */
+  .formcard{margin-top:48px;max-width:660px}
+  .field{margin-bottom:30px}
+  label{display:block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
+  input,textarea,select{
+    width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);
+    color:var(--ink);font-family:var(--sans);font-size:1.02rem;font-weight:300;
+    padding:11px 0;border-radius:0;transition:border-color .35s ease;
+  }
+  select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--cocoa) 50%),linear-gradient(135deg,var(--cocoa) 50%,transparent 50%);background-position:calc(100% - 13px) 20px,calc(100% - 8px) 20px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  textarea{resize:vertical;min-height:120px;line-height:1.7}
+  input:focus,textarea:focus,select:focus{outline:none;border-bottom-color:var(--clay)}
+  input::placeholder,textarea::placeholder{color:#A79B90}
+  .btn{
+    display:inline-block;margin-top:14px;background:var(--bark);cursor:pointer;
+    border:1px solid var(--bark);color:var(--paper);
+    font-family:var(--sans);font-size:.73rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
+    padding:19px 46px;transition:background .4s ease,color .4s ease;
+  }
+  .btn:hover{background:transparent;color:var(--bark)}
+  .note{margin-top:26px;font-size:.87rem;color:var(--muted);max-width:48ch}
+  .note a{color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan)}
+
+  /* ---------- close ---------- */
+  .close{text-align:center;padding:clamp(96px,16vh,180px) 0 0;position:relative;overflow:hidden}
+  .close .mark{font-family:var(--serif);font-style:italic;font-size:clamp(2.4rem,6.6vw,4.6rem);line-height:1.1;color:var(--clay);font-weight:300}
+  footer{padding:64px 0 60px;margin-top:clamp(70px,10vh,110px);border-top:1px solid var(--line)}
+  .fgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;font-size:.78rem;letter-spacing:.06em;color:var(--muted)}
+  .disclaimer{margin-top:34px;font-size:.75rem;line-height:1.75;color:#8B7F75;max-width:78ch}
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="swirl" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M200 20c99 0 180 81 180 180s-81 180-180 180S20 299 20 200c0-84 68-152 152-152s152 68 152 152c0 71-58 129-129 129S66 271 66 200c0-60 49-109 109-109s109 49 109 109c0 51-41 92-92 92s-92-41-92-92c0-43 35-78 78-78s78 35 78 78c0 36-29 65-65 65s-65-29-65-65c0-30 24-54 54-54s54 24 54 54"/>
+      </svg>
+    </div>
+    <p class="eyebrow rv">By invitation</p>
+    <h1 class="rv">I have followed the white rabbit my whole life. This is the <i>deepest door</i> I have walked through.</h1>
+    <p class="lede rv">Licensed psilocybin facilitation. Private, prepared, and held with more care than anything else I do.</p>
+    <div class="facts rv">
+      <span>State licensed</span>
+      <span>InnerTrek trained</span>
+      <span>Adults 21 and over</span>
+      <span>No diagnosis required</span>
+      <span>Private &amp; small group sessions</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="herofig rv">
+      <img src="images/wonderland.jpg" alt="Tracey Abbott seated on a brick path inside a glasshouse, brown tulle skirt spread around her" loading="eager">
+    </figure>
+  </div>
+</header>
+
+<!-- ============ WHO'S ASKING ============ -->
+<section>
+  <div class="wrap duo wide-l">
+    <figure class="fig rv">
+      <img src="images/portraits/tracey-stevie-tee.jpg" alt="Tracey Abbott at home in a Stevie Nicks t-shirt and tulle skirt" loading="lazy">
+    </figure>
+    <div class="rv">
+      <p class="eyebrow">Who's asking</p>
+      <h2 style="margin-top:22px">Twenty eight years across five continents taught me one thing about hesitation. It is always the most expensive decision in the room.</h2>
+      <p style="margin-top:32px" class="dim">I spent nearly three decades leading and advising executives before I ever trained for this. A three hundred fifty million dollar P&amp;L at PepsiCo. Global strategy roles at Foot Locker and Adidas. Eight years as an Operating Partner inside a private equity firm with four hundred fifty billion dollars under management. Five board seats. A Henry Crown Fellowship at the Aspen Institute and a Presidential Leadership Scholar appointment.</p>
+      <p class="dim">None of that is why you are on this page. It is why I can sit across from the person reading it and already know what hesitation is costing them. I spent a career watching it cost capable people everything.</p>
+      <p class="dim">I did not come to this work because talk therapy failed me or because I needed a second act. I came because the leaders I have advised for thirty years are the ones who need a room like this the most, and the least likely to ever ask for one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IDENTITY WHEEL ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv"><p class="eyebrow">The range</p></div>
+      <div class="rv">
+        <h2>Nine things I have been at the same time for about <i>thirty years</i>.</h2>
+        <p style="margin-top:30px" class="dim">Somebody asked me once to name the parts of myself that actually show up for work. This is the list I keep landing on. The range is the credential.</p>
+      <p class="dim">It is also why I can sit with a CEO at nine in the morning and someone taking the mask off at two in the afternoon, and not have to become a different person in between.</p>
+      </div>
+    </div>
+
+    <div class="wheelwrap">
+      <div class="wheel rv">
+<svg viewBox="44 44 534 426" role="img" aria-label="Identity wheel: connector, builder, empath, insider, expatriate, explorer, observer, outsider, balanced human">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <circle cx="320" cy="250" r="168" opacity=".5"/>
+    <circle cx="320" cy="250" r="118" opacity=".2"/>
+    <circle cx="320" cy="250" r="54" opacity=".5"/>
+    <line x1="320.0" y1="196.0" x2="320.0" y2="82.0" opacity=".28"/>
+    <line x1="354.7" y1="208.6" x2="428.0" y2="121.3" opacity=".28"/>
+    <line x1="373.2" y1="240.6" x2="485.4" y2="220.8" opacity=".28"/>
+    <line x1="366.8" y1="277.0" x2="465.5" y2="334.0" opacity=".28"/>
+    <line x1="338.5" y1="300.7" x2="377.5" y2="407.9" opacity=".28"/>
+    <line x1="301.5" y1="300.7" x2="262.5" y2="407.9" opacity=".28"/>
+    <line x1="273.2" y1="277.0" x2="174.5" y2="334.0" opacity=".28"/>
+    <line x1="266.8" y1="240.6" x2="154.6" y2="220.8" opacity=".28"/>
+    <line x1="285.3" y1="208.6" x2="212.0" y2="121.3" opacity=".28"/>
+  </g>
+  <g class="wl">
+    <text x="385.7" y="69.6" text-anchor="start" dy="-0.25em">CONNECTOR</text>
+    <text x="486.3" y="154.0" text-anchor="start" dy="0.34em">BUILDER</text>
+    <text x="509.1" y="283.3" text-anchor="start" dy="0.34em">EMPATH</text>
+    <text x="443.4" y="397.1" text-anchor="start" dy="0.34em">INSIDER</text>
+    <text x="320.0" y="442.0" text-anchor="middle" dy="0.90em">EXPATRIATE</text>
+    <text x="196.6" y="397.1" text-anchor="end" dy="0.34em">EXPLORER</text>
+    <text x="130.9" y="283.3" text-anchor="end" dy="0.34em">OBSERVER</text>
+    <text x="153.7" y="154.0" text-anchor="end" dy="0.34em">OUTSIDER</text>
+    <text x="254.3" y="69.6" text-anchor="end" dy="-0.25em">BALANCED HUMAN</text>
+  </g>
+  <text class="wc" x="320" y="250" text-anchor="middle" dy=".34em">the range</text>
+</svg>
+      </div>
+      <ul class="facets rv">
+        <li><span class="k">Connector</span><span class="v">I have spent a career putting the right people in the right room. This room only holds two. It is still the same job.</span></li>
+        <li><span class="k">Builder</span><span class="v">A Chick-fil-A I opened myself. A three hundred fifty million dollar P&amp;L. A practice I started from nothing with no net. I build the container before anybody walks in.</span></li>
+        <li><span class="k">Empath</span><span class="v">I feel a room before I read it. For most of my career that was the thing I apologized for. Here it is the whole job.</span></li>
+        <li><span class="k">Insider</span><span class="v">Eight years as an Operating Partner. Five board seats. I already know what your calendar looks like and what it is costing you.</span></li>
+        <li><span class="k">Expatriate</span><span class="v">Ten years living outside my own country. You learn fast that the way you were raised to see things is one option, not the truth.</span></li>
+        <li><span class="k">Explorer</span><span class="v">Alice in Wonderland as a child. Under water off Roatán now. Follow the white rabbit is not a slogan for me. It is a method.</span></li>
+        <li><span class="k">Observer</span><span class="v">Thousands of hours watching leaders under pressure. I notice who partners, who opposes, and who goes quiet exactly when it matters.</span></li>
+        <li><span class="k">Outsider</span><span class="v">Single mom household in Alabama, then boardrooms on four continents. I have never fully belonged in either one. That turns out to be useful in here.</span></li>
+        <li><span class="k">Balanced human</span><span class="v">Human beings and becomings, not human doings. I will not ask you to be anything in that room that I am not willing to be first.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE WORK ============ -->
+<section>
+  <div class="wrap duo wide-l">
+    <figure class="fig rv">
+      <img src="images/portraits/tracey-heartwork.jpg" alt="Tracey Abbott in a black heartwork t-shirt" loading="lazy">
+    </figure>
+    <div class="rv">
+      <p class="eyebrow">The work</p>
+      <h2 style="margin-top:22px">Alice in Wonderland was my favorite book as a child. I learned early to walk through doors <i>other people could not see</i>.</h2>
+      <p style="margin-top:32px" class="dim">Curiosity carried me across five continents and into rooms where the answer was supposed to come from analysis. Sometimes it did. More often, what actually moved was something the person already knew and had never let themselves say out loud.</p>
+      <p class="dim">This is a different room. The same belief lives underneath it. People are not broken. They are carrying something they have not had a safe place to set down.</p>
+      <p class="dim">Here is the real reason I got into this. I have seen it and lived it myself. How much healing happens the moment we finally take off the masks and get back to who we actually are underneath them.</p>
+      <p class="dim">Psilocybin services are legal here under the country's first state regulated model. This is not a prescription and not something borrowed from somewhere else. It is a supervised session with a licensed facilitator, at a licensed service center, with real preparation before it and real integration after.</p>
+      <p class="dim">The medicine is the short part. The container is the work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORDS ============ -->
+<div class="words band rv">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:34px">What opens</p>
+    <ul>
+      <li>possibility</li>
+      <li>creativity</li>
+      <li>wonder</li>
+      <li>innovation</li>
+      <li>expansion</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ BEHIND THE VEIL ============ -->
+<section>
+  <div class="wrap duo wide-l">
+    <figure class="fig rv">
+      <img src="images/portraits/tracey-greenhouse-walk.jpg" alt="Tracey Abbott in a glasshouse, brown tulle sweeping up past her face" loading="lazy">
+    </figure>
+    <div class="rv">
+      <p class="eyebrow">Behind the veil</p>
+      <h2 style="margin-top:22px">Every tradition that has taken this seriously describes the same thing. A veil, and the moment it <i>thins</i>.</h2>
+      <p style="margin-top:32px" class="dim">I am careful with that language, because it goes soft fast. So here is the unromantic version. For a few hours, the part of you that manages and edits and defends gets quiet. What is behind it was always there. You have never had the room to look at it without flinching.</p>
+      <p class="dim">There is a version of you that is less defended and more alive. Most people met her once and have been looking for the door ever since.</p>
+      <p class="dim">I scuba dive, and it is the closest thing I know. The ocean taught me to stop controlling, to let the current carry me, to be a kid again. Full of wonder and play. This work does the same thing, closer in.</p>
+      <p class="dim">Carl Jung called it the collective unconscious. A layer underneath your own story that is not only yours, carrying symbols and instincts every human seems to recognize without ever being taught them.</p>
+      <p class="dim">I did not study psychology to believe that. I studied people. In boardrooms, in dive tanks, and in that room. I have watched them meet something in themselves that was older than their own biography.</p>
+      <p class="dim">That is the real reason I do this. Not the license, though I earned that the hard way. What surfaces in that room does not belong only to the person lying there. It belongs to something we are all quietly plugged into, whether we ever say so out loud.</p>
+      <p class="dim">Some people find grief they filed away years ago. Some find a decision they made at nineteen and never revisited. Some find they are not angry, they are tired. Almost nobody finds something they did not already own.</p>
+      <p class="dim">The veil is not hiding a different you. It is hiding this one.</p>
+      <p style="margin-top:26px"><a href="roatan.html" style="font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan);padding-bottom:4px">Where the water taught me this</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE ARC ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv"><p class="eyebrow">The arc</p></div>
+      <div class="rv"><h2>Three meetings, and only one of them <i>involves medicine</i>.</h2></div>
+    </div>
+    <div class="doors">
+      <div class="door rv">
+        <span class="n">i</span>
+        <h3>Preparation</h3>
+        <p>We meet before there is any medicine in the room. Health screening, medications, history. What you are actually here for, which is rarely the first thing anyone says. We build a safety and support plan and a plan for getting you home. Either of us can decide not to go forward, and that decision costs you nothing.</p>
+      </div>
+      <div class="door rv">
+        <span class="n">ii</span>
+        <h3>The session</h3>
+        <p>Administration happens at a licensed service center. Several hours. Eye shades, music, a blanket, a facilitator who stays. Mostly I am quiet. You do not drive yourself anywhere afterward.</p>
+      </div>
+      <div class="door rv">
+        <span class="n">iii</span>
+        <h3>Integration</h3>
+        <p>I follow up within seventy two hours, and we meet again. The session is not the work. The work is what you do with it on an ordinary Tuesday, in your kitchen, in your marriage, in your company. That is where it lands or evaporates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR GROUPS ============ -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div class="rv"><p class="eyebrow">For groups</p></div>
+      <div class="rv"><h2>Some of the deepest work happens when no one is performing for the room.</h2></div>
+    </div>
+    <div class="rv" style="margin-top:36px;max-width:62ch">
+      <p class="dim">Everything above is built for one person. I also hold this for small groups who want to do it together instead of alone. Founders who have run something with the same two or three people for a decade. A leadership team that survived a merger, a layoff, or a brutal year and never once talked about what it actually cost them. Old friends who have already earned the kind of trust this work asks for.</p>
+      <p class="dim">The discipline is the same as the individual work, just built for a room instead of a chair. We prepare together and separately. The session is held at a private location, given only once everyone is confirmed, never published in advance. Integration continues after everyone goes home, because a group that only processes something together in the room and never again is a group that will quietly disagree about what happened.</p>
+      <p class="dim">Up to eight people. Never more. Past that, a room stops being a room and starts being an audience, and this work does not survive an audience.</p>
+      <p class="dim">Before any of that there is something you can do on your own tonight. <a href="roatan.html#pearldive" style="color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan)">The Pearl Dive</a> is a thirty minute assessment I built for the leaders I coach. It is free and it asks nothing of you, not even an email.</p>
+      <p class="dim">For groups who want to take the integration further, I also lead small leadership retreats on <a href="roatan.html" style="color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan)">Roatán</a>, built around the same water that taught me how to stay calm for someone else. The medicine stays where it is licensed. The integration does not.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ PULL ============ -->
+<div class="pull rv">
+  <div class="swirl" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1.1">
+      <path d="M200 20c99 0 180 81 180 180s-81 180-180 180S20 299 20 200c0-84 68-152 152-152s152 68 152 152c0 71-58 129-129 129S66 271 66 200c0-60 49-109 109-109s109 49 109 109c0 51-41 92-92 92s-92-41-92-92c0-43 35-78 78-78s78 35 78 78c0 36-29 65-65 65s-65-29-65-65c0-30 24-54 54-54s54 24 54 54"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <p>Hurt people hurt people. Healed people heal people.</p>
+    <p class="attrib">The whole reason I trained</p>
+  </div>
+</div>
+
+<!-- ============ FIT ============ -->
+<section>
+  <div class="wrap">
+    <div class="duo wide-r mid">
+      <div class="rv">
+        <p class="eyebrow">Fit</p>
+        <h2 style="margin-top:22px">This work is not for everyone, and I would rather say so <i>on the website</i> than in the room.</h2>
+      </div>
+      <figure class="fig rv">
+        <img src="images/portraits/tracey-velvet.jpg" alt="Tracey Abbott seated on a terra cotta planter among cacti, wearing a velvet blazer" loading="lazy">
+      </figure>
+    </div>
+    <div class="cols">
+      <div class="rv">
+        <h3 style="font-size:1.2rem">Who tends to find me</h3>
+        <ul class="plain">
+          <li>People in the middle of something. A transition they chose, or one that chose them.</li>
+          <li>Caregivers who have been competent about grief for a long time.</li>
+          <li>Founders and operators who are very good at holding it together and are tired.</li>
+          <li>People who have done years of talk therapy and hit a wall they can describe perfectly.</li>
+          <li>People who are not in crisis and are not fine either.</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3 style="font-size:1.2rem">Who I turn away</h3>
+        <ul class="plain">
+          <li>Anyone with a personal or family history of psychosis, schizophrenia, or bipolar I.</li>
+          <li>Certain cardiac conditions, and certain medications including lithium and some antidepressants.</li>
+          <li>Pregnancy or nursing. Anyone under twenty one.</li>
+          <li>Anyone in acute crisis who needs clinical care first, not a journey.</li>
+          <li>Anyone looking for a guarantee. I will tell you no, and I will mean it kindly.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVIDENCE ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="duo wide-l mid">
+      <figure class="fig rv">
+        <img src="images/portraits/tracey-stripes.jpg" alt="Tracey Abbott crouched among desert plants in a striped sweater" loading="lazy">
+      </figure>
+      <div class="rv">
+        <p class="eyebrow">The evidence</p>
+        <h2 style="margin-top:22px">I do not promise outcomes. Here is what is <i>actually known</i>, including the parts that complicate it.</h2>
+      <p style="margin-top:32px" class="dim">This is the first place on earth where the work has run at scale in public view, which means there are finally real numbers instead of anecdotes. I read all of it. I would rather you did too.</p>
+      </div>
+    </div>
+
+    <p class="rv" style="margin-top:30px"><a href="reading.html" style="font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan);padding-bottom:4px">The full reading list</a></p>
+
+    <ul class="cites">
+      <li class="rv"><a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1777387/full" target="_blank" rel="noopener">
+        <span class="t">Inaugural year of regulated psilocybin services in Oregon: safety, motivations, and utilization</span>
+        <span class="s">Frontiers in Psychiatry &nbsp;·&nbsp; May 2026</span>
+        <span class="f">5,935 clients across 5,375 sessions in 2025. Serious adverse events were rare: 2.42 behavioral and 2.79 medical per 1,000 sessions, with seven hospitalizations in the entire state across the year.</span>
+      </a></li>
+      <li class="rv"><a href="https://www.medrxiv.org/content/10.64898/2026.02.18.26346580v1" target="_blank" rel="noopener">
+        <span class="t">Psilocybin services and mental health outcomes within Oregon's state-regulated model</span>
+        <span class="s">Gow, Carhart-Harris, Davis et al. &nbsp;·&nbsp; February 2026, preprint</span>
+        <span class="f">The first real-world outcome study inside this exact model. 88 participants showed clinically meaningful improvement in depression, anxiety, and well-being at thirty days, including people who stayed on their psychiatric medication.</span>
+      </a></li>
+      <li class="rv"><a href="https://www.psychiatrictimes.com/view/phase-3-program-investigating-comp360-psilocybin-for-treatment-resistant-depression-breaking-poster-data-from-the-2026-ascp-annual-meeting" target="_blank" rel="noopener">
+        <span class="t">COMP360 psilocybin in treatment resistant depression, phase 3</span>
+        <span class="s">Compass Pathways &nbsp;·&nbsp; six month data, July 2026</span>
+        <span class="f">581 participants. Thirty nine percent of the 25 mg arm reached a clinically meaningful drop in depression scores by week six, and separation held through week twenty six. This is a controlled trial, not a service center, and the difference matters.</span>
+      </a></li>
+      <li class="rv"><a href="https://jamanetwork.com/journals/jama/fullarticle/2808950" target="_blank" rel="noopener">
+        <span class="t">Single-dose psilocybin for major depressive disorder: a randomized clinical trial</span>
+        <span class="s">JAMA &nbsp;·&nbsp; 2023</span>
+        <span class="f">One of the trials that moved this from fringe to serious. Useful if you want to see the method rather than the headline.</span>
+      </a></li>
+      <li class="rv"><a href="https://oregoncapitalchronicle.com/2026/06/30/growing-scope-of-oregon-psilocybin-program-raises-safety-concerns-study-says/" target="_blank" rel="noopener">
+        <span class="t">Growing scope of Oregon's program raises safety concerns</span>
+        <span class="s">Johns Hopkins, International Journal of Drug Policy &nbsp;·&nbsp; June 2026</span>
+        <span class="f">The uncomfortable one. Most people using Oregon's program are seeking wellness rather than treatment, and they skew high income and out of state. Researchers flagged real concern about people bringing serious psychiatric conditions into a supported adult use model that was not built for them. This is exactly why I screen the way I do.</span>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SAY IT STRAIGHT ============ -->
+<section>
+  <div class="wrap duo wide-r">
+    <div class="rv">
+      <p class="eyebrow">Say it straight</p>
+      <h2 style="margin-top:22px">What I am <i>not</i>.</h2>
+      <p style="margin-top:32px" class="dim">I am not a therapist and this is not therapy. I am not a physician and this is not medical treatment. I do not diagnose, I do not treat, and I do not promise outcomes. Anyone who promises you an outcome is selling something.</p>
+      <p class="dim">Here is what I am. I trained at InnerTrek, the program founded by Tom Eckert, who architected Measure 109 and the first state regulated model of psychedelic care in the country. I am licensed by the Oregon Health Authority. I did the practicum hours. I sat in my own hard chair before I ever asked anyone to sit in theirs.</p>
+      <p class="dim">What you will get is careful screening, preparation that takes your questions seriously, a facilitator who stays, and confidentiality that is not negotiable.</p>
+      <p class="dim">And enough respect for you to say no when no is the right answer.</p>
+    </div>
+    <figure class="fig rv">
+      <img src="images/tank.jpg" alt="" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ INQUIRY ============ -->
+<section id="inquire">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv"><p class="eyebrow">Begin</p></div>
+      <div class="rv">
+        <h2>If you have read this twice, <i>write to me</i>.</h2>
+        <p style="margin-top:30px" class="dim">This goes nowhere but to me. I answer everything personally, usually within a few days. Nothing is scheduled from a form. We talk first.</p>
+      </div>
+    </div>
+
+    <!-- To collect these in your inbox automatically: make a free form at formspree.io and
+         replace YOUR_FORM_ID below with the id it gives you. Until then the button opens the
+         visitor's own mail app with everything filled in, so the page works the day it goes live. -->
+    <form class="formcard rv" id="inquiryform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="What you would like to be called">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Where I can reach you privately">
+      </div>
+      <div class="field">
+        <label for="state">Have you done this kind of work before</label>
+        <select id="state" name="experience">
+          <option value="">Choose one</option>
+          <option>Never</option>
+          <option>Once or twice, not in a legal setting</option>
+          <option>Yes, with a facilitator</option>
+          <option>Rather talk about it than type it</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">What brings you here</label>
+        <textarea id="message" name="message" placeholder="As much or as little as you want to say. There is no wrong answer and no one else reads this."></textarea>
+      </div>
+      <button class="btn" type="submit">Send it</button>
+      <p class="note">If a form is not how you want to start, write to <a href="mailto:hello@lovecandothat.com">hello@lovecandothat.com</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CLOSING IMAGE ============ -->
+<div class="wrap" style="margin-top:clamp(20px,4vh,50px)">
+  <figure class="herofig rv" style="margin-top:0">
+    <img src="images/door.jpg" alt="Tracey Abbott standing in front of a dark barn door with her arms open" loading="lazy">
+  </figure>
+</div>
+
+<!-- ============ CLOSE ============ -->
+<div class="close">
+  <div class="wrap">
+    <p class="mark rv">Love can do that.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <span>Licensed psilocybin facilitator, Oregon &nbsp;·&nbsp; InnerTrek trained</span>
+      <span>Tracey Abbott</span>
+      <span>&copy; 2026 Love Can Do That</span>
+    </div>
+    <p class="disclaimer">Psilocybin services are legal for adults twenty one and over in Oregon under Oregon Psilocybin Services, established by Measure 109 and administered by the Oregon Health Authority. Administration takes place only at a licensed service center. Psilocybin remains a Schedule I substance under federal law. Nothing on this page is medical advice, a diagnosis, a treatment claim, or a substitute for care from a licensed medical or mental health professional. No psilocybin product is sold or provided through this website. If you are in crisis, call or text 988.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e,i){
+      if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in')},i*80);io.unobserve(e.target);}
+    });
+  },{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* If the Formspree id has not been filled in yet, fall back to the visitor's mail app
+   so the inquiry form still works the moment this site goes live. */
+(function(){
+  var f=document.getElementById('inquiryform');
+  if(!f||f.action.indexOf('YOUR_FORM_ID')===-1)return;
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var g=function(n){var el=f.elements[n];return el&&el.value?el.value:'';};
+    var body='Name: '+g('name')+'\n\nEmail: '+g('email')+'\n\nDone this before: '+g('experience')+'\n\nWhat brings me here:\n'+g('message');
+    window.location.href='mailto:hello@lovecandothat.com?subject='+
+      encodeURIComponent('Inquiry from '+(g('name')||'the website'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
