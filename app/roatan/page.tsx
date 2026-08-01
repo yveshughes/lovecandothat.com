@@ -214,7 +214,7 @@ export default function Roatan() {
           <div className="fgrid">
             <span>Licensed psilocybin facilitator, Oregon &nbsp;·&nbsp; InnerTrek trained</span>
             <span>Tracey Abbott</span>
-            <span>&copy; 2026 Love Can Do That</span>
+            <span>&copy; 2026 Leadership Current</span>
           </div>
           <p className="disclaimer">
             Psilocybin services are offered only in Oregon, under Oregon Psilocybin Services, and
