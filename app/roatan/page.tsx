@@ -50,8 +50,8 @@ export default function Roatan() {
           </div>
           <figure className="fig wide rv">
             <img
-              src="/images/dive-deep.jpg"
-              alt="A diver hanging in deep blue water above a coral reef"
+              src="/images/dive-hover.jpg"
+              alt="Tracey hovering weightless in blue water with her fins tucked, a coral tower rising in the foreground"
               loading="eager"
             />
           </figure>
@@ -66,9 +66,9 @@ export default function Roatan() {
           <div className="rv">
             <h2>I get out of my head and into my soul down there.</h2>
             <p style={{ marginTop: 34 }} className="dim">
-              The ocean taught me to stop controlling. To let the current carry me somewhere I did
-              not plan. To be a kid again, full of wonder and play and exploration, at an age when
-              most people have quietly agreed to stop.
+              I generate energy underwater. The ocean taught me to let go of control. To let the
+              current carry me to places in flow. To be a kid again, full of wonder and play and
+              exploration, at an age when most people have quietly agreed to stop.
             </p>
             <p className="dim">
               It also taught me the thing I use most in my actual work. When someone else is in

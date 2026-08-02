@@ -82,12 +82,17 @@ export default function Home() {
               always the most expensive decision in the room.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              I spent nearly three decades leading and advising executives before I ever trained for
-              this. A three hundred fifty million dollar P&amp;L at PepsiCo. Global strategy roles
-              at Foot Locker and Adidas. Eight years as an Operating Partner inside a private equity
-              firm with four hundred fifty billion dollars under management. Five board seats. A
-              Henry Crown Fellowship at the Aspen Institute and a Presidential Leadership Scholar
-              appointment.
+              I have built my life and career on curiosity. Alice in Wonderland was my favorite
+              childhood book, and I learned early to follow the white rabbit. From my hometown in
+              Alabama to a decade as an expat, from deep scuba diving to studying alternative
+              medicine, I have always explored the depths, whether of oceans or of the human
+              spirit.
+            </p>
+            <p className="dim">
+              That curiosity carried me through the highest stakes of private equity, and into the
+              roles that matter even more. Caregiver. Daughter. Sister. Friend. Mentor. What all of
+              it taught me is that leadership is not about scaling results. It is about aligning
+              power with purpose. Getting deeply curious, and asking better questions.
             </p>
             <p className="dim">
               None of that is why you are on this page. It is why I can sit across from the person
@@ -117,7 +122,7 @@ export default function Home() {
         <div className="wrap">
           <div className="split">
             <div className="rv">
-              <p className="eyebrow">The range</p>
+              <p className="eyebrow">Identity wheel</p>
             </div>
             <div className="rv">
               <h2>
@@ -125,7 +130,7 @@ export default function Home() {
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
                 Somebody asked me once to name the parts of myself that actually show up for work.
-                This is the list I keep landing on. The range is the credential.
+                This is the list I keep landing on. Rest on a word and it will tell you its story.
               </p>
               <p className="dim">
                 It is also why I can sit with a CEO at nine in the morning and someone taking the
@@ -167,7 +172,7 @@ export default function Home() {
                   <text x="153.7" y="154.0" textAnchor="end" dy="0.34em">OUTSIDER</text>
                   <text x="254.3" y="69.6" textAnchor="end" dy="-0.25em">BALANCED HUMAN</text>
                 </g>
-                <text className="wc" x="320" y="250" textAnchor="middle" dy=".34em">the range</text>
+                <text className="wc" x="320" y="250" textAnchor="middle" dy=".34em">all nine</text>
               </svg>
             </div>
             <ul className="facets rv">

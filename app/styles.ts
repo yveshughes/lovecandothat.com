@@ -106,6 +106,12 @@ export const css = `
 
   .facets{display:contents;list-style:none}
   .facets li{max-width:31ch}
+  /* desktop: facet stories reveal on hover, like the wheel on traceyabbott.com */
+  @media(min-width:981px){
+    .facets .v{opacity:0;transform:translateY(5px);transition:opacity .5s ease,transform .5s ease}
+    .facets li:hover .v,.facets li:focus-within .v{opacity:1;transform:none}
+    .facets .k{cursor:default}
+  }
   .facets .k{display:block;margin-bottom:5px;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
   .facets .v{display:block;font-size:.88rem;line-height:1.65;color:var(--muted)}
 
