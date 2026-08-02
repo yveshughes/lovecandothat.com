@@ -128,9 +128,18 @@ export default function Roatan() {
             </p>
             <p className="dim">
               What that becomes now has a name. Gypsy&apos;s Jewel. It is the house the retreat lives
-              in, and everything happens under its roof and on its water. I lead small leadership
-              retreats here, built around the same water that taught me how to stay calm when
-              someone else is not. The medicine
+              in, and everything happens under its roof and on its water. The name is my
+              mother&apos;s. Her father named her Gypsy, and though she has been rooted in Alabama
+              her whole life, she encouraged my wanderlust. She wanted me to stay and knew I needed
+              out, so she gave me wings. A single mom with a PhD. A supercomputing pioneer in the
+              eighties. A steel magnolia, with more grit in her delicate southern pinky than most
+              boardrooms I have sat in. This island is where her name lives now. The house is her
+              jewel, and so is the dive site that carries the same name, a white buoy rocking on
+              blue water.
+            </p>
+            <p className="dim">
+              I lead small leadership retreats here, built around the same water that taught me how
+              to stay calm when someone else is not. The medicine
               stays where it is licensed, at a proper service center, exactly the way the law
               requires. What happens on this island is the integration. Diving, mostly. Long
               mornings with no agenda. The kind of processing that moves easier in water than in a
@@ -150,6 +159,26 @@ export default function Roatan() {
               </a>
               .
             </p>
+          </div>
+        </div>
+        <div className="wrap">
+          <div className="pair">
+            <figure className="fig rv">
+              <img
+                src="/images/roatan-west-end.jpg"
+                alt="Small boats moored off a West End beach on Roatan, palm trees and simple beach buildings along the sand"
+                loading="lazy"
+              />
+              <figcaption className="cap">The beach down the road</figcaption>
+            </figure>
+            <figure className="fig rv">
+              <img
+                src="/images/roatan-boats.jpg"
+                alt="A wooden pier and small island boats in the shallows on a sunny Roatan afternoon"
+                loading="lazy"
+              />
+              <figcaption className="cap">Nothing fancy. That is the point.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
