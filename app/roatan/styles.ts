@@ -44,7 +44,7 @@ export const css = `
   .hero h1{margin:24px 0 30px}
   .facts{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:9px 34px;font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
 
-  .fig{background:var(--linen);overflow:hidden;position:relative}
+  .fig{background:var(--linen);overflow:hidden;position:relative;border-radius:30px}
   .wide{margin-top:clamp(52px,8vh,90px);aspect-ratio:3/2}
   .split{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.5fr);gap:clamp(26px,6vw,90px);align-items:start}
   @media(max-width:880px){.split{grid-template-columns:1fr;gap:22px}}

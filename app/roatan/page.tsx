@@ -159,7 +159,7 @@ export default function Roatan() {
         <div className="wrap">
           <figure
             className="fig rv"
-            style={{ aspectRatio: "3/4", maxWidth: 480, margin: "clamp(40px,6vh,70px) auto 0" }}
+            style={{ aspectRatio: "3/4", maxWidth: 480, margin: "clamp(84px,12vh,130px) auto 0" }}
           >
             <img
               src="/images/gypsys-jewel-buoy.jpg"
@@ -170,7 +170,7 @@ export default function Roatan() {
               Gypsy&apos;s Jewel, the dive site. Her name on the water.
             </figcaption>
           </figure>
-          <div className="pair">
+          <div className="pair" style={{ marginTop: "clamp(84px,12vh,130px)" }}>
             <figure className="fig rv">
               <img
                 src="/images/roatan-west-end.jpg"
@@ -181,11 +181,11 @@ export default function Roatan() {
             </figure>
             <figure className="fig rv">
               <img
-                src="/images/roatan-boats.jpg"
-                alt="A wooden pier and small island boats in the shallows on a sunny Roatan afternoon"
+                src="/images/dive-lotus.jpg"
+                alt="Tracey floating cross legged in a lotus position above the reef, deep blue water all around"
                 loading="lazy"
               />
-              <figcaption className="cap">Nothing fancy. That is the point.</figcaption>
+              <figcaption className="cap">Where I generate energy</figcaption>
             </figure>
           </div>
         </div>

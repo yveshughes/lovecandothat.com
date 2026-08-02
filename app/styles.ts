@@ -65,7 +65,7 @@ export const css = `
     display:flex;flex-wrap:wrap;gap:9px 34px;
     font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
   }
-  .herofig{margin-top:clamp(56px,9vh,96px);aspect-ratio:3/2;background:var(--linen);overflow:hidden}
+  .herofig{margin-top:clamp(56px,9vh,96px);aspect-ratio:3/2;background:var(--linen);overflow:hidden;border-radius:30px}
   .herofig img{filter:saturate(.93) contrast(1.02)}
 
   /* ---------- layout ---------- */
@@ -73,7 +73,7 @@ export const css = `
   @media(max-width:880px){.split{grid-template-columns:1fr;gap:22px}}
 
   .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,4.5vw,66px);align-items:start}
-  .duo .fig{aspect-ratio:3/4;background:var(--linen);overflow:hidden}
+  .duo .fig{aspect-ratio:3/4;background:var(--linen);overflow:hidden;border-radius:30px}
   .duo .fig img{object-position:center 24%}
   /* wide-l = photo on the left, copy on the right */
   .duo.wide-l{grid-template-columns:minmax(0,.86fr) minmax(0,1fr)}
@@ -100,30 +100,19 @@ export const css = `
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
 
   .facets{list-style:none;position:absolute;inset:0;margin:0;padding:0}
-  .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:default;
+  .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:pointer;
     outline:none;font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
     color:var(--cocoa);transition:color .3s ease}
-  .facets .k:hover,.facets .k:focus{color:var(--clay)}
-  .facets .bh .k{font-family:var(--serif);font-style:italic;text-transform:none;
-    letter-spacing:.02em;font-size:1.08rem;color:var(--clay)}
+  .facets .k:hover,.facets .k:focus,.facets li.on .k{color:var(--clay)}
   .facets .v{position:absolute;left:50%;top:48.4%;transform:translate(-50%,-50%);
     width:min(30ch,56vw);text-align:center;font-size:.86rem;line-height:1.65;color:var(--muted);
     background:var(--sand);padding:14px 10px;opacity:0;pointer-events:none;transition:opacity .45s ease}
-  .facets .k:hover+.v,.facets .k:focus+.v{opacity:1}
+  .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1}
 
-  @media(max-width:980px){
-    /* stack it: wheel first, then the nine read straight down */
-    .wheelwrap{display:block}
-    .wheel{max-width:520px;margin:0 auto 40px;width:100%}
-    .facets{position:static}
-    .facets li{padding:14px 0;border-bottom:1px solid var(--line)}
-    .facets li:first-child{border-top:1px solid var(--line)}
-    .facets .k{position:static;transform:none;display:block;margin-bottom:5px;
-      font-size:.66rem;letter-spacing:.22em;color:var(--clay)}
-    .facets .bh .k{font-family:var(--sans);font-style:normal;text-transform:uppercase;
-      letter-spacing:.22em;font-size:.66rem}
-    .facets .v{position:static;transform:none;opacity:1;pointer-events:auto;display:block;
-      width:auto;text-align:left;background:none;padding:0;font-size:.94rem}
+  @media(max-width:560px){
+    /* the wheel stays a wheel on phones; words shrink to fit and tapping reveals the story */
+    .facets .k{font-size:.55rem;letter-spacing:.1em}
+    .facets .v{width:min(34ch,80vw);font-size:.78rem;padding:10px 8px}
   }
 
   /* ---------- doors ---------- */

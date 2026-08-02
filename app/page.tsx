@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Reveal from "./components/Reveal";
 import InquiryForm from "./components/InquiryForm";
 import SiteNav from "./components/SiteNav";
+import IdentityWheel from "./components/IdentityWheel";
 import { css } from "./styles";
 
 export const metadata: Metadata = {
@@ -16,9 +17,6 @@ export const metadata: Metadata = {
   },
 };
 
-const swirlPath =
-  "M200 20c99 0 180 81 180 180s-81 180-180 180S20 299 20 200c0-84 68-152 152-152s152 68 152 152c0 71-58 129-129 129S66 271 66 200c0-60 49-109 109-109s109 49 109 109c0 51-41 92-92 92s-92-41-92-92c0-43 35-78 78-78s78 35 78 78c0 36-29 65-65 65s-65-29-65-65c0-30 24-54 54-54s54 24 54 54";
-
 export default function Home() {
   return (
     <>
@@ -29,10 +27,12 @@ export default function Home() {
       {/* ============ HERO ============ */}
       <header className="hero">
         <div className="wrap">
-          <div className="swirl" aria-hidden="true">
-            <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" strokeWidth="1.1">
-              <path d={swirlPath} />
-            </svg>
+          <div
+            className="swirl"
+            aria-hidden="true"
+            style={{ opacity: 0.42, top: "-2vh", right: "-3vw", width: "min(36vw, 400px)" }}
+          >
+            <img src="/images/brand/heart-gold.svg" alt="" style={{ width: "100%", height: "auto" }} />
           </div>
           <img
             src="/images/brand/logo-horizontal-gold.svg"
@@ -46,8 +46,8 @@ export default function Home() {
             walked through.
           </h1>
           <p className="lede rv">
-            Licensed psilocybin facilitation. Private, prepared, and held with more care than
-            anything else I do.
+            Licensed psilocybin facilitation. Private and prepared. The container is the work.
+            Integration is the work.
           </p>
           <div className="facts rv">
             <span>State licensed</span>
@@ -69,7 +69,7 @@ export default function Home() {
       </header>
 
       {/* ============ WHO'S ASKING ============ */}
-      <section>
+      <section style={{ paddingTop: "clamp(120px,17vh,200px)" }}>
         <div className="wrap duo wide-l">
           <figure className="fig rv">
             <img
@@ -129,11 +129,11 @@ export default function Home() {
             </div>
             <div className="rv">
               <h2>
-                Nine things I have been at the same time for about <i>thirty years</i>.
+                Who am I? It is <i>the hardest question</i> you will ever wrestle with.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
                 Somebody asked me once to name the parts of myself that actually show up for work.
-                This is the list I keep landing on. Rest on a word and it will tell you its story.
+                This is the list I keep landing on. Touch any word and it will tell you its story.
               </p>
               <p className="dim">
                 It is also why I can sit with a CEO at nine in the morning and someone taking the
@@ -143,91 +143,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="wheelwrap">
-            <div className="wheel rv">
-              <svg viewBox="44 44 534 426" aria-hidden="true">
-                <g fill="none" stroke="currentColor" strokeWidth="1">
-                  <circle cx="320" cy="250" r="168" opacity=".5" />
-                  <circle cx="320" cy="250" r="118" opacity=".2" />
-                  <circle cx="320" cy="250" r="54" opacity=".5" />
-                  <line x1="320.0" y1="196.0" x2="320.0" y2="82.0" opacity=".28" />
-                  <line x1="358.2" y1="211.8" x2="438.8" y2="131.2" opacity=".28" />
-                  <line x1="374.0" y1="250.0" x2="488.0" y2="250.0" opacity=".28" />
-                  <line x1="358.2" y1="288.2" x2="438.8" y2="368.8" opacity=".28" />
-                  <line x1="320.0" y1="304.0" x2="320.0" y2="418.0" opacity=".28" />
-                  <line x1="281.8" y1="288.2" x2="201.2" y2="368.8" opacity=".28" />
-                  <line x1="266.0" y1="250.0" x2="152.0" y2="250.0" opacity=".28" />
-                  <line x1="281.8" y1="211.8" x2="201.2" y2="131.2" opacity=".28" />
-                </g>
-              </svg>
-              <ul className="facets">
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "1.4%" }}>Connector</span>
-                <span className="v">
-                  I have spent a career putting the right people in the right room. This room only
-                  holds two. It is still the same job.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "78.2%", top: "15.2%" }}>Builder</span>
-                <span className="v">
-                  A Chick-fil-A I opened myself. A three hundred fifty million dollar P&amp;L. A
-                  practice I started from nothing with no net. I build the container before anybody
-                  walks in.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "89.1%", top: "48.4%" }}>Empath</span>
-                <span className="v">
-                  I feel a room before I read it. For most of my career that was the thing I
-                  apologized for. Here it is the whole job.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "78.2%", top: "81.5%" }}>Insider</span>
-                <span className="v">
-                  Eight years as an Operating Partner. Five board seats. I already know what your
-                  calendar looks like and what it is costing you.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "95.3%" }}>Expatriate</span>
-                <span className="v">
-                  Ten years living outside my own country. You learn fast that the way you were
-                  raised to see things is one option, not the truth.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "25.2%", top: "81.5%" }}>Explorer</span>
-                <span className="v">
-                  Alice in Wonderland as a child. Under water off Roatán now. Follow the white
-                  rabbit is not a slogan for me. It is a method.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "14.2%", top: "48.4%" }}>Observer</span>
-                <span className="v">
-                  Thousands of hours watching leaders under pressure. I notice who partners, who
-                  opposes, and who goes quiet exactly when it matters.
-                </span>
-              </li>
-              <li>
-                <span className="k" tabIndex={0} style={{ left: "25.2%", top: "15.2%" }}>Outsider</span>
-                <span className="v">
-                  Single mom household in Alabama, then boardrooms on four continents. I have never
-                  fully belonged in either one. That turns out to be useful in here.
-                </span>
-              </li>
-              <li className="bh">
-                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "48.4%" }}>balanced human</span>
-                <span className="v">
-                  Human beings and becomings, not human doings. I will not ask you to be anything in
-                  that room that I am not willing to be first.
-                </span>
-              </li>
-              </ul>
-            </div>
-          </div>
+          <IdentityWheel />
         </div>
       </section>
 
@@ -244,8 +160,8 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">The work</p>
             <h2 style={{ marginTop: 22 }}>
-              Alice in Wonderland was my favorite book as a child. I learned early to walk through
-              doors <i>other people could not see</i>.
+              This is deep internal work. Exploring the subconscious, and what happens when we
+              remove <i>the masks we wear</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
               Curiosity carried me across five continents and into rooms where the answer was
@@ -377,9 +293,9 @@ export default function Home() {
               <h3>Preparation</h3>
               <p>
                 We meet before there is any medicine in the room. Health screening, medications,
-                history. What you are actually here for, which is rarely the first thing anyone
-                says. We build a safety and support plan and a plan for getting you home. Either of
-                us can decide not to go forward, and that decision costs you nothing.
+                history. Then the first real work: setting your intention for the session. We build
+                a safety and support plan and a plan for getting you home. Either of us can decide
+                not to go forward, and that decision costs you nothing.
               </p>
             </div>
             <div className="door rv">
@@ -387,7 +303,8 @@ export default function Home() {
               <h3>The session</h3>
               <p>
                 Administration happens at a licensed service center. Several hours. Eye shades,
-                music, a blanket, a facilitator who stays. Mostly I am quiet. You do not drive
+                music, a blanket, a facilitator who stays. My job in that room is intuition,
+                sensing how to best hold the space for you. Mostly I am quiet. You do not drive
                 yourself anywhere afterward.
               </p>
             </div>
@@ -397,7 +314,7 @@ export default function Home() {
               <p>
                 I follow up within seventy two hours, and we meet again. The session is not the
                 work. The work is what you do with it on an ordinary Tuesday, in your kitchen, in
-                your marriage, in your company. That is where it lands or evaporates.
+                your relationships, in your company. That is where it lands or evaporates.
               </p>
             </div>
           </div>
@@ -472,10 +389,8 @@ export default function Home() {
 
       {/* ============ PULL ============ */}
       <div className="pull rv">
-        <div className="swirl" aria-hidden="true">
-          <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" strokeWidth="1.1">
-            <path d={swirlPath} />
-          </svg>
+        <div className="swirl" aria-hidden="true" style={{ opacity: 0.3 }}>
+          <img src="/images/brand/heart-gold.svg" alt="" style={{ width: "100%", height: "auto" }} />
         </div>
         <div className="wrap">
           <p>Hurt people hurt people. Healed people heal people.</p>
