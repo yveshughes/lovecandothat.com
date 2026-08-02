@@ -27,13 +27,6 @@ export default function Home() {
       {/* ============ HERO ============ */}
       <header className="hero">
         <div className="wrap">
-          <div
-            className="swirl"
-            aria-hidden="true"
-            style={{ opacity: 0.42, top: "-2vh", right: "-3vw", width: "min(36vw, 400px)" }}
-          >
-            <img src="/images/brand/heart-gold.svg" alt="" style={{ width: "100%", height: "auto" }} />
-          </div>
           <img
             src="/images/brand/logo-horizontal-gold.svg"
             alt="Love can do that. Risk the possible."
@@ -42,10 +35,13 @@ export default function Home() {
           />
           <p className="eyebrow rv">By invitation</p>
           <h1 className="rv">
-            I have followed the white rabbit my whole life. This is the <i>deepest door</i> I have
-            walked through.
+            Love can do what <i>fear never will</i>.
           </h1>
           <p className="lede rv">
+            It heals. It reconnects. It forgives. It transforms. It reminds us who we were before
+            the world told us who to become.
+          </p>
+          <p className="dim rv" style={{ marginTop: 26, maxWidth: "58ch" }}>
             Licensed psilocybin facilitation. Private and prepared. The container is the work.
             Integration is the work.
           </p>
@@ -55,6 +51,51 @@ export default function Home() {
             <span>Adults 21 and over</span>
             <span>No diagnosis required</span>
             <span>Private &amp; small group sessions</span>
+          </div>
+          <div
+            className="rv"
+            style={{
+              marginTop: 38,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "12px 30px",
+              fontSize: ".72rem",
+              letterSpacing: ".22em",
+              textTransform: "uppercase",
+            }}
+          >
+            <a
+              href="/roatan"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Retreats
+            </a>
+            <a
+              href="/roatan#pearldive"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              The Pearl Dive
+            </a>
+            <a
+              href="/roatan#gypsys-jewel"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Gypsy&apos;s Jewel
+            </a>
+            <a
+              href="https://substack.com/@lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Journal
+            </a>
+            <a
+              href="/reading"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Research
+            </a>
           </div>
         </div>
         <div className="wrap">
@@ -115,6 +156,10 @@ export default function Home() {
               I did not come to this work because talk therapy failed me or because I needed a
               second act. I came because the leaders I have advised for thirty years are the ones
               who need a room like this the most, and the least likely to ever ask for one.
+            </p>
+            <p className="dim">
+              I have followed the white rabbit my whole life. This is the <i>deepest door</i> I
+              have walked through.
             </p>
           </div>
         </div>
@@ -383,6 +428,56 @@ export default function Home() {
               , built around the same water that taught me how to stay calm for someone else. The
               medicine stays where it is licensed. The integration does not.
             </p>
+          </div>
+          <div
+            className="rv"
+            style={{
+              marginTop: "clamp(64px,9vh,100px)",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "clamp(16px,3vw,34px)",
+            }}
+          >
+            <figure style={{ margin: 0 }}>
+              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "1/1" }}>
+                <img
+                  src="/images/group-deck.jpg"
+                  alt="A circle of sheepskin floor seats on a wooden deck under a big mountain sky, a vase of roses in the center"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption
+                style={{
+                  marginTop: 12,
+                  fontSize: ".74rem",
+                  letterSpacing: ".14em",
+                  textTransform: "uppercase",
+                  color: "var(--muted)",
+                }}
+              >
+                What group work looks like
+              </figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "1/1" }}>
+                <img
+                  src="/images/group-cabin.jpg"
+                  alt="A log cabin room prepared for a group circle, mats and sheepskins arranged around a stone fireplace and flowers"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption
+                style={{
+                  marginTop: 12,
+                  fontSize: ".74rem",
+                  letterSpacing: ".14em",
+                  textTransform: "uppercase",
+                  color: "var(--muted)",
+                }}
+              >
+                The kind of room we build
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -660,6 +755,10 @@ export default function Home() {
       <div className="close">
         <div className="wrap">
           <p className="mark rv">Love can do that.</p>
+          <p className="dim rv" style={{ margin: "26px auto 0", maxWidth: "54ch" }}>
+            Love is not soft. It is the force that lets us tell the truth, forgive, begin again,
+            and become who we were meant to be.
+          </p>
           <p className="eyebrow rv" style={{ marginTop: 26 }}>
             Risk the possible
           </p>

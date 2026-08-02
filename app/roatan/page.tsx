@@ -98,12 +98,12 @@ export default function Roatan() {
         </div>
       </div>
 
-      <section className="band">
+      <section className="band" id="gypsys-jewel">
         <div className="wrap duo wide-l">
           <figure className="fig rv">
             <img
               src="/images/gypsys-jewel.jpg"
-              alt="Gypsy's Jewel, a green two story island house with a wraparound veranda, a pink front door, and a lush garden"
+              alt="Gypsy's Jewel from the garden, a two story island house with wraparound verandas under palms and a bright blue sky"
               loading="lazy"
             />
           </figure>
@@ -122,15 +122,16 @@ export default function Roatan() {
               how the good things start.
             </p>
             <p className="dim">
-              What that becomes now has a name. Gypsy&apos;s Jewel. It is the house the retreat lives
-              in, and everything happens under its roof and on its water. The name is my
-              mother&apos;s. Her father named her Gypsy, and though she has been rooted in Alabama
-              her whole life, she encouraged my wanderlust. She wanted me to stay and knew I needed
-              out, so she gave me wings. A single mom with a PhD. A supercomputing pioneer in the
+              What that becomes now has a name. Gypsy&apos;s Jewel. The name is my mother&apos;s.
+              Her father named her Gypsy. A single mom with a PhD. A supercomputing pioneer in the
               eighties. A steel magnolia, with more grit in her delicate southern pinky than most
-              boardrooms I have sat in. This island is where her name lives now. The house is her
-              jewel, and so is the dive site that carries the same name, a white buoy rocking on
-              blue water.
+              boardrooms I have sat in. She wanted me to stay and knew I needed out, so she gave me
+              wings.
+            </p>
+            <p className="dim">
+              Before she passed, she and I named the dive site out front together. Gypsy&apos;s
+              Jewel. Her name on a white buoy, rocking on blue water. The house carries the name
+              now too, and everything the retreat is happens under its roof and on her water.
             </p>
             <p className="dim">
               I lead small leadership retreats here, built around the same water that taught me how
@@ -167,7 +168,7 @@ export default function Roatan() {
               loading="lazy"
             />
             <figcaption className="cap" style={{ textAlign: "center" }}>
-              Gypsy&apos;s Jewel, the dive site. Her name on the water.
+              Gypsy&apos;s Jewel. The dive site we named together, before her passing.
             </figcaption>
           </figure>
           <div className="pair" style={{ marginTop: "clamp(84px,12vh,130px)" }}>
@@ -218,6 +219,10 @@ export default function Roatan() {
               />
             </figure>
             <div className="rv">
+              <p className="dim">
+                Every pearl begins with an irritation. Every transformation begins with the courage
+                to dive. The treasures worth finding are not on the surface.
+              </p>
               <p className="dim">
                 Most people try to become themselves by adding. More skills, more credentials, more
                 strategy. This does the opposite. It is a process of intentional subtraction, and
