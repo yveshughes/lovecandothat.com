@@ -266,6 +266,41 @@ export default function Roatan() {
             <span>Tracey Abbott</span>
             <span>&copy; 2026 Leadership Current</span>
           </div>
+          <nav
+            style={{
+              marginTop: 34,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "12px 30px",
+              fontSize: ".72rem",
+              letterSpacing: ".22em",
+              textTransform: "uppercase",
+            }}
+          >
+            <a href="/" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Home
+            </a>
+            <a href="/roatan#pearldive" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              The Pearl Dive
+            </a>
+            <a href="/roatan#gypsys-jewel" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Gypsy&apos;s Jewel
+            </a>
+            <a
+              href="https://substack.com/@lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Journal
+            </a>
+            <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Research
+            </a>
+            <a href="#" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Back to top
+            </a>
+          </nav>
           <div
             style={{
               marginTop: 30,
