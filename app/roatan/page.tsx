@@ -162,6 +162,19 @@ export default function Roatan() {
           </div>
         </div>
         <div className="wrap">
+          <figure
+            className="fig rv"
+            style={{ aspectRatio: "3/4", maxWidth: 480, margin: "clamp(40px,6vh,70px) auto 0" }}
+          >
+            <img
+              src="/images/gypsys-jewel-buoy.jpg"
+              alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+              loading="lazy"
+            />
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              Gypsy&apos;s Jewel, the dive site. Her name on the water.
+            </figcaption>
+          </figure>
           <div className="pair">
             <figure className="fig rv">
               <img
