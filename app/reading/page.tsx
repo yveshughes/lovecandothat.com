@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteNav from "../components/SiteNav";
 import { css } from "./styles";
 
 export const metadata: Metadata = {
@@ -11,6 +12,8 @@ export default function Reading() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
+
+      <SiteNav current="research" />
 
       <header>
         <div className="wrap">

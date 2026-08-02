@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Reveal from "../components/Reveal";
+import SiteNav from "../components/SiteNav";
 import { css } from "./styles";
 
 export const metadata: Metadata = {
@@ -18,13 +19,7 @@ export default function Roatan() {
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
 
-      <div className="topbar">
-        <div className="wrap">
-          <a className="back" href="/">
-            <span></span>Love Can Do That
-          </a>
-        </div>
-      </div>
+      <SiteNav current="roatan" />
 
       <header className="hero">
         <div className="wrap">

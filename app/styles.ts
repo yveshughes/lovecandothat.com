@@ -93,49 +93,37 @@ export const css = `
   }
 
   /* ---------- identity wheel ---------- */
-  /* the wheel sits in the middle and the nine facets wrap around it:
-     three across the top, three down each side */
-  .wheelwrap{display:grid;
-    grid-template-columns:minmax(0,.88fr) minmax(360px,1.7fr) minmax(0,.88fr);
-    column-gap:clamp(22px,3vw,54px);row-gap:clamp(20px,2.6vw,34px);
-    margin-top:clamp(46px,7vh,78px)}
-  .wheel{grid-column:2;grid-row:2 / span 3;align-self:center;color:var(--clay)}
+  /* the words sit on the wheel itself; resting on one reveals its story
+     in the centre. balanced human holds the centre. */
+  .wheelwrap{display:flex;justify-content:center;margin-top:clamp(46px,7vh,78px)}
+  .wheel{position:relative;width:min(660px,94vw);color:var(--clay)}
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
-  .wheel .wl text{font-family:var(--sans);font-size:12.5px;font-weight:400;letter-spacing:.15em;fill:var(--cocoa)}
-  .wheel .wc{font-family:var(--serif);font-style:italic;font-size:20px;fill:var(--clay)}
 
-  .facets{display:contents;list-style:none}
-  .facets li{max-width:31ch}
-  /* desktop: facet stories reveal on hover, like the wheel on traceyabbott.com */
-  @media(min-width:981px){
-    .facets .v{opacity:0;transform:translateY(5px);transition:opacity .5s ease,transform .5s ease}
-    .facets li:hover .v,.facets li:focus-within .v{opacity:1;transform:none}
-    .facets .k{cursor:default}
-  }
-  .facets .k{display:block;margin-bottom:5px;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--clay)}
-  .facets .v{display:block;font-size:.88rem;line-height:1.65;color:var(--muted)}
-
-  /* across the top */
-  .facets li:nth-child(1){grid-column:1;grid-row:1;text-align:right;justify-self:end}
-  .facets li:nth-child(2){grid-column:2;grid-row:1;text-align:center;justify-self:center}
-  .facets li:nth-child(3){grid-column:3;grid-row:1;text-align:left;justify-self:start}
-  /* down the left */
-  .facets li:nth-child(4){grid-column:1;grid-row:2;text-align:right;justify-self:end}
-  .facets li:nth-child(5){grid-column:1;grid-row:3;text-align:right;justify-self:end}
-  .facets li:nth-child(6){grid-column:1;grid-row:4;text-align:right;justify-self:end}
-  /* down the right */
-  .facets li:nth-child(7){grid-column:3;grid-row:2;text-align:left;justify-self:start}
-  .facets li:nth-child(8){grid-column:3;grid-row:3;text-align:left;justify-self:start}
-  .facets li:nth-child(9){grid-column:3;grid-row:4;text-align:left;justify-self:start}
+  .facets{list-style:none;position:absolute;inset:0;margin:0;padding:0}
+  .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:default;
+    outline:none;font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--cocoa);transition:color .3s ease}
+  .facets .k:hover,.facets .k:focus{color:var(--clay)}
+  .facets .bh .k{font-family:var(--serif);font-style:italic;text-transform:none;
+    letter-spacing:.02em;font-size:1.08rem;color:var(--clay)}
+  .facets .v{position:absolute;left:50%;top:48.4%;transform:translate(-50%,-50%);
+    width:min(30ch,56vw);text-align:center;font-size:.86rem;line-height:1.65;color:var(--muted);
+    background:var(--sand);padding:14px 10px;opacity:0;pointer-events:none;transition:opacity .45s ease}
+  .facets .k:hover+.v,.facets .k:focus+.v{opacity:1}
 
   @media(max-width:980px){
     /* stack it: wheel first, then the nine read straight down */
     .wheelwrap{display:block}
     .wheel{max-width:520px;margin:0 auto 40px;width:100%}
-    .facets{display:block}
-    .facets li{max-width:none;text-align:left!important;padding:14px 0;border-bottom:1px solid var(--line)}
-    .facets li:first-of-type{border-top:1px solid var(--line)}
-    .facets .v{font-size:.94rem}
+    .facets{position:static}
+    .facets li{padding:14px 0;border-bottom:1px solid var(--line)}
+    .facets li:first-child{border-top:1px solid var(--line)}
+    .facets .k{position:static;transform:none;display:block;margin-bottom:5px;
+      font-size:.66rem;letter-spacing:.22em;color:var(--clay)}
+    .facets .bh .k{font-family:var(--sans);font-style:normal;text-transform:uppercase;
+      letter-spacing:.22em;font-size:.66rem}
+    .facets .v{position:static;transform:none;opacity:1;pointer-events:auto;display:block;
+      width:auto;text-align:left;background:none;padding:0;font-size:.94rem}
   }
 
   /* ---------- doors ---------- */

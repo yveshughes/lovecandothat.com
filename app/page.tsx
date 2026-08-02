@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Reveal from "./components/Reveal";
 import InquiryForm from "./components/InquiryForm";
+import SiteNav from "./components/SiteNav";
 import { css } from "./styles";
 
 export const metadata: Metadata = {
@@ -22,6 +23,8 @@ export default function Home() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
+
+      <SiteNav current="hudson" />
 
       {/* ============ HERO ============ */}
       <header className="hero">
@@ -142,49 +145,31 @@ export default function Home() {
 
           <div className="wheelwrap">
             <div className="wheel rv">
-              <svg
-                viewBox="44 44 534 426"
-                role="img"
-                aria-label="Identity wheel: connector, builder, empath, insider, expatriate, explorer, observer, outsider, balanced human"
-              >
+              <svg viewBox="44 44 534 426" aria-hidden="true">
                 <g fill="none" stroke="currentColor" strokeWidth="1">
                   <circle cx="320" cy="250" r="168" opacity=".5" />
                   <circle cx="320" cy="250" r="118" opacity=".2" />
                   <circle cx="320" cy="250" r="54" opacity=".5" />
                   <line x1="320.0" y1="196.0" x2="320.0" y2="82.0" opacity=".28" />
-                  <line x1="354.7" y1="208.6" x2="428.0" y2="121.3" opacity=".28" />
-                  <line x1="373.2" y1="240.6" x2="485.4" y2="220.8" opacity=".28" />
-                  <line x1="366.8" y1="277.0" x2="465.5" y2="334.0" opacity=".28" />
-                  <line x1="338.5" y1="300.7" x2="377.5" y2="407.9" opacity=".28" />
-                  <line x1="301.5" y1="300.7" x2="262.5" y2="407.9" opacity=".28" />
-                  <line x1="273.2" y1="277.0" x2="174.5" y2="334.0" opacity=".28" />
-                  <line x1="266.8" y1="240.6" x2="154.6" y2="220.8" opacity=".28" />
-                  <line x1="285.3" y1="208.6" x2="212.0" y2="121.3" opacity=".28" />
+                  <line x1="358.2" y1="211.8" x2="438.8" y2="131.2" opacity=".28" />
+                  <line x1="374.0" y1="250.0" x2="488.0" y2="250.0" opacity=".28" />
+                  <line x1="358.2" y1="288.2" x2="438.8" y2="368.8" opacity=".28" />
+                  <line x1="320.0" y1="304.0" x2="320.0" y2="418.0" opacity=".28" />
+                  <line x1="281.8" y1="288.2" x2="201.2" y2="368.8" opacity=".28" />
+                  <line x1="266.0" y1="250.0" x2="152.0" y2="250.0" opacity=".28" />
+                  <line x1="281.8" y1="211.8" x2="201.2" y2="131.2" opacity=".28" />
                 </g>
-                <g className="wl">
-                  <text x="385.7" y="69.6" textAnchor="start" dy="-0.25em">CONNECTOR</text>
-                  <text x="486.3" y="154.0" textAnchor="start" dy="0.34em">BUILDER</text>
-                  <text x="509.1" y="283.3" textAnchor="start" dy="0.34em">EMPATH</text>
-                  <text x="443.4" y="397.1" textAnchor="start" dy="0.34em">INSIDER</text>
-                  <text x="320.0" y="442.0" textAnchor="middle" dy="0.90em">EXPATRIATE</text>
-                  <text x="196.6" y="397.1" textAnchor="end" dy="0.34em">EXPLORER</text>
-                  <text x="130.9" y="283.3" textAnchor="end" dy="0.34em">OBSERVER</text>
-                  <text x="153.7" y="154.0" textAnchor="end" dy="0.34em">OUTSIDER</text>
-                  <text x="254.3" y="69.6" textAnchor="end" dy="-0.25em">BALANCED HUMAN</text>
-                </g>
-                <text className="wc" x="320" y="250" textAnchor="middle" dy=".34em">all nine</text>
               </svg>
-            </div>
-            <ul className="facets rv">
+              <ul className="facets">
               <li>
-                <span className="k">Connector</span>
+                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "1.4%" }}>Connector</span>
                 <span className="v">
                   I have spent a career putting the right people in the right room. This room only
                   holds two. It is still the same job.
                 </span>
               </li>
               <li>
-                <span className="k">Builder</span>
+                <span className="k" tabIndex={0} style={{ left: "78.2%", top: "15.2%" }}>Builder</span>
                 <span className="v">
                   A Chick-fil-A I opened myself. A three hundred fifty million dollar P&amp;L. A
                   practice I started from nothing with no net. I build the container before anybody
@@ -192,55 +177,56 @@ export default function Home() {
                 </span>
               </li>
               <li>
-                <span className="k">Empath</span>
+                <span className="k" tabIndex={0} style={{ left: "89.1%", top: "48.4%" }}>Empath</span>
                 <span className="v">
                   I feel a room before I read it. For most of my career that was the thing I
                   apologized for. Here it is the whole job.
                 </span>
               </li>
               <li>
-                <span className="k">Insider</span>
+                <span className="k" tabIndex={0} style={{ left: "78.2%", top: "81.5%" }}>Insider</span>
                 <span className="v">
                   Eight years as an Operating Partner. Five board seats. I already know what your
                   calendar looks like and what it is costing you.
                 </span>
               </li>
               <li>
-                <span className="k">Expatriate</span>
+                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "95.3%" }}>Expatriate</span>
                 <span className="v">
                   Ten years living outside my own country. You learn fast that the way you were
                   raised to see things is one option, not the truth.
                 </span>
               </li>
               <li>
-                <span className="k">Explorer</span>
+                <span className="k" tabIndex={0} style={{ left: "25.2%", top: "81.5%" }}>Explorer</span>
                 <span className="v">
                   Alice in Wonderland as a child. Under water off Roatán now. Follow the white
                   rabbit is not a slogan for me. It is a method.
                 </span>
               </li>
               <li>
-                <span className="k">Observer</span>
+                <span className="k" tabIndex={0} style={{ left: "14.2%", top: "48.4%" }}>Observer</span>
                 <span className="v">
                   Thousands of hours watching leaders under pressure. I notice who partners, who
                   opposes, and who goes quiet exactly when it matters.
                 </span>
               </li>
               <li>
-                <span className="k">Outsider</span>
+                <span className="k" tabIndex={0} style={{ left: "25.2%", top: "15.2%" }}>Outsider</span>
                 <span className="v">
                   Single mom household in Alabama, then boardrooms on four continents. I have never
                   fully belonged in either one. That turns out to be useful in here.
                 </span>
               </li>
-              <li>
-                <span className="k">Balanced human</span>
+              <li className="bh">
+                <span className="k" tabIndex={0} style={{ left: "51.7%", top: "48.4%" }}>balanced human</span>
                 <span className="v">
                   Human beings and becomings, not human doings. I will not ask you to be anything in
                   that room that I am not willing to be first.
                 </span>
               </li>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
