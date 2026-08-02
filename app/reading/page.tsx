@@ -244,6 +244,14 @@ export default function Reading() {
             >
               YouTube
             </a>
+            <a
+              href="https://substack.com/@lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Substack
+            </a>
           </div>
           <p className="fine">
             Tracey Abbott. Licensed psilocybin facilitator, Oregon. InnerTrek trained. Psilocybin

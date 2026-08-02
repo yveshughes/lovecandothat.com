@@ -809,6 +809,14 @@ export default function Home() {
             >
               YouTube
             </a>
+            <a
+              href="https://substack.com/@lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Substack
+            </a>
           </div>
           <p className="disclaimer">
             Psilocybin services are legal for adults twenty one and over in Oregon under Oregon

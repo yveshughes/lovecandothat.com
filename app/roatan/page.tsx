@@ -107,8 +107,8 @@ export default function Roatan() {
         <div className="wrap duo wide-l">
           <figure className="fig rv">
             <img
-              src="/images/roatan-sunset.jpg"
-              alt="Sunrise over the water from a wooden dock on Roatan"
+              src="/images/gypsys-jewel.jpg"
+              alt="Gypsy's Jewel, a green two story island house with a wraparound veranda, a pink front door, and a lush garden"
               loading="lazy"
             />
           </figure>
@@ -265,6 +265,14 @@ export default function Roatan() {
               style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
             >
               YouTube
+            </a>
+            <a
+              href="https://substack.com/@lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Substack
             </a>
           </div>
           <p className="disclaimer">
