@@ -109,10 +109,18 @@ export const css = `
     background:var(--sand);padding:14px 10px;opacity:0;pointer-events:none;transition:opacity .45s ease}
   .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1}
 
-  @media(max-width:560px){
-    /* the wheel stays a wheel on phones; words shrink to fit and tapping reveals the story */
-    .facets .k{font-size:.55rem;letter-spacing:.1em}
-    .facets .v{width:min(34ch,80vw);font-size:.78rem;padding:10px 8px}
+  @media(max-width:880px){
+    /* on phones the wheel becomes a list: the circle sits above as a mark,
+       the nine words stack beneath it, and tapping a word opens its story */
+    .wheel{width:min(440px,90vw)}
+    .wheel svg{max-width:280px;margin:0 auto}
+    .facets{position:static;margin-top:26px}
+    .facets li{border-bottom:1px solid var(--line)}
+    .facets li:first-child{border-top:1px solid var(--line)}
+    .facets .k{position:static;transform:none;display:block;padding:15px 0;font-size:.7rem;letter-spacing:.18em}
+    .facets .v{position:static;transform:none;width:auto;text-align:left;background:transparent;
+      padding:0 0 18px;opacity:1;display:none}
+    .facets li.on .v{display:block}
   }
 
   /* ---------- doors ---------- */
@@ -151,8 +159,7 @@ export const css = `
   .cites .f{display:block;margin-top:10px;font-size:.93rem;color:var(--muted);max-width:60ch;line-height:1.7}
 
   /* ---------- pull ---------- */
-  .pull{text-align:center;padding:clamp(90px,15vh,170px) 0;position:relative;overflow:hidden}
-  .pull .swirl{bottom:-14vh;left:-8vw;width:min(38vw,420px);opacity:.13}
+  .pull{text-align:center;padding:clamp(90px,15vh,170px) 0}
   .pull p{
     font-family:var(--serif);font-size:clamp(1.8rem,4.4vw,3rem);line-height:1.3;
     max-width:22ch;margin:0 auto;color:var(--bark);font-weight:300;

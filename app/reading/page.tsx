@@ -222,12 +222,6 @@ export default function Reading() {
             <a href="/roatan" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Retreats
             </a>
-            <a href="/roatan#pearldive" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              The Pearl Dive
-            </a>
-            <a href="/roatan#gypsys-jewel" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Gypsy&apos;s Jewel
-            </a>
             <a
               href="https://substack.com/@lovecandothat"
               target="_blank"

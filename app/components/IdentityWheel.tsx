@@ -66,7 +66,12 @@ export default function IdentityWheel() {
   const [active, setActive] = useState<number | null>(null);
   return (
     <div className="wheelwrap">
-      <div className="wheel rv">
+      <div
+        className="wheel"
+        onClick={(e) => {
+          if (!(e.target as HTMLElement).closest(".k")) setActive(null);
+        }}
+      >
         <svg viewBox="44 44 534 426" aria-hidden="true">
           <g fill="none" stroke="currentColor" strokeWidth="1">
             <circle cx="320" cy="250" r="168" opacity=".5" />
@@ -100,7 +105,9 @@ export default function IdentityWheel() {
               >
                 {f.k}
               </span>
-              <span className="v">{f.v}</span>
+              <span className="v" style={active === i ? { opacity: 1 } : undefined}>
+                {f.v}
+              </span>
             </li>
           ))}
         </ul>

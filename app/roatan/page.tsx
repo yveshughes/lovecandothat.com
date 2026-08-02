@@ -280,12 +280,6 @@ export default function Roatan() {
             <a href="/" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Home
             </a>
-            <a href="/roatan#pearldive" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              The Pearl Dive
-            </a>
-            <a href="/roatan#gypsys-jewel" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Gypsy&apos;s Jewel
-            </a>
             <a
               href="https://substack.com/@lovecandothat"
               target="_blank"

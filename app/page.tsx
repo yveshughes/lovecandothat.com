@@ -127,39 +127,27 @@ export default function Home() {
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
               I have built my life and career on curiosity. Alice in Wonderland was my favorite
-              childhood book, and I learned early to follow the white rabbit. From my hometown in
-              Alabama to a decade as an expat, from deep scuba diving to studying alternative
-              medicine, I have always explored the depths, whether of oceans or of the human
-              spirit.
+              childhood book, and I learned early to follow the white rabbit through doors other
+              people could not see. Alabama to a decade as an expat. Deep water to the depths of
+              the human spirit.
             </p>
             <p className="dim">
-              That curiosity carried me through the highest stakes of private equity, and into the
-              roles that matter even more. Caregiver. Daughter. Sister. Friend. Mentor. What all of
-              it taught me is that leadership is not about scaling results. It is about aligning
-              power with purpose. Getting deeply curious, and asking better questions.
+              Curiosity carried me through the highest stakes of private equity, and into the roles
+              that matter more. Caregiver. Daughter. Sister. Friend. Leadership is not about
+              scaling results. It is about aligning power with purpose.
             </p>
             <p className="dim">
-              None of that is why you are on this page. It is why I can sit across from the person
-              reading it and already know what hesitation is costing them. I spent a career watching
-              it cost capable people everything.
+              The white rabbit came from a phone call. On the edge of leaving private equity, I
+              called an investment banker turned conscious capitalist. I expected a framework.
+              Instead he said, follow the white rabbit. It will lead you to doorways you cannot see
+              yet. Every decision that has mattered since has come down to the same choice.
+              Probability, which you can calculate. Or possibility, which you cannot. I choose
+              possibility. <i>Risk the possible</i> is the method.
             </p>
             <p className="dim">
-              The white rabbit came from a phone call. Standing at the edge of leaving private
-              equity, I called an investment banker I trusted who had become a conscious
-              capitalist. I expected advice. A framework. A model. Instead he said, follow the
-              white rabbit. It will lead you to doorways you cannot see yet. Every decision that
-              has mattered since has come down to the same choice. Probability, which you can
-              calculate. Or possibility, which you cannot. I choose possibility. <i>Risk the
-              possible</i> is not a tagline to me. It is the method.
-            </p>
-            <p className="dim">
-              I did not come to this work because talk therapy failed me or because I needed a
-              second act. I came because the leaders I have advised for thirty years are the ones
-              who need a room like this the most, and the least likely to ever ask for one.
-            </p>
-            <p className="dim">
-              I have followed the white rabbit my whole life. This is the <i>deepest door</i> I
-              have walked through.
+              I did not come to this work because talk therapy failed me. I came because the
+              leaders I have advised for thirty years need a room like this the most, and ask for
+              it the least. This is the <i>deepest door</i> I have walked through.
             </p>
           </div>
         </div>
@@ -177,13 +165,11 @@ export default function Home() {
                 Who am I? It is <i>the hardest question</i> you will ever wrestle with.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Somebody asked me once to name the parts of myself that actually show up for work.
-                This is the list I keep landing on. Touch any word and it will tell you its story.
+                Nine answers keep showing up for work. Touch a word and it will tell you its story.
               </p>
               <p className="dim">
-                It is also why I can sit with a CEO at nine in the morning and someone taking the
-                mask off at two in the afternoon, and not have to become a different person in
-                between.
+                They are why I can sit with a CEO at nine and someone taking the mask off at two,
+                and never become a different person in between.
               </p>
             </div>
           </div>
@@ -209,24 +195,17 @@ export default function Home() {
               remove <i>the masks we wear</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              Curiosity carried me across five continents and into rooms where the answer was
-              supposed to come from analysis. Sometimes it did. More often, what actually moved was
-              something the person already knew and had never let themselves say out loud.
+              For thirty years the answer was supposed to come from analysis. What actually moved
+              people was the thing they already knew and had never said out loud.
             </p>
             <p className="dim">
-              This is a different room. The same belief lives underneath it. People are not broken.
-              They are carrying something they have not had a safe place to set down.
-            </p>
-            <p className="dim">
-              Here is the real reason I got into this. I have seen it and lived it myself. How much
-              healing happens the moment we finally take off the masks and get back to who we
-              actually are underneath them.
+              People are not broken. They are carrying something that has never had a safe place to
+              be set down. The healing starts the moment the masks come off. I have lived it.
             </p>
             <p className="dim">
               Psilocybin services are legal here under the country&apos;s first state regulated
-              model. This is not a prescription and not something borrowed from somewhere else. It
-              is a supervised session with a licensed facilitator, at a licensed service center,
-              with real preparation before it and real integration after.
+              model. A supervised session with a licensed facilitator, at a licensed service
+              center. Real preparation before. Real integration after.
             </p>
             <p className="dim">The medicine is the short part. The container is the work.</p>
           </div>
@@ -264,39 +243,22 @@ export default function Home() {
               the moment it <i>thins</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              I am careful with that language, because it goes soft fast. So here is the unromantic
-              version. For a few hours, the part of you that manages and edits and defends gets
-              quiet. What is behind it was always there. You have never had the room to look at it
-              without flinching.
+              Here is the unromantic version. For a few hours, the part of you that manages and
+              edits and defends gets quiet. What is behind it was always there.
             </p>
             <p className="dim">
               There is a version of you that is less defended and more alive. Most people met her
               once and have been looking for the door ever since.
             </p>
             <p className="dim">
-              I scuba dive, and it is the closest thing I know. The ocean taught me to stop
-              controlling, to let the current carry me, to be a kid again. Full of wonder and play.
-              This work does the same thing, closer in.
+              Jung called it the collective unconscious. I did not study psychology to believe it.
+              I studied people, in boardrooms and dive tanks and that room, and watched them meet
+              something older than their own biography.
             </p>
             <p className="dim">
-              Carl Jung called it the collective unconscious. A layer underneath your own story that
-              is not only yours, carrying symbols and instincts every human seems to recognize
-              without ever being taught them.
-            </p>
-            <p className="dim">
-              I did not study psychology to believe that. I studied people. In boardrooms, in dive
-              tanks, and in that room. I have watched them meet something in themselves that was
-              older than their own biography.
-            </p>
-            <p className="dim">
-              That is the real reason I do this. Not the license, though I earned that the hard way.
-              What surfaces in that room does not belong only to the person lying there. It belongs
-              to something we are all quietly plugged into, whether we ever say so out loud.
-            </p>
-            <p className="dim">
-              Some people find grief they filed away years ago. Some find a decision they made at
-              nineteen and never revisited. Some find they are not angry, they are tired. Almost
-              nobody finds something they did not already own.
+              Some find grief they filed away years ago. Some find a decision they made at
+              nineteen. Some find they are not angry, they are tired. Almost nobody finds something
+              they did not already own.
             </p>
             <p className="dim">The veil is not hiding a different you. It is hiding this one.</p>
             <p style={{ marginTop: 26 }}>
@@ -379,26 +341,20 @@ export default function Home() {
           </div>
           <div className="rv" style={{ marginTop: 36, maxWidth: "62ch" }}>
             <p className="dim">
-              Everything above is built for one person. I also hold this for small groups who want
-              to do it together instead of alone. Founders who have run something with the same two
-              or three people for a decade. A leadership team that survived a merger, a layoff, or a
-              brutal year and never once talked about what it actually cost them. Old friends who
-              have already earned the kind of trust this work asks for.
+              Everything above is built for one person. I also hold this for small groups who have
+              already earned the trust it asks for. Founders a decade in. A leadership team that
+              survived a brutal year and never once talked about what it cost them.
             </p>
             <p className="dim">
-              The discipline is the same as the individual work, just built for a room instead of a
-              chair. We prepare together and separately. The session is held at a private location,
-              given only once everyone is confirmed, never published in advance. Integration
-              continues after everyone goes home, because a group that only processes something
-              together in the room and never again is a group that will quietly disagree about what
-              happened.
+              Same discipline, built for a room instead of a chair. A private location, shared only
+              once everyone is confirmed. Integration continues after everyone goes home.
             </p>
             <p className="dim">
-              Up to eight people. Never more. Past that, a room stops being a room and starts being
-              an audience, and this work does not survive an audience.
+              Up to eight people. Never more. Past eight, a room becomes an audience, and this work
+              does not survive an audience.
             </p>
             <p className="dim">
-              Before any of that there is something you can do on your own tonight.{" "}
+              Start tonight if you want.{" "}
               <a
                 href="/roatan#pearldive"
                 style={{
@@ -409,12 +365,11 @@ export default function Home() {
               >
                 The Pearl Dive
               </a>{" "}
-              is a thirty minute assessment I built for the leaders I coach. It is free and it asks
-              nothing of you, not even an email.
+              is the free thirty minute assessment I built for the leaders I coach. It asks nothing
+              of you, not even an email.
             </p>
             <p className="dim">
-              For groups who want to take the integration further, I also lead small leadership
-              retreats on{" "}
+              And for groups who want to go further, I lead small retreats on{" "}
               <a
                 href="/roatan"
                 style={{
@@ -425,8 +380,8 @@ export default function Home() {
               >
                 Roatán
               </a>
-              , built around the same water that taught me how to stay calm for someone else. The
-              medicine stays where it is licensed. The integration does not.
+
+              . The medicine stays where it is licensed. The integration does not.
             </p>
           </div>
           <div
@@ -484,9 +439,6 @@ export default function Home() {
 
       {/* ============ PULL ============ */}
       <div className="pull rv">
-        <div className="swirl" aria-hidden="true" style={{ opacity: 0.3 }}>
-          <img src="/images/brand/heart-gold.svg" alt="" style={{ width: "100%", height: "auto" }} />
-        </div>
         <div className="wrap">
           <p>Hurt people hurt people. Healed people heal people.</p>
           <p className="attrib">The whole reason I trained</p>
@@ -783,17 +735,8 @@ export default function Home() {
               textTransform: "uppercase",
             }}
           >
-            <a href="/" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Home
-            </a>
             <a href="/roatan" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Retreats
-            </a>
-            <a href="/roatan#pearldive" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              The Pearl Dive
-            </a>
-            <a href="/roatan#gypsys-jewel" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Gypsy&apos;s Jewel
             </a>
             <a
               href="https://substack.com/@lovecandothat"
