@@ -98,6 +98,8 @@ export const css = `
   .wheelwrap{display:flex;justify-content:center;margin-top:clamp(46px,7vh,78px)}
   .wheel{position:relative;width:min(660px,94vw);color:var(--clay)}
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
+  .wheel svg .ml{display:none}
+  .wheel svg .ml text{font-family:var(--sans);font-size:17px;letter-spacing:.13em;fill:var(--cocoa)}
 
   .facets{list-style:none;position:absolute;inset:0;margin:0;padding:0}
   .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:pointer;
@@ -113,7 +115,8 @@ export const css = `
     /* on phones the wheel becomes a list: the circle sits above as a mark,
        the nine words stack beneath it, and tapping a word opens its story */
     .wheel{width:min(440px,90vw)}
-    .wheel svg{max-width:280px;margin:0 auto}
+    .wheel svg{max-width:360px;margin:0 auto}
+    .wheel svg .ml{display:block}
     .facets{position:static;margin-top:26px}
     .facets li{border-bottom:1px solid var(--line)}
     .facets li:first-child{border-top:1px solid var(--line)}

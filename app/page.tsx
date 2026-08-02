@@ -738,14 +738,6 @@ export default function Home() {
             <a href="/roatan" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Retreats
             </a>
-            <a
-              href="https://substack.com/@lovecandothat"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Journal
-            </a>
             <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Research
             </a>

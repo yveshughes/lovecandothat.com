@@ -64,7 +64,7 @@ export const css = `
   .pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,34px);margin-top:clamp(40px,6vh,70px)}
   .pair .fig{aspect-ratio:1/1}
   .pair .fig img{object-position:center 30%}
-  @media(max-width:700px){.pair{grid-template-columns:1fr}}
+  @media(max-width:700px){.pair{grid-template-columns:1fr;gap:44px}}
 
   /* ---------- the pearl dive ---------- */
   .gift{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1fr);gap:clamp(34px,5vw,72px);align-items:center;margin-top:clamp(40px,6vh,64px)}

@@ -158,35 +158,28 @@ export default function Roatan() {
           </div>
         </div>
         <div className="wrap">
-          <figure
-            className="fig rv"
-            style={{ aspectRatio: "3/4", maxWidth: 480, margin: "clamp(84px,12vh,130px) auto 0" }}
-          >
-            <img
-              src="/images/gypsys-jewel-buoy.jpg"
-              alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
-              loading="lazy"
-            />
-            <figcaption className="cap" style={{ textAlign: "center" }}>
-              Gypsy&apos;s Jewel. The dive site we named together, before her passing.
-            </figcaption>
-          </figure>
-          <div className="pair" style={{ marginTop: "clamp(84px,12vh,130px)" }}>
-            <figure className="fig rv">
-              <img
-                src="/images/roatan-west-end.jpg"
-                alt="Small boats moored off a West End beach on Roatan, palm trees and simple beach buildings along the sand"
-                loading="lazy"
-              />
-              <figcaption className="cap">The beach down the road</figcaption>
+          <div className="pair" style={{ marginTop: "clamp(64px,9vh,100px)" }}>
+            <figure className="rv" style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/gypsys-jewel-buoy.jpg"
+                  alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="cap">
+                Gypsy&apos;s Jewel. The dive site we named together, before her passing.
+              </figcaption>
             </figure>
-            <figure className="fig rv">
-              <img
-                src="/images/dive-lotus.jpg"
-                alt="Tracey floating cross legged in a lotus position above the reef, deep blue water all around"
-                loading="lazy"
-              />
-              <figcaption className="cap">Where I generate energy</figcaption>
+            <figure className="rv" style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/roatan-west-end.jpg"
+                  alt="Small boats moored off a West End beach on Roatan, palm trees and simple beach buildings along the sand"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="cap">The beach down the road</figcaption>
             </figure>
           </div>
         </div>
@@ -279,14 +272,6 @@ export default function Roatan() {
           >
             <a href="/" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Home
-            </a>
-            <a
-              href="https://substack.com/@lovecandothat"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Journal
             </a>
             <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Research
