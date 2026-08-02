@@ -31,6 +31,12 @@ export default function Home() {
               <path d={swirlPath} />
             </svg>
           </div>
+          <img
+            src="/images/brand/logo-horizontal-gold.svg"
+            alt="Love can do that. Risk the possible."
+            className="rv"
+            style={{ width: "min(440px, 84vw)", height: "auto", objectFit: "contain", marginBottom: 44 }}
+          />
           <p className="eyebrow rv">By invitation</p>
           <h1 className="rv">
             I have followed the white rabbit my whole life. This is the <i>deepest door</i> I have
@@ -87,6 +93,15 @@ export default function Home() {
               None of that is why you are on this page. It is why I can sit across from the person
               reading it and already know what hesitation is costing them. I spent a career watching
               it cost capable people everything.
+            </p>
+            <p className="dim">
+              The white rabbit came from a phone call. Standing at the edge of leaving private
+              equity, I called an investment banker I trusted who had become a conscious
+              capitalist. I expected advice. A framework. A model. Instead he said, follow the
+              white rabbit. It will lead you to doorways you cannot see yet. Every decision that
+              has mattered since has come down to the same choice. Probability, which you can
+              calculate. Or possibility, which you cannot. I choose possibility. <i>Risk the
+              possible</i> is not a tagline to me. It is the method.
             </p>
             <p className="dim">
               I did not come to this work because talk therapy failed me or because I needed a
@@ -739,6 +754,9 @@ export default function Home() {
       <div className="close">
         <div className="wrap">
           <p className="mark rv">Love can do that.</p>
+          <p className="eyebrow rv" style={{ marginTop: 26 }}>
+            Risk the possible
+          </p>
         </div>
       </div>
 
@@ -748,6 +766,49 @@ export default function Home() {
             <span>Licensed psilocybin facilitator, Oregon &nbsp;·&nbsp; InnerTrek trained</span>
             <span>Tracey Abbott</span>
             <span>&copy; 2026 Leadership Current</span>
+          </div>
+          <div
+            style={{
+              marginTop: 30,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "10px 28px",
+              fontSize: ".78rem",
+              letterSpacing: ".06em",
+            }}
+          >
+            <a
+              href="https://www.instagram.com/love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.threads.com/@love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Threads
+            </a>
+            <a
+              href="https://www.facebook.com/lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.youtube.com/@Lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              YouTube
+            </a>
           </div>
           <p className="disclaimer">
             Psilocybin services are legal for adults twenty one and over in Oregon under Oregon

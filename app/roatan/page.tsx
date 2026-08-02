@@ -28,6 +28,12 @@ export default function Roatan() {
 
       <header className="hero">
         <div className="wrap">
+          <img
+            src="/images/brand/logo-horizontal-teal.svg"
+            alt="Love can do that. Risk the possible."
+            className="rv"
+            style={{ width: "min(440px, 84vw)", height: "auto", objectFit: "contain", marginBottom: 44 }}
+          />
           <p className="eyebrow rv">Roatán, Honduras</p>
           <h1 className="rv">
             I trained as a rescue diver. The whole certification comes down to one thing. Staying
@@ -107,7 +113,7 @@ export default function Roatan() {
             />
           </figure>
           <div className="rv">
-            <p className="eyebrow">The house</p>
+            <p className="eyebrow">Gypsy&apos;s Jewel</p>
             <h2 style={{ marginTop: 22 }}>
               Half the year I am here. It is where I go to <i>come back</i>.
             </h2>
@@ -121,8 +127,10 @@ export default function Roatan() {
               how the good things start.
             </p>
             <p className="dim">
-              What that becomes now has a name. I lead small leadership retreats here, built around
-              the same water that taught me how to stay calm when someone else is not. The medicine
+              What that becomes now has a name. Gypsy&apos;s Jewel. It is the house the retreat lives
+              in, and everything happens under its roof and on its water. I lead small leadership
+              retreats here, built around the same water that taught me how to stay calm when
+              someone else is not. The medicine
               stays where it is licensed, at a proper service center, exactly the way the law
               requires. What happens on this island is the integration. Diving, mostly. Long
               mornings with no agenda. The kind of processing that moves easier in water than in a
@@ -215,6 +223,49 @@ export default function Roatan() {
             <span>Licensed psilocybin facilitator, Oregon &nbsp;·&nbsp; InnerTrek trained</span>
             <span>Tracey Abbott</span>
             <span>&copy; 2026 Leadership Current</span>
+          </div>
+          <div
+            style={{
+              marginTop: 30,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "10px 28px",
+              fontSize: ".78rem",
+              letterSpacing: ".06em",
+            }}
+          >
+            <a
+              href="https://www.instagram.com/love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.threads.com/@love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Threads
+            </a>
+            <a
+              href="https://www.facebook.com/lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.youtube.com/@Lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              YouTube
+            </a>
           </div>
           <p className="disclaimer">
             Psilocybin services are offered only in Oregon, under Oregon Psilocybin Services, and

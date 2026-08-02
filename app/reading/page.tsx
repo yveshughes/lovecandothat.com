@@ -201,6 +201,50 @@ export default function Reading() {
             </a>
             .
           </p>
+          <div
+            style={{
+              marginTop: 28,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "10px 28px",
+              fontSize: ".78rem",
+              letterSpacing: ".06em",
+            }}
+          >
+            <a
+              href="https://www.instagram.com/love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.threads.com/@love.candothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Threads
+            </a>
+            <a
+              href="https://www.facebook.com/lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.youtube.com/@Lovecandothat"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
+            >
+              YouTube
+            </a>
+          </div>
           <p className="fine">
             Tracey Abbott. Licensed psilocybin facilitator, Oregon. InnerTrek trained. Psilocybin
             services are legal for adults twenty one and over in Oregon under Oregon Psilocybin
