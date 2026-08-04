@@ -83,14 +83,6 @@ export default function Home() {
               Gypsy&apos;s Jewel
             </a>
             <a
-              href="https://substack.com/@lovecandothat"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Journal
-            </a>
-            <a
               href="/reading"
               style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
             >
@@ -207,7 +199,10 @@ export default function Home() {
               model. A supervised session with a licensed facilitator, at a licensed service
               center. Real preparation before. Real integration after.
             </p>
-            <p className="dim">The medicine is the short part. The container is the work.</p>
+            <p className="dim">
+              I do not fix anyone. I hold the container, and I am the catalyst. The medicine is the
+              short part. The healing is yours.
+            </p>
           </div>
         </div>
       </section>

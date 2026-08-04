@@ -110,36 +110,37 @@ export default function Roatan() {
           <div className="rv">
             <p className="eyebrow">Gypsy&apos;s Jewel</p>
             <h2 style={{ marginTop: 22 }}>
-              Half the year I am here. It is where I go to <i>come back</i>.
+              My mother named the dive site herself. <i>Gypsy&apos;s Jewel</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              I split my time between the Hudson Valley woods and this island. Different quiet in
-              each. One is trees and cold and long dark evenings. The other is salt on everything,
-              and a boat, and a door that stays open.
+              Her father named her Gypsy. A single mom who earned her PhD at night. A supercomputing
+              pioneer in the eighties, when almost nobody who looked like her was in that room. A
+              steel magnolia, with more grit in her delicate southern pinky than most boardrooms I
+              have sat in. She wanted me to stay and knew I needed out, so she gave me wings.
             </p>
             <p className="dim">
-              People find their way here. That has happened without me planning it, which is usually
-              how the good things start.
+              She was a competitive swimmer as a girl and loved the water her whole life, weightless
+              and free. So last June I dedicated a dive site to her, off this island. She picked the
+              name. When I told her, she wrote back, so cool, thank you so much honey, it is such a
+              positive thing to know that some aspect of me will live forever.
             </p>
             <p className="dim">
-              What that becomes now has a name. Gypsy&apos;s Jewel. The name is my mother&apos;s.
-              Her father named her Gypsy. A single mom with a PhD. A supercomputing pioneer in the
-              eighties. A steel magnolia, with more grit in her delicate southern pinky than most
-              boardrooms I have sat in. She wanted me to stay and knew I needed out, so she gave me
-              wings.
+              She never got to dive it. She watched the video of the dedication instead, the first
+              time I went down to see her name on the water. She passed a few weeks later. I gave her
+              eulogy, and her words came through me in flow, and that is where the phrase found me.
+              We did an impossibly hard thing that day. Turns out, love can do that.
             </p>
             <p className="dim">
-              Before she passed, she and I named the dive site out front together. Gypsy&apos;s
-              Jewel. Her name on a white buoy, rocking on blue water. The house carries the name
-              now too, and everything the retreat is happens under its roof and on her water.
+              The house carries her name now too. We shared a favorite hour, twilight, what the
+              French call <i>entre chien et loup</i>, between the dog and the wolf, when you cannot
+              quite tell one from the other. She loved it because the earth was settling down.
+              Twilight is where things transform. It is the whole reason I do this work.
             </p>
             <p className="dim">
-              I lead small leadership retreats here, built around the same water that taught me how
-              to stay calm when someone else is not. The medicine
-              stays where it is licensed, at a proper service center, exactly the way the law
-              requires. What happens on this island is the integration. Diving, mostly. Long
-              mornings with no agenda. The kind of processing that moves easier in water than in a
-              conference room.
+              I lead small leadership retreats here, on her water. The medicine stays where it is
+              licensed, at a proper service center, exactly the way the law requires. What happens on
+              this island is the integration. Diving, mostly. Long mornings with no agenda. The kind
+              of processing that moves easier in water than in a conference room.
             </p>
             <p className="dim">
               If your team already knows the room and is ready to go somewhere quieter with it,{" "}
@@ -168,7 +169,7 @@ export default function Roatan() {
                 />
               </div>
               <figcaption className="cap">
-                Gypsy&apos;s Jewel. The dive site we named together, before her passing.
+                Gypsy&apos;s Jewel. Her name on the water. See you in the stars, Mama.
               </figcaption>
             </figure>
             <figure className="rv" style={{ margin: 0 }}>
