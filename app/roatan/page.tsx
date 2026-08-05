@@ -126,15 +126,21 @@ export default function Roatan() {
             </p>
             <p className="dim">
               She never got to dive it. She watched the video of the dedication instead, the first
-              time I went down to see her name on the water. She passed a few weeks later. I gave her
-              eulogy, and her words came through me in flow, and that is where the phrase found me.
-              We did an impossibly hard thing that day. Turns out, love can do that.
+              time I went down to see her name on the water. Less than a month later I was laying her
+              to rest. I gave her eulogy, and her words came through me in flow, and that is where
+              this phrase found me. We did an impossibly hard thing that day. Turns out, love can do
+              that. Love can do everything.
             </p>
             <p className="dim">
               The house carries her name now too. We shared a favorite hour, twilight, what the
               French call <i>entre chien et loup</i>, between the dog and the wolf, when you cannot
               quite tell one from the other. She loved it because the earth was settling down.
               Twilight is where things transform. It is the whole reason I do this work.
+            </p>
+            <p className="dim">
+              A few days before she died, I asked her how she wanted to be remembered. One word.{" "}
+              <i>Kind</i>. The last thing I told her was that I would see her in the stars. They
+              twinkle like Gypsy&apos;s Jewel.
             </p>
             <p className="dim">
               I lead small leadership retreats here, on her water. The medicine stays where it is
