@@ -736,9 +736,6 @@ export default function Home() {
             <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Research
             </a>
-            <a href="#" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Back to top
-            </a>
           </nav>
           <div
             style={{

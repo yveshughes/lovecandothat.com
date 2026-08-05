@@ -93,13 +93,11 @@ export const css = `
   }
 
   /* ---------- identity wheel ---------- */
-  /* the words sit on the wheel itself; resting on one reveals its story
-     in the centre. balanced human holds the centre. */
+  /* the words sit on the wheel itself; resting on one (desktop) or tapping
+     it reveals its story in the centre. on phones it becomes an accordion. */
   .wheelwrap{display:flex;justify-content:center;margin-top:clamp(46px,7vh,78px)}
   .wheel{position:relative;width:min(660px,94vw);color:var(--clay)}
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
-  .wheel svg .ml{display:none}
-  .wheel svg .ml text{font-family:var(--sans);font-size:17px;letter-spacing:.13em;fill:var(--cocoa)}
 
   .facets{list-style:none;position:absolute;inset:0;margin:0;padding:0}
   .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:pointer;
@@ -112,17 +110,22 @@ export const css = `
   .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1}
 
   @media(max-width:880px){
-    /* on phones the wheel becomes a list: the circle sits above as a mark,
-       the nine words stack beneath it, and tapping a word opens its story */
-    .wheel{width:min(440px,90vw)}
-    .wheel svg{max-width:360px;margin:0 auto}
-    .wheel svg .ml{display:block}
-    .facets{position:static;margin-top:26px}
+    /* phones: rings become a small mark, the nine words become a tappable
+       accordion, and each word opens its own story inline. no overlap. */
+    .wheelwrap{flex-direction:column;align-items:stretch;margin-top:clamp(30px,5vh,50px)}
+    .wheel{position:static;width:100%}
+    .wheel svg{max-width:200px;margin:0 auto 30px;opacity:.7}
+    .facets{position:static;inset:auto;margin:0}
     .facets li{border-bottom:1px solid var(--line)}
     .facets li:first-child{border-top:1px solid var(--line)}
-    .facets .k{position:static;transform:none;display:block;padding:15px 0;font-size:.7rem;letter-spacing:.18em}
-    .facets .v{position:static;transform:none;width:auto;text-align:left;background:transparent;
-      padding:0 0 18px;opacity:1;display:none}
+    .facets .k{position:static;transform:none;display:flex;justify-content:space-between;
+      align-items:center;width:100%;padding:17px 2px;font-size:.74rem;letter-spacing:.18em}
+    .facets .k::after{content:"+";font-family:var(--sans);font-size:1.15rem;font-weight:300;
+      color:var(--clay);line-height:1}
+    .facets li.on .k::after{content:"\\2013"}
+    .facets .v{position:static;transform:none;width:auto;max-width:none;text-align:left;
+      background:transparent;padding:0 0 20px;font-size:.95rem;color:var(--muted);
+      opacity:1;pointer-events:auto;display:none}
     .facets li.on .v{display:block}
   }
 

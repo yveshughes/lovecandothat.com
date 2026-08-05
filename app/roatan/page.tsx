@@ -71,8 +71,9 @@ export default function Roatan() {
               ocean for people, without ever needing to fix it.
             </p>
             <p className="dim">
-              My best friend calls me a pearl diver into other people. It is true above the surface
-              and below it.
+              My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
+              above the surface and below it. That is the whole job. I hold the container, and I
+              take people to the depths.
             </p>
           </div>
         </div>
@@ -181,12 +182,12 @@ export default function Roatan() {
             <figure className="rv" style={{ margin: 0 }}>
               <div className="fig" style={{ aspectRatio: "1/1" }}>
                 <img
-                  src="/images/roatan-west-end.jpg"
-                  alt="Small boats moored off a West End beach on Roatan, palm trees and simple beach buildings along the sand"
+                  src="/images/roatan-beach.jpg"
+                  alt="A calm palm-framed Roatan shoreline, turquoise water, moored buoys and a small boat under a clear blue sky"
                   loading="lazy"
                 />
               </div>
-              <figcaption className="cap">The beach down the road</figcaption>
+              <figcaption className="cap">The water out front. Nothing fancy. That is the point.</figcaption>
             </figure>
           </div>
         </div>
@@ -282,9 +283,6 @@ export default function Roatan() {
             </a>
             <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Research
-            </a>
-            <a href="#" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Back to top
             </a>
           </nav>
           <div

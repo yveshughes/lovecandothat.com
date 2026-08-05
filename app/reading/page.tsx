@@ -222,9 +222,6 @@ export default function Reading() {
             <a href="/roatan" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Retreats
             </a>
-            <a href="#" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Back to top
-            </a>
           </nav>
           <div
             style={{

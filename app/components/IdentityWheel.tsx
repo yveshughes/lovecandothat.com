@@ -87,17 +87,6 @@ export default function IdentityWheel() {
             <line x1="266.8" y1="240.6" x2="154.6" y2="220.8" opacity=".28" />
             <line x1="285.3" y1="208.6" x2="212.0" y2="121.3" opacity=".28" />
           </g>
-          <g className="ml" aria-hidden="true">
-            <text x="385.7" y="69.6" textAnchor="start" dy="-0.25em">CONNECTOR</text>
-            <text x="486.3" y="154.0" textAnchor="start" dy="0.34em">BUILDER</text>
-            <text x="509.1" y="283.3" textAnchor="start" dy="0.34em">EMPATH</text>
-            <text x="443.4" y="397.1" textAnchor="start" dy="0.34em">INSIDER</text>
-            <text x="320.0" y="442.0" textAnchor="middle" dy="0.90em">EXPATRIATE</text>
-            <text x="196.6" y="397.1" textAnchor="end" dy="0.34em">EXPLORER</text>
-            <text x="130.9" y="283.3" textAnchor="end" dy="0.34em">OBSERVER</text>
-            <text x="153.7" y="154.0" textAnchor="end" dy="0.34em">OUTSIDER</text>
-            <text x="254.3" y="69.6" textAnchor="end" dy="-0.25em">BALANCED HUMAN</text>
-          </g>
         </svg>
         <ul className="facets">
           {FACETS.map((f, i) => (
