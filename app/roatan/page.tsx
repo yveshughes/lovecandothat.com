@@ -43,10 +43,13 @@ export default function Roatan() {
             <span>Half in the Hudson Valley woods</span>
             <span>Rescue diver</span>
           </div>
-          <figure className="fig wide rv">
+          <figure
+            className="fig rv"
+            style={{ aspectRatio: "2/3", maxWidth: 560, margin: "clamp(44px,7vh,84px) auto 0" }}
+          >
             <img
-              src="/images/dive-hover.jpg"
-              alt="Tracey hovering weightless in blue water with her fins tucked, a coral tower rising in the foreground"
+              src="/images/dive-lotus.jpg"
+              alt="Tracey hovering cross-legged and weightless in deep blue water, a coral tower rising below her"
               loading="eager"
             />
           </figure>
