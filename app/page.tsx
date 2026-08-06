@@ -77,32 +77,29 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Who&apos;s asking</p>
             <h2 style={{ marginTop: 22 }}>
-              I do this for one reason. When the people in real power wake up to how connected
-              everything is, <i>the world changes</i>. That is the whole mission.
+              You are successful on paper, and some part of you knows that is <i>not the whole
+              story</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              I have built my life and career on curiosity. Alice in Wonderland was my favorite
-              childhood book, and I learned early to follow the white rabbit through doors other
-              people could not see. Alabama to a decade as an expat. Deep water to the depths of
-              the human spirit.
+              Maybe you are in the middle of something, a change you chose or one that chose you.
+              Maybe you have held it together for everyone else so long that you are tired in a way
+              sleep does not touch. Maybe you have done years of talk therapy and hit a wall you can
+              describe perfectly. You are not in crisis. You are not fine either.
             </p>
             <p className="dim">
-              Curiosity carried me through the highest stakes of private equity, and into the roles
-              that matter more. Caregiver. Daughter. Sister. Friend. Leadership is not about
-              scaling results. It is about aligning power with purpose.
+              I know that place because I have stood in it. In the summer of 2024 my partner went
+              into heart failure and my mother was sick at the same time. I could not be at work the
+              way I needed to be, and everything was coming down at once. It was after a psychedelic
+              session that I sat down and wrote the plan for my life. It is the plan I am living now.
             </p>
             <p className="dim">
-              The white rabbit came from a phone call. On the edge of leaving private equity, I
-              called an investment banker turned conscious capitalist. I expected a framework.
-              Instead he said, follow the white rabbit. It will lead you to doorways you cannot see
-              yet. Every decision that has mattered since has come down to the same choice.
-              Probability, which you can calculate. Or possibility, which you cannot. I choose
-              possibility.
+              I spent nearly thirty years advising leaders before I ever trained for this. That is
+              not why you are here. It is why I can sit across from you and already know what this is
+              costing you.
             </p>
             <p className="dim">
-              I did not come to this work because talk therapy failed me. I came because the
-              leaders I have advised for thirty years need a room like this the most, and ask for
-              it the least. This is the work I was <i>quietly walking toward</i> the whole time.
+              And I do this for one reason. When people in real power wake up to how connected
+              everything is, <i>the world changes</i>. That is the whole mission.
             </p>
           </div>
         </div>
@@ -152,12 +149,13 @@ export default function Home() {
               remove <i>the masks we wear</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              For thirty years the answer was supposed to come from analysis. What actually moved
-              people was the thing they already knew and had never said out loud.
+              For thirty years I watched the answer come from analysis. What actually moved people
+              was the thing they already knew and had never said out loud. It will be the same for
+              you.
             </p>
             <p className="dim">
-              People are not broken. They are carrying something that has never had a safe place to
-              be set down. The healing starts the moment the masks come off. I have lived it.
+              You are not broken. You are carrying something that has never had a safe place to be
+              set down. The healing starts the moment the mask comes off. I have lived that too.
             </p>
             <p className="dim">
               Psilocybin services are legal here under the country&apos;s first state regulated
