@@ -86,11 +86,11 @@ export default function Roatan() {
       <div className="wrap">
         <figure
           className="fig rv"
-          style={{ aspectRatio: "2/3", maxWidth: 520, margin: "clamp(40px,6vh,70px) auto 0" }}
+          style={{ aspectRatio: "3/4", maxWidth: 560, margin: "clamp(40px,6vh,70px) auto 0" }}
         >
           <img
-            src="/images/dive-1.jpg"
-            alt="A diver descending toward the bow of a coral-encrusted shipwreck in deep blue water"
+            src="/images/roatan-reef2.jpg"
+            alt="Aerial view of Roatan from the plane, the reef and turquoise shallows tracing the green island coastline"
             loading="lazy"
           />
         </figure>
@@ -133,11 +133,11 @@ export default function Roatan() {
 
           <figure
             className="fig rv"
-            style={{ aspectRatio: "3/2", maxWidth: 760, margin: "clamp(40px,6vh,64px) auto" }}
+            style={{ aspectRatio: "3/4", maxWidth: 540, margin: "clamp(40px,6vh,64px) auto" }}
           >
             <img
-              src="/images/gypsys-jewel.jpg"
-              alt="Gypsy's Jewel, the house, a two story island home with wraparound verandas under palms and a bright blue sky"
+              src="/images/gypsys-jewel-house.jpg"
+              alt="Gypsy's Jewel, the house: a green two story island home with a pink front door, wraparound verandas, and palms"
               loading="lazy"
             />
           </figure>
@@ -168,15 +168,17 @@ export default function Roatan() {
             </p>
           </div>
 
-          <figure
-            className="fig rv"
-            style={{ aspectRatio: "3/2", maxWidth: 820, margin: "clamp(40px,6vh,64px) auto" }}
-          >
-            <img
-              src="/images/roatan-beach.jpg"
-              alt="A calm palm-framed Roatan shoreline, turquoise water, moored buoys and a small boat under a clear blue sky"
-              loading="lazy"
-            />
+          <figure className="rv" style={{ maxWidth: 620, margin: "clamp(40px,6vh,64px) auto" }}>
+            <div className="fig" style={{ aspectRatio: "3/4" }}>
+              <img
+                src="/images/roatan-reef.jpg"
+                alt="Aerial view of Roatan's barrier reef, the turquoise reef line dropping into deep blue ocean along the island coast"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              The reef from the plane. Second largest in the world.
+            </figcaption>
           </figure>
 
           <div className="rv" style={{ maxWidth: "64ch" }}>
@@ -201,6 +203,17 @@ export default function Roatan() {
               .
             </p>
           </div>
+
+          <figure
+            className="fig rv"
+            style={{ aspectRatio: "3/4", maxWidth: 620, margin: "clamp(40px,6vh,64px) auto" }}
+          >
+            <img
+              src="/images/roatan-beach2.jpg"
+              alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
+              loading="lazy"
+            />
+          </figure>
 
           <figure className="rv" style={{ maxWidth: 440, margin: "clamp(44px,7vh,72px) auto 0" }}>
             <div className="fig" style={{ aspectRatio: "1/1" }}>
