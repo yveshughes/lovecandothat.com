@@ -320,6 +320,56 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div
+            className="rv"
+            style={{
+              marginTop: "clamp(64px,9vh,100px)",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "clamp(16px,3vw,34px)",
+            }}
+          >
+            <figure style={{ margin: 0 }}>
+              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "4/5" }}>
+                <img
+                  src="/images/service-center-room.jpg"
+                  alt="A one-on-one session room at the licensed service center: a made bed under a hand-painted owl mural and hanging lanterns"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption
+                style={{
+                  marginTop: 12,
+                  fontSize: ".74rem",
+                  letterSpacing: ".14em",
+                  textTransform: "uppercase",
+                  color: "var(--muted)",
+                }}
+              >
+                Where the one-on-one work happens
+              </figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "4/5" }}>
+                <img
+                  src="/images/service-center-owl.jpg"
+                  alt="Detail of the service center mural: a snowy owl painted on a mossy branch among Moroccan lanterns"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption
+                style={{
+                  marginTop: 12,
+                  fontSize: ".74rem",
+                  letterSpacing: ".14em",
+                  textTransform: "uppercase",
+                  color: "var(--muted)",
+                }}
+              >
+                Held with care, down to the walls
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
