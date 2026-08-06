@@ -194,6 +194,35 @@ export default function Reading() {
         </div>
       </section>
 
+      <section>
+        <div className="wrap">
+          <h2>One book, for the soul of it</h2>
+          <p className="dim" style={{ marginTop: 18 }}>
+            Everything above is safety and outcomes. This is about meaning, which no study measures.
+          </p>
+          <div className="grp">
+            <div className="item">
+              <a
+                href="https://www.simonyugler.com/psychedelics-and-the-soul"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="t">
+                  Psychedelics and the Soul: A Mythic Guide to Psychedelic Healing, Depth
+                  Psychology, and Cultural Repair
+                </span>
+                <span className="s">Simon Yugler &nbsp;·&nbsp; 2024</span>
+                <span className="f">
+                  Simon teaches for InnerTrek, where I trained. He reads the journey through Jung,
+                  myth, and depth psychology, the same veil I describe on the home page. If you want
+                  to understand what this work reaches for underneath the safety data, start here.
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div className="wrap">
           <p className="mark">Love can do that.</p>

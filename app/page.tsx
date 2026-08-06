@@ -192,10 +192,11 @@ export default function Home() {
         <div className="wrap">
           <p className="eyebrow" style={{ marginBottom: 34 }}>What opens</p>
           <ul>
+            <li>curiosity</li>
             <li>possibility</li>
             <li>creativity</li>
             <li>wonder</li>
-            <li>innovation</li>
+            <li>play</li>
             <li>expansion</li>
           </ul>
         </div>
@@ -231,9 +232,21 @@ export default function Home() {
               older than their own biography.
             </p>
             <p className="dim">
+              I studied Chinese medicine before I trained for this, and the oldest idea in it is the
+              one I kept. Balance, and impermanence. Nothing in you is fixed. Yin turns into yang,
+              the tide goes out and comes back, and the heaviest thing you carry is already moving
+              whether you touch it or not. This work just lets you be there when it turns.
+            </p>
+            <p className="dim">
               Some find grief they filed away years ago. Some find a decision they made at
               nineteen. Some find they are not angry, they are tired. Almost nobody finds something
               they did not already own.
+            </p>
+            <p className="dim">
+              And it is not all heavy. People brace for something solemn and meet, instead, their
+              own curiosity. Wonder. A flame they were sure had gone out, catching again. I am still
+              the girl who loved Alice in Wonderland, and the way in is not grief. It is the
+              willingness to get curious and <i>follow the white rabbit</i> to see where it goes.
             </p>
             <p className="dim">The veil is not hiding a different you. It is hiding this one.</p>
             <p style={{ marginTop: 26 }}>
