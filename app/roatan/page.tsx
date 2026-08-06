@@ -103,7 +103,7 @@ export default function Roatan() {
         </div>
       </div>
 
-      <section className="band" id="gypsys-jewel">
+      <section className="band" id="gypsys-jewel" style={{ paddingBottom: "clamp(24px,4vh,48px)" }}>
         <div className="wrap">
           <div className="split">
             <div className="rv">
@@ -238,56 +238,59 @@ export default function Roatan() {
       </section>
 
       {/* ============ THE PEARL DIVE ============ */}
-      <section className="band" id="pearldive">
-        <div className="wrap">
-          <div className="split">
-            <div className="rv">
-              <p className="eyebrow">Take something with you</p>
-            </div>
-            <div className="rv">
-              <h2>
-                The Pearl Dive. Thirty minutes, a pen, and <i>nobody watching</i>.
-              </h2>
-              <p style={{ marginTop: 30 }} className="dim">
-                You do not have to work with me to use this. It is the assessment I built for the
-                leaders I coach, and it is free.
-              </p>
-            </div>
+      <section className="band" id="pearldive" style={{ paddingTop: "clamp(20px,3vh,44px)" }}>
+        <div className="wrap" style={{ textAlign: "center" }}>
+          <p className="eyebrow rv">Take something with you</p>
+          <h2 className="rv" style={{ marginTop: 18, maxWidth: "24ch", marginInline: "auto" }}>
+            The Pearl Dive. Thirty minutes, a pen, and <i>nobody watching</i>.
+          </h2>
+          <p className="dim rv" style={{ marginTop: 24, maxWidth: "52ch", marginInline: "auto" }}>
+            You do not have to work with me to use this. It is the assessment I built for the
+            leaders I coach, and it is free.
+          </p>
+
+          <figure
+            className="cover rv"
+            style={{ maxWidth: 340, margin: "clamp(40px,6vh,64px) auto 0" }}
+          >
+            <img
+              src="/images/pearldive-cover.jpg"
+              alt="Cover of The Pearl Dive, a complimentary identity tool by Tracey Abbott"
+              loading="lazy"
+            />
+          </figure>
+
+          <div className="rv" style={{ maxWidth: "56ch", margin: "clamp(30px,5vh,48px) auto 0" }}>
+            <p className="dim">
+              Every pearl begins with an irritation. Every transformation begins with the courage to
+              dive. The treasures worth finding are not on the surface.
+            </p>
+            <p className="dim">
+              Most people try to become themselves by adding. More skills, more credentials, more
+              strategy. This does the opposite. It is a process of intentional subtraction, and what
+              is left at the end is the thing you have been carrying the whole time.
+            </p>
           </div>
 
-          <div className="gift">
-            <figure className="cover rv">
-              <img
-                src="/images/pearldive-cover.jpg"
-                alt="Cover of The Pearl Dive, a complimentary leadership assessment by Tracey Abbott"
-                loading="lazy"
-              />
-            </figure>
-            <div className="rv">
-              <p className="dim">
-                Every pearl begins with an irritation. Every transformation begins with the courage
-                to dive. The treasures worth finding are not on the surface.
-              </p>
-              <p className="dim">
-                Most people try to become themselves by adding. More skills, more credentials, more
-                strategy. This does the opposite. It is a process of intentional subtraction, and
-                what is left at the end is the thing you have been carrying the whole time.
-              </p>
-              <ul className="giftlist">
-                <li>Strip away the roles that were only ever armor</li>
-                <li>Find the thread that has never wavered across seasons</li>
-                <li>Name the gifts you cannot not give</li>
-                <li>Write the one sentence that holds your essence</li>
-              </ul>
-              <a className="giftbtn" href="/The-Pearl-Dive.pdf" download>
-                Download the Pearl Dive
-              </a>
-              <p className="giftnote">
-                Print it in color, step away from screens, and let pen meet paper. The truth lives
-                offline.
-              </p>
-            </div>
+          <ul
+            className="giftlist rv"
+            style={{ maxWidth: "44ch", margin: "26px auto 0", textAlign: "left" }}
+          >
+            <li>Strip away the roles that were only ever armor</li>
+            <li>Find the thread that has never wavered across seasons</li>
+            <li>Name the gifts you cannot not give</li>
+            <li>Write the one sentence that holds your essence</li>
+          </ul>
+
+          <div className="rv">
+            <a className="giftbtn" href="/The-Pearl-Dive.pdf" download>
+              Download the Pearl Dive
+            </a>
           </div>
+          <p className="giftnote rv" style={{ margin: "18px auto 0" }}>
+            Print it in color, step away from screens, and let pen meet paper. The truth lives
+            offline.
+          </p>
         </div>
       </section>
 
