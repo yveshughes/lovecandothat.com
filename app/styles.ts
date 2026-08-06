@@ -93,8 +93,9 @@ export const css = `
   }
 
   /* ---------- identity wheel ---------- */
-  /* the words sit on the wheel itself; resting on one (desktop) or tapping
-     it reveals its story in the centre. on phones it becomes an accordion. */
+  /* the words sit on the wheel itself at every size. resting on one (desktop)
+     or tapping it reveals its story in the centre; tapping the panel or any
+     empty spot closes it again. */
   .wheelwrap{display:flex;justify-content:center;margin-top:clamp(46px,7vh,78px)}
   .wheel{position:relative;width:min(660px,94vw);color:var(--clay)}
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
@@ -106,27 +107,18 @@ export const css = `
   .facets .k:hover,.facets .k:focus,.facets li.on .k{color:var(--clay)}
   .facets .v{position:absolute;left:50%;top:48.4%;transform:translate(-50%,-50%);
     width:min(30ch,56vw);text-align:center;font-size:.86rem;line-height:1.65;color:var(--muted);
-    background:var(--sand);padding:14px 10px;opacity:0;pointer-events:none;transition:opacity .45s ease}
-  .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1}
+    background:var(--sand);border-radius:14px;padding:14px 12px;opacity:0;pointer-events:none;
+    transition:opacity .45s ease}
+  .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1;pointer-events:auto}
 
   @media(max-width:880px){
-    /* phones: rings become a small mark, the nine words become a tappable
-       accordion, and each word opens its own story inline. no overlap. */
-    .wheelwrap{flex-direction:column;align-items:stretch;margin-top:clamp(30px,5vh,50px)}
-    .wheel{position:static;width:100%}
-    .wheel svg{max-width:200px;margin:0 auto 30px;opacity:.7}
-    .facets{position:static;inset:auto;margin:0}
-    .facets li{border-bottom:1px solid var(--line)}
-    .facets li:first-child{border-top:1px solid var(--line)}
-    .facets .k{position:static;transform:none;display:flex;justify-content:space-between;
-      align-items:center;width:100%;padding:17px 2px;font-size:.74rem;letter-spacing:.18em}
-    .facets .k::after{content:"+";font-family:var(--sans);font-size:1.15rem;font-weight:300;
-      color:var(--clay);line-height:1}
-    .facets li.on .k::after{content:"\\2013"}
-    .facets .v{position:static;transform:none;width:auto;max-width:none;text-align:left;
-      background:transparent;padding:0 0 20px;font-size:.95rem;color:var(--muted);
-      opacity:1;pointer-events:auto;display:none}
-    .facets li.on .v{display:block}
+    /* phones keep the words on the wheel; only the sizes shrink so they fit,
+       and the centre panel gets a soft shadow so it reads over the rings */
+    .wheelwrap{margin-top:clamp(30px,5vh,52px)}
+    .wheel{width:min(560px,96vw)}
+    .facets .k{font-size:.56rem;letter-spacing:.08em}
+    .facets .v{width:min(22ch,66vw);font-size:.82rem;padding:15px 13px;
+      box-shadow:0 10px 34px rgba(59,47,38,.16)}
   }
 
   /* ---------- doors ---------- */

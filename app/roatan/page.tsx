@@ -123,34 +123,37 @@ export default function Roatan() {
               have sat in. She wanted me to stay and knew I needed out, so she gave me wings.
             </p>
             <p className="dim">
-              She was a competitive swimmer as a girl and loved the water her whole life, weightless
-              and free. So last June I dedicated a dive site to her, off this island. She picked the
-              name. When I told her, she wrote back, so cool, thank you so much honey, it is such a
-              positive thing to know that some aspect of me will live forever.
+              She loved the water her whole life, weightless and free. Last June I dedicated a dive
+              site to her off this island, and she chose the name. She never got to dive it. Less
+              than a month later I gave her eulogy, and that is where this phrase found me. Turns
+              out, love can do that. Love can do everything.
             </p>
+            <details className="more">
+              <summary>More about my mother</summary>
+              <p className="dim">
+                When I told her about the dive site, she wrote back: so cool, thank you so much
+                honey, it is such a positive thing to know that some aspect of me will live forever.
+                She watched the video of the dedication instead of diving it, the first time I went
+                down to see her name on the water.
+              </p>
+              <p className="dim">
+                The house carries her name now too. We shared a favorite hour, twilight, what the
+                French call <i>entre chien et loup</i>, between the dog and the wolf, when you cannot
+                quite tell one from the other. She loved it because the earth was settling down.
+                Twilight is where things transform.
+              </p>
+              <p className="dim">
+                A few days before she died, I asked her how she wanted to be remembered. One word.{" "}
+                <i>Kind</i>. The last thing I told her was that I would see her in the stars. They
+                twinkle like Gypsy&apos;s Jewel.
+              </p>
+            </details>
             <p className="dim">
-              She never got to dive it. She watched the video of the dedication instead, the first
-              time I went down to see her name on the water. Less than a month later I was laying her
-              to rest. I gave her eulogy, and her words came through me in flow, and that is where
-              this phrase found me. We did an impossibly hard thing that day. Turns out, love can do
-              that. Love can do everything.
-            </p>
-            <p className="dim">
-              The house carries her name now too. We shared a favorite hour, twilight, what the
-              French call <i>entre chien et loup</i>, between the dog and the wolf, when you cannot
-              quite tell one from the other. She loved it because the earth was settling down.
-              Twilight is where things transform. It is the whole reason I do this work.
-            </p>
-            <p className="dim">
-              A few days before she died, I asked her how she wanted to be remembered. One word.{" "}
-              <i>Kind</i>. The last thing I told her was that I would see her in the stars. They
-              twinkle like Gypsy&apos;s Jewel.
-            </p>
-            <p className="dim">
-              I lead small leadership retreats here, on her water. The medicine stays where it is
-              licensed, at a proper service center, exactly the way the law requires. What happens on
-              this island is the integration. Diving, mostly. Long mornings with no agenda. The kind
-              of processing that moves easier in water than in a conference room.
+              Roatán sits on the second largest reef in the world, and half my year is here, on her
+              water. I lead small leadership retreats on this island. The medicine stays where it is
+              licensed, at a proper service center, exactly the way the law requires. What happens
+              here is the integration. Diving, mostly. Long mornings with no agenda, warm water, and
+              the kind of processing that moves easier in the ocean than in a conference room.
             </p>
             <p className="dim">
               If your team already knows the room and is ready to go somewhere quieter with it,{" "}

@@ -31,6 +31,17 @@ export const css = `
   section{padding:clamp(78px,11vh,132px) 0}
   .band{background:var(--sand)}
 
+  /* click-to-expand story (native details/summary) */
+  .more{margin:8px 0 1.3em;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .more>summary{list-style:none;cursor:pointer;padding:16px 0;font-size:.72rem;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--clay);display:flex;justify-content:space-between;align-items:center}
+  .more>summary::-webkit-details-marker{display:none}
+  .more>summary::after{content:"+";font-size:1.2rem;font-weight:300;line-height:1}
+  .more[open]>summary::after{content:"\\2013"}
+  .more>summary:hover{color:var(--bark)}
+  .more>p:first-of-type{margin-top:2px}
+  .more>p:last-child{margin-bottom:18px}
+
   .rv{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
   .rv.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}

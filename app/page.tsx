@@ -42,7 +42,7 @@ export default function Home() {
             the world told us who to become.
           </p>
           <p className="dim rv" style={{ marginTop: 26, maxWidth: "58ch" }}>
-            Licensed psilocybin facilitation. Private and prepared. The container is the work.
+            Licensed psilocybin facilitation. Private and prepared. The container is the safety.
             Integration is the work.
           </p>
           <div className="facts rv">
@@ -51,43 +51,6 @@ export default function Home() {
             <span>Adults 21 and over</span>
             <span>No diagnosis required</span>
             <span>Private &amp; small group sessions</span>
-          </div>
-          <div
-            className="rv"
-            style={{
-              marginTop: 38,
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "12px 30px",
-              fontSize: ".72rem",
-              letterSpacing: ".22em",
-              textTransform: "uppercase",
-            }}
-          >
-            <a
-              href="/roatan"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Retreats
-            </a>
-            <a
-              href="/roatan#pearldive"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              The Pearl Dive
-            </a>
-            <a
-              href="/roatan#gypsys-jewel"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Gypsy&apos;s Jewel
-            </a>
-            <a
-              href="/reading"
-              style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}
-            >
-              Research
-            </a>
           </div>
         </div>
         <div className="wrap">
@@ -114,8 +77,8 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Who&apos;s asking</p>
             <h2 style={{ marginTop: 22 }}>
-              Twenty eight years across five continents taught me one thing about hesitation. It is
-              always the most expensive decision in the room.
+              I do this for one reason. When the people in real power wake up to how connected
+              everything is, <i>the world changes</i>. That is the whole mission.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
               I have built my life and career on curiosity. Alice in Wonderland was my favorite
@@ -134,12 +97,12 @@ export default function Home() {
               Instead he said, follow the white rabbit. It will lead you to doorways you cannot see
               yet. Every decision that has mattered since has come down to the same choice.
               Probability, which you can calculate. Or possibility, which you cannot. I choose
-              possibility. <i>Risk the possible</i> is the method.
+              possibility.
             </p>
             <p className="dim">
               I did not come to this work because talk therapy failed me. I came because the
               leaders I have advised for thirty years need a room like this the most, and ask for
-              it the least. This is the <i>deepest door</i> I have walked through.
+              it the least. This is the work I was <i>quietly walking toward</i> the whole time.
             </p>
           </div>
         </div>
@@ -157,11 +120,13 @@ export default function Home() {
                 Who am I? It is <i>the hardest question</i> you will ever wrestle with.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Nine answers keep showing up for work. Touch a word and it will tell you its story.
+                These are the nine that keep showing up for work. They are why I can sit with a CEO
+                at nine and someone taking the mask off at two, and never become a different person
+                in between.
               </p>
               <p className="dim">
-                They are why I can sit with a CEO at nine and someone taking the mask off at two,
-                and never become a different person in between.
+                Touch a word and it will tell you its story. Then the real question is not mine. It
+                is yours. <i>What are yours?</i>
               </p>
             </div>
           </div>
@@ -238,8 +203,8 @@ export default function Home() {
               the moment it <i>thins</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              Here is the unromantic version. For a few hours, the part of you that manages and
-              edits and defends gets quiet. What is behind it was always there.
+              For a few hours, the part of you that manages and edits and defends gets quiet. What
+              is behind it was always there.
             </p>
             <p className="dim">
               There is a version of you that is less defended and more alive. Most people met her
@@ -247,8 +212,8 @@ export default function Home() {
             </p>
             <p className="dim">
               Jung called it the collective unconscious. I did not study psychology to believe it.
-              I studied people, in boardrooms and dive tanks and that room, and watched them meet
-              something older than their own biography.
+              I studied people, in boardrooms and in that room, and watched them meet something
+              older than their own biography.
             </p>
             <p className="dim">
               Some find grief they filed away years ago. Some find a decision they made at
@@ -320,56 +285,30 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div
+          <figure
             className="rv"
-            style={{
-              marginTop: "clamp(64px,9vh,100px)",
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "clamp(16px,3vw,34px)",
-            }}
+            style={{ margin: "clamp(64px,9vh,100px) auto 0", maxWidth: 720 }}
           >
-            <figure style={{ margin: 0 }}>
-              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "4/5" }}>
-                <img
-                  src="/images/service-center-room.jpg"
-                  alt="A one-on-one session room at the licensed service center: a made bed under a hand-painted owl mural and hanging lanterns"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption
-                style={{
-                  marginTop: 12,
-                  fontSize: ".74rem",
-                  letterSpacing: ".14em",
-                  textTransform: "uppercase",
-                  color: "var(--muted)",
-                }}
-              >
-                Where the one-on-one work happens
-              </figcaption>
-            </figure>
-            <figure style={{ margin: 0 }}>
-              <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "4/5" }}>
-                <img
-                  src="/images/service-center-owl.jpg"
-                  alt="Detail of the service center mural: a snowy owl painted on a mossy branch among Moroccan lanterns"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption
-                style={{
-                  marginTop: 12,
-                  fontSize: ".74rem",
-                  letterSpacing: ".14em",
-                  textTransform: "uppercase",
-                  color: "var(--muted)",
-                }}
-              >
-                Held with care, down to the walls
-              </figcaption>
-            </figure>
-          </div>
+            <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "3/2" }}>
+              <img
+                src="/images/service-center-room.jpg"
+                alt="A one-on-one session room at the licensed service center: a made bed under a hand-painted owl mural and hanging lanterns"
+                loading="lazy"
+              />
+            </div>
+            <figcaption
+              style={{
+                marginTop: 14,
+                fontSize: ".74rem",
+                letterSpacing: ".14em",
+                textTransform: "uppercase",
+                color: "var(--muted)",
+                textAlign: "center",
+              }}
+            >
+              Where the one-on-one work happens
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -520,6 +459,10 @@ export default function Home() {
                 <li>Caregivers who have been competent about grief for a long time.</li>
                 <li>
                   Founders and operators who are very good at holding it together and are tired.
+                </li>
+                <li>
+                  High performers who are stuck, successful on paper, and cannot yet see what is
+                  next.
                 </li>
                 <li>
                   People who have done years of talk therapy and hit a wall they can describe
@@ -700,8 +643,9 @@ export default function Home() {
             <p className="dim">
               Here is what I am. I trained at InnerTrek, the program founded by Tom Eckert, who
               architected Measure 109 and the first state regulated model of psychedelic care in the
-              country. I am licensed by the Oregon Health Authority. I did the practicum hours. I
-              sat in my own hard chair before I ever asked anyone to sit in theirs.
+              country. Over a hundred and fifty hours of coursework, forty hours of supervised
+              practicum, and fifty hours of consultation. I am licensed by the Oregon Health
+              Authority. And I sat in my own hard chair before I ever asked anyone to sit in theirs.
             </p>
             <p className="dim">
               What you will get is careful screening, preparation that takes your questions
