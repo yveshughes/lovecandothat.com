@@ -97,27 +97,29 @@ export const css = `
      or tapping it reveals its story in the centre; tapping the panel or any
      empty spot closes it again. */
   .wheelwrap{display:flex;justify-content:center;margin-top:clamp(46px,7vh,78px)}
-  .wheel{position:relative;width:min(660px,94vw);color:var(--clay)}
+  /* square wheel; the label ring sits just outside the outer circle */
+  .wheel{position:relative;width:min(560px,92vw);aspect-ratio:1/1;color:var(--clay)}
   .wheel svg{width:100%;height:auto;display:block;overflow:visible}
 
   .facets{list-style:none;position:absolute;inset:0;margin:0;padding:0}
   .facets .k{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;cursor:pointer;
-    outline:none;font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
+    outline:none;font-size:.68rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;
     color:var(--cocoa);transition:color .3s ease}
   .facets .k:hover,.facets .k:focus,.facets li.on .k{color:var(--clay)}
-  .facets .v{position:absolute;left:50%;top:48.4%;transform:translate(-50%,-50%);
-    width:min(30ch,56vw);text-align:center;font-size:.86rem;line-height:1.65;color:var(--muted);
-    background:var(--sand);border-radius:14px;padding:14px 12px;opacity:0;pointer-events:none;
-    transition:opacity .45s ease}
+  /* the story panel lives in the roomy centre, bounded by the middle ring */
+  .facets .v{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:44%;text-align:center;font-size:.84rem;line-height:1.6;color:var(--muted);
+    background:var(--sand);border-radius:16px;padding:16px 16px;opacity:0;pointer-events:none;
+    transition:opacity .4s ease}
   .facets .k:hover+.v,.facets .k:focus+.v,.facets li.on .v{opacity:1;pointer-events:auto}
 
   @media(max-width:880px){
-    /* phones keep the words on the wheel; only the sizes shrink so they fit,
+    /* phones keep the words on the wheel; sizes shrink so they fit cleanly,
        and the centre panel gets a soft shadow so it reads over the rings */
     .wheelwrap{margin-top:clamp(30px,5vh,52px)}
-    .wheel{width:min(560px,96vw)}
-    .facets .k{font-size:.56rem;letter-spacing:.08em}
-    .facets .v{width:min(22ch,66vw);font-size:.82rem;padding:15px 13px;
+    .wheel{width:min(440px,94vw)}
+    .facets .k{font-size:.54rem;letter-spacing:.06em}
+    .facets .v{width:52%;font-size:.72rem;line-height:1.5;padding:13px 12px;
       box-shadow:0 10px 34px rgba(59,47,38,.16)}
   }
 

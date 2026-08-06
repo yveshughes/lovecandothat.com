@@ -69,9 +69,10 @@ export default function Roatan() {
               exploration, at an age when most people have quietly agreed to stop.
             </p>
             <p className="dim">
-              It also taught me the thing I use most in my actual work. When someone else is in
-              trouble, your job is not to fix it fast. I can hold space as deep as the bottom of the
-              ocean for people, without ever needing to fix it.
+              It also taught me the thing I use most in my actual work. I trained as a rescue diver.
+              I can hold space at the bottom of the ocean, safely, while my clients explore. When
+              someone else is in trouble, the job is not to fix it fast. It is to stay calm and stay
+              with them.
             </p>
             <p className="dim">
               My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
@@ -97,26 +98,26 @@ export default function Roatan() {
 
       <div className="pull rv">
         <div className="wrap">
-          <p>I can hold space as deep as the bottom of the ocean for people.</p>
+          <p>I can hold space at the bottom of the ocean, safely, while my clients explore.</p>
           <p className="attrib">What diving taught me about sitting with people</p>
         </div>
       </div>
 
       <section className="band" id="gypsys-jewel">
-        <div className="wrap duo wide-l">
-          <figure className="fig rv">
-            <img
-              src="/images/gypsys-jewel.jpg"
-              alt="Gypsy's Jewel from the garden, a two story island house with wraparound verandas under palms and a bright blue sky"
-              loading="lazy"
-            />
-          </figure>
-          <div className="rv">
-            <p className="eyebrow">Gypsy&apos;s Jewel</p>
-            <h2 style={{ marginTop: 22 }}>
-              My mother named the dive site herself. <i>Gypsy&apos;s Jewel</i>.
-            </h2>
-            <p style={{ marginTop: 32 }} className="dim">
+        <div className="wrap">
+          <div className="split">
+            <div className="rv">
+              <p className="eyebrow">Gypsy&apos;s Jewel</p>
+            </div>
+            <div className="rv">
+              <h2>
+                My mother named the dive site herself. <i>Gypsy&apos;s Jewel</i>.
+              </h2>
+            </div>
+          </div>
+
+          <div className="rv" style={{ marginTop: 36, maxWidth: "64ch" }}>
+            <p className="dim">
               Her father named her Gypsy. A single mom who earned her PhD at night. A supercomputing
               pioneer in the eighties, when almost nobody who looked like her was in that room. A
               steel magnolia, with more grit in her delicate southern pinky than most boardrooms I
@@ -128,6 +129,20 @@ export default function Roatan() {
               than a month later I gave her eulogy, and that is where this phrase found me. Turns
               out, love can do that. Love can do everything.
             </p>
+          </div>
+
+          <figure
+            className="fig rv"
+            style={{ aspectRatio: "3/2", maxWidth: 760, margin: "clamp(40px,6vh,64px) auto" }}
+          >
+            <img
+              src="/images/gypsys-jewel.jpg"
+              alt="Gypsy's Jewel, the house, a two story island home with wraparound verandas under palms and a bright blue sky"
+              loading="lazy"
+            />
+          </figure>
+
+          <div className="rv" style={{ maxWidth: "64ch" }}>
             <details className="more">
               <summary>More about my mother</summary>
               <p className="dim">
@@ -144,13 +159,29 @@ export default function Roatan() {
               </p>
               <p className="dim">
                 A few days before she died, I asked her how she wanted to be remembered. One word.{" "}
-                <i>Kind</i>. The last thing I told her was that I would see her in the stars. They
-                twinkle like Gypsy&apos;s Jewel.
+                <i>Kind</i>.
               </p>
             </details>
             <p className="dim">
               Roatán sits on the second largest reef in the world, and half my year is here, on her
-              water. I lead small leadership retreats on this island. The medicine stays where it is
+              water.
+            </p>
+          </div>
+
+          <figure
+            className="fig rv"
+            style={{ aspectRatio: "3/2", maxWidth: 820, margin: "clamp(40px,6vh,64px) auto" }}
+          >
+            <img
+              src="/images/roatan-beach.jpg"
+              alt="A calm palm-framed Roatan shoreline, turquoise water, moored buoys and a small boat under a clear blue sky"
+              loading="lazy"
+            />
+          </figure>
+
+          <div className="rv" style={{ maxWidth: "64ch" }}>
+            <p className="dim">
+              I lead small leadership retreats on this island. The medicine stays where it is
               licensed, at a proper service center, exactly the way the law requires. What happens
               here is the integration. Diving, mostly. Long mornings with no agenda, warm water, and
               the kind of processing that moves easier in the ocean than in a conference room.
@@ -170,32 +201,19 @@ export default function Roatan() {
               .
             </p>
           </div>
-        </div>
-        <div className="wrap">
-          <div className="pair" style={{ marginTop: "clamp(64px,9vh,100px)" }}>
-            <figure className="rv" style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/gypsys-jewel-buoy.jpg"
-                  alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption className="cap">
-                Gypsy&apos;s Jewel. Her name on the water. See you in the stars, Mama.
-              </figcaption>
-            </figure>
-            <figure className="rv" style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/roatan-beach.jpg"
-                  alt="A calm palm-framed Roatan shoreline, turquoise water, moored buoys and a small boat under a clear blue sky"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption className="cap">The water out front. Nothing fancy. That is the point.</figcaption>
-            </figure>
-          </div>
+
+          <figure className="rv" style={{ maxWidth: 440, margin: "clamp(44px,7vh,72px) auto 0" }}>
+            <div className="fig" style={{ aspectRatio: "1/1" }}>
+              <img
+                src="/images/gypsys-jewel-buoy.jpg"
+                alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              Gypsy&apos;s Jewel.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
