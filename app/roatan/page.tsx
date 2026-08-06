@@ -131,15 +131,17 @@ export default function Roatan() {
             </p>
           </div>
 
-          <figure
-            className="fig rv"
-            style={{ aspectRatio: "3/4", maxWidth: 540, margin: "clamp(40px,6vh,64px) auto" }}
-          >
-            <img
-              src="/images/gypsys-jewel-house.jpg"
-              alt="Gypsy's Jewel, the house: a green two story island home with a pink front door, wraparound verandas, and palms"
-              loading="lazy"
-            />
+          <figure className="rv" style={{ maxWidth: 440, margin: "clamp(40px,6vh,64px) auto" }}>
+            <div className="fig" style={{ aspectRatio: "1/1" }}>
+              <img
+                src="/images/gypsys-jewel-buoy.jpg"
+                alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              Gypsy&apos;s Jewel, the dive site she named.
+            </figcaption>
           </figure>
 
           <div className="rv" style={{ maxWidth: "64ch" }}>
@@ -162,6 +164,22 @@ export default function Roatan() {
                 <i>Kind</i>.
               </p>
             </details>
+          </div>
+
+          <figure className="rv" style={{ maxWidth: 540, margin: "clamp(40px,6vh,64px) auto" }}>
+            <div className="fig" style={{ aspectRatio: "3/4" }}>
+              <img
+                src="/images/gypsys-jewel-house.jpg"
+                alt="Gypsy's Jewel, the house: a green two story island home with a pink front door, wraparound verandas, and palms"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              Gypsy&apos;s Jewel, the house.
+            </figcaption>
+          </figure>
+
+          <div className="rv" style={{ maxWidth: "64ch" }}>
             <p className="dim">
               Roatán sits on the second largest reef in the world, and half my year is here, on her
               water.
@@ -204,27 +222,16 @@ export default function Roatan() {
             </p>
           </div>
 
-          <figure
-            className="fig rv"
-            style={{ aspectRatio: "3/4", maxWidth: 620, margin: "clamp(40px,6vh,64px) auto" }}
-          >
-            <img
-              src="/images/roatan-beach2.jpg"
-              alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
-              loading="lazy"
-            />
-          </figure>
-
-          <figure className="rv" style={{ maxWidth: 440, margin: "clamp(44px,7vh,72px) auto 0" }}>
-            <div className="fig" style={{ aspectRatio: "1/1" }}>
+          <figure className="rv" style={{ maxWidth: 620, margin: "clamp(40px,6vh,64px) auto 0" }}>
+            <div className="fig" style={{ aspectRatio: "3/4" }}>
               <img
-                src="/images/gypsys-jewel-buoy.jpg"
-                alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+                src="/images/roatan-beach2.jpg"
+                alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
                 loading="lazy"
               />
             </div>
             <figcaption className="cap" style={{ textAlign: "center" }}>
-              Gypsy&apos;s Jewel.
+              The beach out front.
             </figcaption>
           </figure>
         </div>
