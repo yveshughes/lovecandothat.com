@@ -137,6 +137,12 @@ export const css = `
   }
 
   /* ---------- words strip ---------- */
+  /* primary call-to-action button */
+  .cta{display:inline-block;border:1px solid var(--tan);color:var(--bark);text-decoration:none;
+    font-size:.73rem;letter-spacing:.22em;text-transform:uppercase;padding:17px 40px;
+    transition:background .4s ease,color .4s ease}
+  .cta:hover{background:var(--bark);color:var(--paper)}
+
   .words{padding:clamp(64px,10vh,110px) 0;text-align:center}
   .words ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 46px}
   .words li{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3.4vw,2.3rem);color:var(--cocoa);font-weight:300}

@@ -52,6 +52,23 @@ export default function Home() {
             <span>No diagnosis required</span>
             <span>Private &amp; small group sessions</span>
           </div>
+          <div
+            className="rv"
+            style={{
+              marginTop: 40,
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              gap: "16px 26px",
+            }}
+          >
+            <a className="cta" href="#inquire">
+              Start with a conversation
+            </a>
+            <span style={{ fontSize: ".82rem", color: "var(--muted)" }}>
+              No commitment. We talk first.
+            </span>
+          </div>
         </div>
         <div className="wrap">
           <figure className="herofig rv">
@@ -248,8 +265,12 @@ export default function Home() {
             </div>
             <div className="rv">
               <h2>
-                Three meetings, and only one of them <i>involves medicine</i>.
+                How it works. Three meetings, and only one of them <i>involves medicine</i>.
               </h2>
+              <p style={{ marginTop: 26 }} className="dim">
+                It always starts the same way, with a conversation. No commitment, no medicine, just
+                the two of us deciding together whether this is right for you.
+              </p>
             </div>
           </div>
           <div className="doors">
@@ -307,6 +328,11 @@ export default function Home() {
               Where the one-on-one work happens
             </figcaption>
           </figure>
+          <div className="rv" style={{ marginTop: "clamp(48px,7vh,84px)", textAlign: "center" }}>
+            <a className="cta" href="#inquire">
+              Start with a conversation
+            </a>
+          </div>
         </div>
       </section>
 
@@ -666,11 +692,12 @@ export default function Home() {
             </div>
             <div className="rv">
               <h2>
-                If you have read this twice, <i>write to me</i>.
+                Start with a conversation. Not a booking, <i>just a conversation</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                This goes nowhere but to me. I answer everything personally, usually within a few
-                days. Nothing is scheduled from a form. We talk first.
+                Tell me a little about what brings you here. It goes nowhere but to me, and I answer
+                everything personally, usually within a few days. Nothing is scheduled from a form.
+                We talk first, and only if it is right for you does anything happen after that.
               </p>
             </div>
           </div>
