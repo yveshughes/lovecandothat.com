@@ -54,7 +54,8 @@ export const css = `
   .back:hover{color:var(--clay)}
 
   .hero{padding:clamp(56px,9vh,100px) 0 0}
-  .hero h1{margin:24px 0 30px}
+  .hero h1{margin:24px 0 30px;color:var(--cocoa)}
+  .hero h1 i{color:var(--clay)}
   .facts{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:9px 34px;font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
 
   .fig{background:var(--linen);overflow:hidden;position:relative;border-radius:30px}
@@ -74,6 +75,10 @@ export const css = `
     .duo,.duo.wide-l,.duo.wide-r{grid-template-columns:1fr;gap:40px}
     .duo .fig{aspect-ratio:4/5;max-width:560px;position:static}
   }
+  .settinglink{color:inherit}
+  .settinglink .fig{transition:transform .5s ease}
+  .settinglink:hover .fig,.settinglink:focus-visible .fig{transform:translateY(-4px)}
+  .settinglink:hover .cap,.settinglink:focus-visible .cap{color:var(--clay)}
   .pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,34px);margin-top:clamp(40px,6vh,70px)}
   .pair .fig{aspect-ratio:1/1}
   .pair .fig img{object-position:center 30%}

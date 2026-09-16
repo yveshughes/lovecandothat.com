@@ -59,7 +59,8 @@ export const css = `
   /* ---------- hero ---------- */
   .hero{padding:clamp(90px,13vh,150px) 0 0;position:relative;overflow:hidden}
   .hero .swirl{top:-6vh;right:-9vw;width:min(46vw,520px)}
-  .hero h1{max-width:16ch;margin:26px 0 32px}
+  .hero h1{max-width:16ch;margin:26px 0 32px;color:var(--cocoa)}
+  .hero h1 i{color:var(--clay)}
   .facts{
     margin-top:46px;padding-top:22px;border-top:1px solid var(--line);
     display:flex;flex-wrap:wrap;gap:9px 34px;

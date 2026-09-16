@@ -49,32 +49,36 @@ export default function Immersion() {
           </div>
 
           <div className="pair rv" style={{ marginTop: "clamp(48px,7vh,84px)" }}>
-            <figure style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/hudson-house.jpg"
-                  alt="The house in the Hudson Valley woods, a long table on the stone patio under a big maple"
-                  loading="eager"
-                  style={{ objectPosition: "center 62%" }}
-                />
-              </div>
-              <figcaption className="cap">Fall &nbsp;·&nbsp; Cold Spring, New York</figcaption>
-            </figure>
-            <figure style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/roatan-house-lawn.jpg"
-                  alt="The green house on Roatan seen from the lawn, palms and red ti plants in front of the wraparound veranda"
-                  loading="eager"
-                />
-              </div>
-              <figcaption className="cap">Spring &nbsp;·&nbsp; Roatán, Honduras</figcaption>
-            </figure>
+            <a href="#hudson-valley" className="settinglink" style={{ margin: 0, display: "block", textDecoration: "none" }}>
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/hudson-house.jpg"
+                    alt="The house in the Hudson Valley woods, a long table on the stone patio under a big maple"
+                    loading="eager"
+                    style={{ objectPosition: "center 62%" }}
+                  />
+                </div>
+                <figcaption className="cap">Fall &nbsp;·&nbsp; Cold Spring, New York &nbsp;→</figcaption>
+              </figure>
+            </a>
+            <a href="#roatan" className="settinglink" style={{ margin: 0, display: "block", textDecoration: "none" }}>
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/roatan-house-lawn.jpg"
+                    alt="The green house on Roatan seen from the lawn, palms and red ti plants in front of the wraparound veranda"
+                    loading="eager"
+                  />
+                </div>
+                <figcaption className="cap">Spring &nbsp;·&nbsp; Roatán, Honduras &nbsp;→</figcaption>
+              </figure>
+            </a>
           </div>
         </div>
       </header>
 
-      {/* ============ TWO SEASONS ============ */}
+      {/* ============ TWO SETTINGS ============ */}
       <section>
         <div className="wrap split">
           <div className="rv">
@@ -87,8 +91,8 @@ export default function Immersion() {
             <p style={{ marginTop: 34 }} className="dim">
               Same three days, two very different kinds of quiet. In the fall the woods around my
               house in Cold Spring turn and the river goes cold. In the spring I am on my island,
-              where the most complex conversation is what cool thing someone saw underwater. Pick
-              the one your body is asking for.
+              on the second largest reef in the world. Pick the one your body is asking for, or tap
+              a photo above to see it.
             </p>
           </div>
         </div>
@@ -123,7 +127,7 @@ export default function Immersion() {
               essence of energy ourselves. That is what three days here is for.
             </p>
             <p className="dim">
-              It is not a retreat. A retreat is where you go to pull back. You come here to go in.
+              This is not a retreat. This is an immersion. You come here to go into the depths.
             </p>
           </div>
         </div>
@@ -151,25 +155,27 @@ export default function Immersion() {
               <span className="n">i</span>
               <h3>Find the current</h3>
               <p>
-                Strip away the noise. Find what is true, what matters now, and where life is
-                already trying to take you. Analysis collects the dots. Intuition connects the dots.
+                Strip away the noise and find your base case. Where you actually are, underneath
+                everything you have been managing, before you decide a single thing. Most people
+                have never once stopped long enough to look.
               </p>
             </div>
             <div className="door rv">
               <span className="n">ii</span>
               <h3>Power the current</h3>
               <p>
-                Move from insight to momentum. Align your energy, choices and action behind what
-                you found. This is the day the decision gets made. The leaders who win move before
-                they are certain.
+                Move from insight to momentum. Align your energy, your choices, and your action
+                behind what you found. This is the day the decision gets made, and the first move
+                gets taken.
               </p>
             </div>
             <div className="door rv">
               <span className="n">iii</span>
               <h3>Become the current</h3>
               <p>
-                Stop trying to navigate from the outside. Embody it. Trust it. Become the force you
-                have been looking for. Your job is to be the calmest thing in the water.
+                This is about tapping into the electricity and the force that already runs through
+                you, and through the world, and letting it carry you instead of fighting it. You
+                stop navigating from the outside. You become the thing itself.
               </p>
             </div>
           </div>
@@ -179,9 +185,10 @@ export default function Immersion() {
             </div>
             <div>
               <p className="dim">
-                Everyone gets follow up sessions once they are home. Insight is the cheap part. The
-                work is what you do with it on an ordinary Tuesday, in your kitchen, in your
-                relationships, in your company.
+                Everyone gets follow up sessions once they are home. Integration is where it becomes
+                real. I give you the tools to take what opened up here and live it, in the boardroom,
+                in your marriage, on an ordinary day. That is the part that actually changes
+                anything.
               </p>
             </div>
           </div>
@@ -191,22 +198,16 @@ export default function Immersion() {
       {/* ============ HUDSON VALLEY ============ */}
       <section className="band" id="hudson-valley">
         <div className="wrap">
-          <div className="split">
+          <div className="duo wide-r mid">
             <div className="rv">
               <p className="eyebrow">Hudson Valley &nbsp;·&nbsp; Fall</p>
-            </div>
-            <div className="rv">
-              <h2>
+              <h2 style={{ marginTop: 22 }}>
                 My woods. <i>Cold Spring, New York</i>.
               </h2>
-              <p style={{ marginTop: 34 }} className="dim">
-                I answer CEO calls from the top of a mountain here. Most CEOs run until they hit a
-                wall, or their team stages an intervention and forces a vacation onto the calendar.
-                I do not wait for the wall.
-              </p>
-              <p className="dim">
+              <p style={{ marginTop: 32 }} className="dim">
                 Nervous system regulation is not a wellness trend. It is a performance requirement.
-                You cannot lead clearly from a body still braced for the last hit.
+                You cannot lead clearly from a body still braced for the last hit, and the woods
+                here are very good at unbracing it.
               </p>
               <p className="dim">
                 Trees, cold air, a fire and nowhere to be. Afternoons are hiking, kayaking on the
@@ -214,6 +215,14 @@ export default function Immersion() {
                 alley.
               </p>
             </div>
+            <figure className="fig rv">
+              <img
+                src="/images/hudson-waterfront.jpg"
+                alt="The Cold Spring waterfront, sun over the mountain and a dock reaching into the river"
+                loading="lazy"
+                style={{ objectPosition: "center 55%" }}
+              />
+            </figure>
           </div>
 
           <div className="pair rv">
@@ -240,63 +249,48 @@ export default function Immersion() {
             </figure>
           </div>
 
-          <div className="pair rv">
-            <figure style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/hudson-garden-path.jpg"
-                  alt="The stone garden path beside the house, a teak bench and a black cat sitting in the grass"
-                  loading="lazy"
-                  style={{ objectPosition: "center 60%" }}
-                />
-              </div>
-              <figcaption className="cap">The garden path.</figcaption>
-            </figure>
-            <figure style={{ margin: 0 }}>
-              <div className="fig" style={{ aspectRatio: "1/1" }}>
-                <img
-                  src="/images/hudson-waterfront.jpg"
-                  alt="The Cold Spring waterfront, sun over the mountain and a dock reaching into the river"
-                  loading="lazy"
-                  style={{ objectPosition: "center 55%" }}
-                />
-              </div>
-              <figcaption className="cap">Town, a ten minute walk.</figcaption>
-            </figure>
-          </div>
+          <figure className="rv" style={{ maxWidth: 720, margin: "clamp(40px,6vh,64px) auto 0" }}>
+            <div className="fig" style={{ aspectRatio: "3/2" }}>
+              <img
+                src="/images/hudson-garden-path.jpg"
+                alt="The stone garden path beside the house, a teak bench and a black cat sitting in the grass"
+                loading="lazy"
+                style={{ objectPosition: "center 55%" }}
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              The garden path.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       {/* ============ ROATAN ============ */}
       <section id="roatan">
         <div className="wrap">
-          <div className="split">
+          <div className="duo wide-l mid">
+            <figure className="fig rv">
+              <img
+                src="/images/roatan-driftwood-beach.jpg"
+                alt="A quiet beach with driftwood at the waterline and a green island across turquoise water"
+                loading="lazy"
+                style={{ objectPosition: "center 55%" }}
+              />
+            </figure>
             <div className="rv">
               <p className="eyebrow">Roatán &nbsp;·&nbsp; Spring</p>
-            </div>
-            <div className="rv">
-              <h2>I dive in the morning and coach CEOs in the afternoon.</h2>
-              <p style={{ marginTop: 34 }} className="dim">
-                Half the year I am on this island, on the second largest reef in the world. I get
-                out of my head and into my soul down there. I generate energy underwater. The ocean
-                taught me to let go of control. To let the current carry me to places in flow. To be
-                a kid again, full of wonder and play and exploration, at an age when most people have
-                quietly agreed to stop.
+              <h2 style={{ marginTop: 22 }}>
+                Let the water <i>do the work</i>.
+              </h2>
+              <p style={{ marginTop: 32 }} className="dim">
+                Afternoons here are breathwork, yoga, massage, diving and snorkeling over the second
+                largest reef in the world. Long stretches of time in warm water, which has a way of
+                teaching people to stop controlling things.
               </p>
               <p className="dim">
-                It also taught me the thing I use most in my actual work. I trained as a rescue
-                diver. I can hold space at the bottom of the ocean, safely, while my clients
-                explore. When someone else is in trouble, the job is not to fix it fast. It is to
-                stay calm and stay with them.
-              </p>
-              <p className="dim">
-                My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
-                above the surface and below it. That is the whole job. I hold the container, and I
-                take people to the depths.
-              </p>
-              <p className="dim">
-                Afternoons here are yoga, breathwork, massage, and snorkeling over the reef. Come a
-                few days early, get certified, and dive with me.
+                You do not come here to be quiet by yourself. You come to do deep work alongside a
+                few other powerful people who are also ready to transform. That is rarer than the
+                island, and it is the real reason to come.
               </p>
             </div>
           </div>
@@ -331,10 +325,10 @@ export default function Immersion() {
             <figure style={{ margin: 0 }}>
               <div className="fig" style={{ aspectRatio: "1/1" }}>
                 <img
-                  src="/images/roatan-driftwood-beach.jpg"
-                  alt="A quiet beach with driftwood at the waterline and a green island across turquoise water"
+                  src="/images/roatan-beach2.jpg"
+                  alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
                   loading="lazy"
-                  style={{ objectPosition: "center 60%" }}
+                  style={{ objectPosition: "center 55%" }}
                 />
               </div>
             </figure>
@@ -347,7 +341,7 @@ export default function Immersion() {
         <div className="wrap">
           <div className="split">
             <div className="rv">
-              <p className="eyebrow">Gypsy&apos;s Jewel</p>
+              <p className="eyebrow">The house</p>
             </div>
             <div className="rv">
               <h2>
@@ -459,40 +453,41 @@ export default function Immersion() {
               Inside. One long table, and room for four.
             </figcaption>
           </div>
+        </div>
+      </section>
 
-          <div className="rv" style={{ maxWidth: "64ch", marginTop: "clamp(40px,6vh,64px)" }}>
-            <p className="dim">
-              This is where the spring immersion happens. Long mornings with no agenda, warm water,
-              and the kind of thinking that moves easier in the ocean than in a conference room.
+      {/* ============ WHAT THE WATER TAUGHT ME ============ */}
+      <section>
+        <div className="wrap duo wide-l mid">
+          <figure className="fig rv">
+            <img
+              src="/images/dive-lotus.jpg"
+              alt="Tracey hovering cross-legged and weightless in deep blue water, a coral tower rising below her"
+              loading="lazy"
+            />
+          </figure>
+          <div className="rv">
+            <p className="eyebrow">What the water taught me</p>
+            <h2 style={{ marginTop: 22 }}>
+              I get out of my head and into my soul <i>down there</i>.
+            </h2>
+            <p style={{ marginTop: 32 }} className="dim">
+              The ocean taught me to let go of control. To let the current carry me. To be a kid
+              again, full of wonder and play, at an age when most people have quietly agreed to
+              stop.
             </p>
             <p className="dim">
-              If your team is ready to go somewhere quieter,{" "}
-              <a
-                href="#inquire"
-                style={{
-                  color: "var(--clay)",
-                  textDecoration: "none",
-                  borderBottom: "1px solid var(--tan)",
-                }}
-              >
-                this is where we would go
-              </a>
-              .
+              It also taught me the thing I use most in the actual work. I trained as a rescue
+              diver. When someone else is in trouble, the job is not to fix it fast. It is to stay
+              calm, and stay with them, and hold space at the bottom while they find their way back
+              up.
+            </p>
+            <p className="dim">
+              My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
+              above the surface and below it. That is the whole job. I hold the container, and I
+              take people to the depths.
             </p>
           </div>
-
-          <figure className="rv" style={{ maxWidth: 620, margin: "clamp(40px,6vh,64px) auto 0" }}>
-            <div className="fig" style={{ aspectRatio: "3/4" }}>
-              <img
-                src="/images/roatan-beach2.jpg"
-                alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
-                loading="lazy"
-              />
-            </div>
-            <figcaption className="cap" style={{ textAlign: "center" }}>
-              The beach out front.
-            </figcaption>
-          </figure>
         </div>
       </section>
 
@@ -507,12 +502,12 @@ export default function Immersion() {
       <section className="band" id="pearldive">
         <div className="wrap" style={{ textAlign: "center" }}>
           <p className="eyebrow rv">Take something with you</p>
-          <h2 className="rv" style={{ marginTop: 18, maxWidth: "24ch", marginInline: "auto" }}>
-            The Pearl Dive. Thirty minutes, a pen, and <i>nobody watching</i>.
+          <h2 className="rv" style={{ marginTop: 18, maxWidth: "26ch", marginInline: "auto" }}>
+            The Pearl Dive. A journal, a pen, and <i>the questions that matter</i>.
           </h2>
           <p className="dim rv" style={{ marginTop: 24, maxWidth: "52ch", marginInline: "auto" }}>
-            You do not have to work with me to use this. It is the assessment I built for the
-            leaders I coach, and it is free.
+            You do not have to work with me to use this. It is a journal I made for the leaders I
+            coach, a set of deep questions you sit with on your own. It is free.
           </p>
 
           <figure
@@ -521,7 +516,7 @@ export default function Immersion() {
           >
             <img
               src="/images/pearldive-cover.jpg"
-              alt="Cover of The Pearl Dive, a complimentary identity tool by Tracey Abbott"
+              alt="Cover of The Pearl Dive, a complimentary journal by Tracey Abbott"
               loading="lazy"
             />
           </figure>
@@ -569,12 +564,12 @@ export default function Immersion() {
             </div>
             <div className="rv">
               <h2>
-                Dates are set by conversation, <i>not by a calendar page</i>.
+                We start with <i>a conversation</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Tell me what you are in the middle of, and which season is calling. I will tell you
-                whether one of these is right for you. If it is not, I will say so, and I will mean
-                it kindly.
+                There is no booking button, and no set calendar. Tell me what you are in the middle
+                of, and which season is calling. If one of these is right for you, we will find the
+                time together. If it is not, I will say so, and point you somewhere better.
               </p>
             </div>
           </div>
@@ -684,7 +679,10 @@ export default function Immersion() {
             medical care, or mental health treatment, and no controlled substance of any kind is
             offered, arranged, provided, or permitted at any immersion. Nothing on this page is
             medical advice, a diagnosis, a treatment claim, or a substitute for care from a licensed
-            medical or mental health professional. If you are in crisis, call or text 988.
+            medical or mental health professional. If you are in crisis, call or text 988.{" "}
+            <a href="/private" style={{ color: "#8B7F75" }}>
+              Client materials
+            </a>
           </p>
         </div>
       </footer>
