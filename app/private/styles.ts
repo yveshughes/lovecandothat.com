@@ -26,4 +26,20 @@ export const css =
   .callout{background:var(--sand);padding:34px;margin-top:38px;max-width:780px}
   .callout p{font-size:.97rem;color:var(--cocoa)}
   a.plainlink{color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan)}
+
+  /* ---------- testimonials ---------- */
+  .quotes{margin-top:34px;display:grid;gap:0;max-width:640px}
+  .quote{padding:26px 0;border-bottom:1px solid var(--line)}
+  .quote:first-child{border-top:1px solid var(--line)}
+  .quote p.q{font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.45;color:var(--bark);max-width:52ch}
+  .quote .who{margin-top:12px;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+
+  /* ---------- click-to-expand history ---------- */
+  .more{margin-top:38px;max-width:640px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .more>summary{list-style:none;cursor:pointer;padding:16px 0;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);display:flex;justify-content:space-between;align-items:center}
+  .more>summary::-webkit-details-marker{display:none}
+  .more>summary::after{content:"+";font-size:1.2rem;font-weight:300;line-height:1}
+  .more[open]>summary::after{content:"\\2013"}
+  .more>summary:hover{color:var(--bark)}
+  .more>p{margin:2px 0 18px;color:var(--muted);font-size:.95rem;line-height:1.75}
 `;
