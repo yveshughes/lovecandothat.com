@@ -7,11 +7,11 @@ import { css } from "./styles";
 export const metadata: Metadata = {
   title: "The Immersion · Love Can Do That",
   description:
-    "A three day immersion for four people at most. Find the current. Power the current. Become the current. Roatán or the Hudson Valley.",
+    "A three day immersion for four people at most. The Hudson Valley in the fall, Roatán in the spring. Find the current. Power the current. Become the current.",
   openGraph: {
     title: "The Immersion",
     description:
-      "A three day immersion for four people at most. Find the current. Power the current. Become the current.",
+      "A three day immersion for four people at most. The Hudson Valley in the fall, Roatán in the spring.",
   },
 };
 
@@ -22,6 +22,7 @@ export default function Immersion() {
 
       <SiteNav current="immersion" />
 
+      {/* ============ HERO ============ */}
       <header className="hero">
         <div className="wrap">
           <img
@@ -30,7 +31,7 @@ export default function Immersion() {
             className="rv"
             style={{ width: "min(440px, 84vw)", height: "auto", objectFit: "contain", marginBottom: 44 }}
           />
-          <p className="eyebrow rv">Roatán and the Hudson Valley &nbsp;·&nbsp; A three day immersion</p>
+          <p className="eyebrow rv">A three day immersion &nbsp;·&nbsp; Four people, never more</p>
           <h1 className="rv">
             What if you could feel fully alive, fully present, and <i>fully yourself</i>?
           </h1>
@@ -43,24 +44,58 @@ export default function Immersion() {
           <div className="facts rv">
             <span>Three days</span>
             <span>Never more than four people</span>
-            <span>Roatán or the Hudson Valley</span>
-            <span>Dates set by conversation</span>
+            <span>Hudson Valley in the fall</span>
+            <span>Roatán in the spring</span>
           </div>
-          <figure
-            className="fig rv"
-            style={{ aspectRatio: "2/3", maxWidth: 560, margin: "clamp(44px,7vh,84px) auto 0" }}
-          >
-            <img
-              src="/images/dive-lotus.jpg"
-              alt="Tracey hovering cross-legged and weightless in deep blue water, a coral tower rising below her"
-              loading="eager"
-            />
-          </figure>
+
+          <div className="pair rv" style={{ marginTop: "clamp(48px,7vh,84px)" }}>
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/hudson-house.jpg"
+                  alt="The house in the Hudson Valley woods, a long table on the stone patio under a big maple"
+                  loading="eager"
+                  style={{ objectPosition: "center 62%" }}
+                />
+              </div>
+              <figcaption className="cap">Fall &nbsp;·&nbsp; Cold Spring, New York</figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/roatan-house-lawn.jpg"
+                  alt="The green house on Roatan seen from the lawn, palms and red ti plants in front of the wraparound veranda"
+                  loading="eager"
+                />
+              </div>
+              <figcaption className="cap">Spring &nbsp;·&nbsp; Roatán, Honduras</figcaption>
+            </figure>
+          </div>
         </div>
       </header>
 
-      {/* ============ THE PREMISE ============ */}
+      {/* ============ TWO SEASONS ============ */}
       <section>
+        <div className="wrap split">
+          <div className="rv">
+            <p className="eyebrow">Two settings</p>
+          </div>
+          <div className="rv">
+            <h2>
+              The Hudson Valley in the fall. <i>Roatán in the spring</i>.
+            </h2>
+            <p style={{ marginTop: 34 }} className="dim">
+              Same three days, two very different kinds of quiet. In the fall the woods around my
+              house in Cold Spring turn and the river goes cold. In the spring I am on my island,
+              where the most complex conversation is what cool thing someone saw underwater. Pick
+              the one your body is asking for.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ THE PREMISE ============ */}
+      <section className="band">
         <div className="wrap split">
           <div className="rv">
             <p className="eyebrow">The premise</p>
@@ -88,73 +123,11 @@ export default function Immersion() {
               essence of energy ourselves. That is what three days here is for.
             </p>
             <p className="dim">
-              This is not a retreat. A retreat is somewhere you go to pull back, and nobody comes
-              here to pull back. You go in, you go under, and you come up different. Divers have a
-              better word for it. Three days is short enough that you will actually come, and long
-              enough that the second day can do what only a second day can do.
+              It is not a retreat. A retreat is where you go to pull back. You come here to go in.
             </p>
           </div>
         </div>
       </section>
-
-      <div className="wrap">
-        <figure
-          className="rv"
-          style={{ maxWidth: 620, margin: "clamp(40px,6vh,70px) auto 0" }}
-        >
-          <div className="fig" style={{ aspectRatio: "3/4" }}>
-            <img
-              src="/images/hudson-falls.jpg"
-              alt="A creek pouring over dark rocks beside an old brick mill, trees on both banks"
-              loading="lazy"
-            />
-          </div>
-          <figcaption className="cap" style={{ textAlign: "center" }}>
-            The current, close to home. Cold Spring, New York.
-          </figcaption>
-        </figure>
-      </div>
-
-      {/* ============ THE WATER ============ */}
-      <section className="band">
-        <div className="wrap split">
-          <div className="rv">
-            <p className="eyebrow">The water</p>
-          </div>
-          <div className="rv">
-            <h2>I get out of my head and into my soul down there.</h2>
-            <p style={{ marginTop: 34 }} className="dim">
-              I generate energy underwater. The ocean taught me to let go of control. To let the
-              current carry me to places in flow. To be a kid again, full of wonder and play and
-              exploration, at an age when most people have quietly agreed to stop.
-            </p>
-            <p className="dim">
-              It also taught me the thing I use most in my actual work. I trained as a rescue diver.
-              I can hold space at the bottom of the ocean, safely, while my clients explore. When
-              someone else is in trouble, the job is not to fix it fast. It is to stay calm and stay
-              with them.
-            </p>
-            <p className="dim">
-              My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
-              above the surface and below it. That is the whole job. I hold the container, and I
-              take people to the depths.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="wrap">
-        <figure
-          className="fig rv"
-          style={{ aspectRatio: "3/4", maxWidth: 560, margin: "clamp(40px,6vh,70px) auto 0" }}
-        >
-          <img
-            src="/images/roatan-reef2.jpg"
-            alt="Aerial view of Roatan from the plane, the reef and turquoise shallows tracing the green island coastline"
-            loading="lazy"
-          />
-        </figure>
-      </div>
 
       {/* ============ THE THREE DAYS ============ */}
       <section>
@@ -168,9 +141,8 @@ export default function Immersion() {
                 Find the current. Power the current. <i>Become the current</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Real work in the mornings, water or woods in the afternoons, one long dinner where
-                the actual conversation happens. Four people at most, so nobody performs for the
-                room.
+                Mornings are the work. Afternoons are for getting back in your body. Four people at
+                most, so nobody performs for the room.
               </p>
             </div>
           </div>
@@ -207,115 +179,171 @@ export default function Immersion() {
             </div>
             <div>
               <p className="dim">
-                Then the part nobody photographs. Everyone gets follow up sessions once they are
-                home, because insight on an island is easy and insight on an ordinary Tuesday in
-                your own kitchen is the only kind that counts.
+                Everyone gets follow up sessions once they are home. Insight is the cheap part. The
+                work is what you do with it on an ordinary Tuesday, in your kitchen, in your
+                relationships, in your company.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ============ TWO SETTINGS ============ */}
-      <section className="band">
+      {/* ============ HUDSON VALLEY ============ */}
+      <section className="band" id="hudson-valley">
         <div className="wrap">
           <div className="split">
             <div className="rv">
-              <p className="eyebrow">Two settings</p>
+              <p className="eyebrow">Hudson Valley &nbsp;·&nbsp; Fall</p>
             </div>
             <div className="rv">
               <h2>
-                Salt water or cold woods. <i>Both work</i>.
+                My woods. <i>Cold Spring, New York</i>.
               </h2>
-              <p style={{ marginTop: 30 }} className="dim">
-                The setting is not decoration. It decides what kind of quiet you get, and different
-                people need different quiet. Mornings are the work. Afternoons are for getting back
-                in your body.
+              <p style={{ marginTop: 34 }} className="dim">
+                I answer CEO calls from the top of a mountain here. Most CEOs run until they hit a
+                wall, or their team stages an intervention and forces a vacation onto the calendar.
+                I do not wait for the wall.
+              </p>
+              <p className="dim">
+                Nervous system regulation is not a wellness trend. It is a performance requirement.
+                You cannot lead clearly from a body still braced for the last hit.
+              </p>
+              <p className="dim">
+                Trees, cold air, a fire and nowhere to be. Afternoons are hiking, kayaking on the
+                river, long walks in the forest, and a little shopping in town if that is up your
+                alley.
               </p>
             </div>
           </div>
-          <div className="settings">
-            <div className="setting rv">
-              <figure className="fig">
+
+          <div className="pair rv">
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
                 <img
-                  src="/images/roatan-house-lawn.jpg"
-                  alt="The green house on Roatan seen from the lawn, palms and red ti plants in front of the wraparound veranda"
+                  src="/images/hudson-river-beach.jpg"
+                  alt="A sandy bend of the Hudson River with driftwood, the highlands across the water"
+                  loading="lazy"
+                  style={{ objectPosition: "center 60%" }}
+                />
+              </div>
+              <figcaption className="cap">The river.</figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/hudson-falls.jpg"
+                  alt="A creek pouring over dark rocks beside an old brick mill, trees on both banks"
                   loading="lazy"
                 />
-              </figure>
-              <p className="where">Roatán, Honduras</p>
-              <h3>The island</h3>
-              <p>
-                Half the year I am on this island, on the second largest reef in the world.
-                Afternoons here are yoga, breathwork, massage, and snorkeling over the reef.
-              </p>
-              <p>
-                For anyone who wants to come in a few days early, get certified, and dive with me,
-                the ocean is very good at teaching people to stop controlling things. It does not
-                need my help to do it.
-              </p>
-              <div className="pair">
-                <figure className="fig">
-                  <img
-                    src="/images/roatan-cay-boats.jpg"
-                    alt="Fishing boats pulled up to a white sand cay, palm thatch huts under coconut palms"
-                    loading="lazy"
-                    style={{ objectPosition: "center 55%" }}
-                  />
-                </figure>
-                <figure className="fig">
-                  <img
-                    src="/images/roatan-dining-lamps.jpg"
-                    alt="The long dining table in the house, blue mosaic lamps hanging in the corner, jungle through the windows"
-                    loading="lazy"
-                  />
-                </figure>
               </div>
-            </div>
-            <div className="setting rv">
-              <figure className="fig">
+              <figcaption className="cap">The current, close to home.</figcaption>
+            </figure>
+          </div>
+
+          <div className="pair rv">
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
                 <img
-                  src="/images/hudson-house.jpg"
-                  alt="The house in the Hudson Valley woods, a long table on the stone patio under a big maple"
+                  src="/images/hudson-garden-path.jpg"
+                  alt="The stone garden path beside the house, a teak bench and a black cat sitting in the grass"
                   loading="lazy"
-                  style={{ objectPosition: "center 68%" }}
+                  style={{ objectPosition: "center 60%" }}
                 />
-              </figure>
-              <p className="where">Hudson Valley, New York</p>
-              <h3>The woods</h3>
-              <p>
-                My woods, Cold Spring, New York. Trees, cold air, a fire and nowhere to be.
-                Afternoons here are hiking, kayaking on the river, long walks in the forest, and a
-                little shopping in town if that is up your alley.
-              </p>
-              <p>
-                Some people need the ocean to let go. Some people need the dark and the quiet.
-              </p>
-              <div className="pair">
-                <figure className="fig">
-                  <img
-                    src="/images/hudson-river-beach.jpg"
-                    alt="A sandy bend of the Hudson River with driftwood, Storm King mountain across the water"
-                    loading="lazy"
-                    style={{ objectPosition: "center 60%" }}
-                  />
-                </figure>
-                <figure className="fig">
-                  <img
-                    src="/images/hudson-garden-path.jpg"
-                    alt="The stone garden path beside the house, a teak bench and a black cat sitting in the grass"
-                    loading="lazy"
-                    style={{ objectPosition: "center 60%" }}
-                  />
-                </figure>
               </div>
-            </div>
+              <figcaption className="cap">The garden path.</figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/hudson-waterfront.jpg"
+                  alt="The Cold Spring waterfront, sun over the mountain and a dock reaching into the river"
+                  loading="lazy"
+                  style={{ objectPosition: "center 55%" }}
+                />
+              </div>
+              <figcaption className="cap">Town, a ten minute walk.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      {/* ============ GYPSY'S JEWEL ============ */}
-      <section id="gypsys-jewel" style={{ paddingBottom: "clamp(24px,4vh,48px)" }}>
+      {/* ============ ROATAN ============ */}
+      <section id="roatan">
+        <div className="wrap">
+          <div className="split">
+            <div className="rv">
+              <p className="eyebrow">Roatán &nbsp;·&nbsp; Spring</p>
+            </div>
+            <div className="rv">
+              <h2>I dive in the morning and coach CEOs in the afternoon.</h2>
+              <p style={{ marginTop: 34 }} className="dim">
+                Half the year I am on this island, on the second largest reef in the world. I get
+                out of my head and into my soul down there. I generate energy underwater. The ocean
+                taught me to let go of control. To let the current carry me to places in flow. To be
+                a kid again, full of wonder and play and exploration, at an age when most people have
+                quietly agreed to stop.
+              </p>
+              <p className="dim">
+                It also taught me the thing I use most in my actual work. I trained as a rescue
+                diver. I can hold space at the bottom of the ocean, safely, while my clients
+                explore. When someone else is in trouble, the job is not to fix it fast. It is to
+                stay calm and stay with them.
+              </p>
+              <p className="dim">
+                My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,
+                above the surface and below it. That is the whole job. I hold the container, and I
+                take people to the depths.
+              </p>
+              <p className="dim">
+                Afternoons here are yoga, breathwork, massage, and snorkeling over the reef. Come a
+                few days early, get certified, and dive with me.
+              </p>
+            </div>
+          </div>
+
+          <figure
+            className="rv"
+            style={{ maxWidth: 560, margin: "clamp(40px,6vh,70px) auto 0" }}
+          >
+            <div className="fig" style={{ aspectRatio: "3/4" }}>
+              <img
+                src="/images/roatan-reef2.jpg"
+                alt="Aerial view of Roatan from the plane, the reef and turquoise shallows tracing the green island coastline"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              The reef from the plane. Second largest in the world.
+            </figcaption>
+          </figure>
+
+          <div className="pair rv">
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/roatan-cay-boats.jpg"
+                  alt="Fishing boats pulled up to a white sand cay, palm thatch huts under coconut palms"
+                  loading="lazy"
+                  style={{ objectPosition: "center 55%" }}
+                />
+              </div>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <div className="fig" style={{ aspectRatio: "1/1" }}>
+                <img
+                  src="/images/roatan-driftwood-beach.jpg"
+                  alt="A quiet beach with driftwood at the waterline and a green island across turquoise water"
+                  loading="lazy"
+                  style={{ objectPosition: "center 60%" }}
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ GYPSY'S JEWEL (the Roatán house) ============ */}
+      <section className="band" id="gypsys-jewel" style={{ paddingBottom: "clamp(24px,4vh,48px)" }}>
         <div className="wrap">
           <div className="split">
             <div className="rv">
@@ -323,7 +351,8 @@ export default function Immersion() {
             </div>
             <div className="rv">
               <h2>
-                My mother named the dive site herself. <i>Gypsy&apos;s Jewel</i>.
+                The house is Gypsy&apos;s Jewel. So is the dive site. My mother named it{" "}
+                <i>herself</i>.
               </h2>
             </div>
           </div>
@@ -343,39 +372,30 @@ export default function Immersion() {
             </p>
           </div>
 
-          <figure className="rv" style={{ maxWidth: 440, margin: "clamp(40px,6vh,64px) auto" }}>
-            <div className="fig" style={{ aspectRatio: "1/1" }}>
-              <img
-                src="/images/gypsys-jewel-buoy.jpg"
-                alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
-                loading="lazy"
-              />
-            </div>
-            <figcaption className="cap" style={{ textAlign: "center" }}>
-              Gypsy&apos;s Jewel, the dive site she named.
-            </figcaption>
-          </figure>
-
-          <div className="rv" style={{ maxWidth: 760, margin: "0 auto" }}>
+          <div className="rv" style={{ maxWidth: 760, margin: "clamp(40px,6vh,64px) auto 0" }}>
             <div className="pair" style={{ marginTop: 0 }}>
-              <figure className="fig">
-                <img
-                  src="/images/gypsys-jewel-dive.jpg"
-                  alt="Tracey at the surface in scuba gear, smiling in her mask, one arm over the Gypsy's Jewel mooring buoy"
-                  loading="lazy"
-                  style={{ objectPosition: "center 55%" }}
-                />
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/gypsys-jewel-buoy.jpg"
+                    alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
+                    loading="lazy"
+                  />
+                </div>
               </figure>
-              <figure className="fig">
-                <img
-                  src="/images/gypsys-jewel-plaque.jpg"
-                  alt="A carved wooden Roatan Marine Park plaque with the island in relief, marked Gypsy's Jewel with its coordinates"
-                  loading="lazy"
-                />
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/gypsys-jewel-dive.jpg"
+                    alt="Tracey at the surface in scuba gear, smiling in her mask, one arm over the Gypsy's Jewel mooring buoy"
+                    loading="lazy"
+                    style={{ objectPosition: "center 55%" }}
+                  />
+                </div>
               </figure>
             </div>
             <figcaption className="cap" style={{ textAlign: "center" }}>
-              On her water, and the plaque from Roatán Marine Park.
+              Gypsy&apos;s Jewel, the dive site she named. On her water.
             </figcaption>
           </div>
 
@@ -416,20 +436,23 @@ export default function Immersion() {
 
           <div className="rv" style={{ maxWidth: 760, margin: "0 auto" }}>
             <div className="pair" style={{ marginTop: 0 }}>
-              <figure className="fig">
-                <img
-                  src="/images/roatan-living-room.jpg"
-                  alt="The living room, wicker chairs with navy cushions around a low table, screened porch and palms beyond"
-                  loading="lazy"
-                />
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/roatan-living-room.jpg"
+                    alt="The living room, wicker chairs with navy cushions around a low table, screened porch and palms beyond"
+                    loading="lazy"
+                  />
+                </div>
               </figure>
-              <figure className="fig">
-                <img
-                  src="/images/roatan-great-room.jpg"
-                  alt="The open great room, a long weathered wood table set for dinner, kitchen and sitting area behind"
-                  loading="lazy"
-                  style={{ objectPosition: "center 60%" }}
-                />
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/roatan-dining-lamps.jpg"
+                    alt="The long dining table in the house, blue mosaic lamps hanging in the corner, jungle through the windows"
+                    loading="lazy"
+                  />
+                </div>
               </figure>
             </div>
             <figcaption className="cap" style={{ textAlign: "center" }}>
@@ -439,29 +462,8 @@ export default function Immersion() {
 
           <div className="rv" style={{ maxWidth: "64ch", marginTop: "clamp(40px,6vh,64px)" }}>
             <p className="dim">
-              Roatán sits on the second largest reef in the world, and half my year is here, on her
-              water.
-            </p>
-          </div>
-
-          <figure className="rv" style={{ maxWidth: 620, margin: "clamp(40px,6vh,64px) auto" }}>
-            <div className="fig" style={{ aspectRatio: "3/4" }}>
-              <img
-                src="/images/roatan-reef.jpg"
-                alt="Aerial view of Roatan's barrier reef, the turquoise reef line dropping into deep blue ocean along the island coast"
-                loading="lazy"
-              />
-            </div>
-            <figcaption className="cap" style={{ textAlign: "center" }}>
-              The reef from the plane. Second largest in the world.
-            </figcaption>
-          </figure>
-
-          <div className="rv" style={{ maxWidth: "64ch" }}>
-            <p className="dim">
-              This is where the immersion happens when it happens on the island. Long mornings with
-              no agenda, warm water, and the kind of thinking that moves easier in the ocean than in
-              a conference room.
+              This is where the spring immersion happens. Long mornings with no agenda, warm water,
+              and the kind of thinking that moves easier in the ocean than in a conference room.
             </p>
             <p className="dim">
               If your team is ready to go somewhere quieter,{" "}
@@ -478,6 +480,19 @@ export default function Immersion() {
               .
             </p>
           </div>
+
+          <figure className="rv" style={{ maxWidth: 620, margin: "clamp(40px,6vh,64px) auto 0" }}>
+            <div className="fig" style={{ aspectRatio: "3/4" }}>
+              <img
+                src="/images/roatan-beach2.jpg"
+                alt="The beach out front on Roatan: a wooden dock, a leaning palm, loungers on the sand, and calm water"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="cap" style={{ textAlign: "center" }}>
+              The beach out front.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -557,9 +572,9 @@ export default function Immersion() {
                 Dates are set by conversation, <i>not by a calendar page</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Tell me what you are in the middle of and I will tell you whether one of these is
-                right for you, or whether something else is. I would rather send you somewhere
-                better than fill a seat.
+                Tell me what you are in the middle of, and which season is calling. I will tell you
+                whether one of these is right for you. If it is not, I will say so, and I will mean
+                it kindly.
               </p>
             </div>
           </div>
@@ -569,7 +584,12 @@ export default function Immersion() {
             subject="Immersion inquiry from"
             selectName="type"
             selectLabel="What you have in mind"
-            selectOptions={["A seat for myself", "Something for my leadership team", "Not sure yet"]}
+            selectOptions={[
+              "Hudson Valley, this fall",
+              "Roatán, this spring",
+              "Something for my leadership team",
+              "Not sure yet",
+            ]}
             messageLabel="What you are in the middle of"
             messagePlaceholder="As much or as little as you want to say."
           />
