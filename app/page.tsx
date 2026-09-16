@@ -42,12 +42,12 @@ export default function Home() {
             the world told us who to become.
           </p>
           <p className="dim rv" style={{ marginTop: 26, maxWidth: "58ch" }}>
-            Private coaching, and three day immersions for four. This is about transformation, in
-            how you lead and how you live.
+            Private coaching, and three day immersions for small groups. This is about
+            transformation, in how you lead and how you live.
           </p>
           <div className="facts rv">
             <span>One to one</span>
-            <span>Immersions of four, never more</span>
+            <span>Small groups</span>
             <span>Roatán and the Hudson Valley</span>
             <span>By conversation only</span>
           </div>
@@ -68,15 +68,6 @@ export default function Home() {
               No commitment. We talk first.
             </span>
           </div>
-        </div>
-        <div className="wrap">
-          <figure className="herofig rv">
-            <img
-              src="/images/door.jpg"
-              alt="Tracey Abbott at a dark barn door, arms open in a cream fringe poncho"
-              loading="eager"
-            />
-          </figure>
         </div>
       </header>
 
@@ -323,8 +314,8 @@ export default function Home() {
             </p>
             <p className="dim">
               Same discipline, built for a room instead of a chair. A private location, shared only
-              once everyone is confirmed. Never more than four people, so everyone gets real time,
-              and everyone leaves knowing something real about the others.
+              once everyone is confirmed. Small groups, so everyone gets real time, and everyone
+              leaves knowing something real about the others.
             </p>
             <p className="dim">
               And for anyone who wants to go further, there is{" "}

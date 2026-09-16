@@ -7,11 +7,11 @@ import { css } from "./styles";
 export const metadata: Metadata = {
   title: "The Immersion · Love Can Do That",
   description:
-    "A three day immersion for four people at most. The Hudson Valley in the fall, Roatán in the spring. Find the current. Power the current. Become the current.",
+    "A three day immersion for a small group. The Hudson Valley in the fall, Roatán in the spring. Find the current. Power the current. Become the current.",
   openGraph: {
     title: "The Immersion",
     description:
-      "A three day immersion for four people at most. The Hudson Valley in the fall, Roatán in the spring.",
+      "A three day immersion for a small group. The Hudson Valley in the fall, Roatán in the spring.",
   },
 };
 
@@ -31,19 +31,19 @@ export default function Immersion() {
             className="rv"
             style={{ width: "min(440px, 84vw)", height: "auto", objectFit: "contain", marginBottom: 44 }}
           />
-          <p className="eyebrow rv">A three day immersion &nbsp;·&nbsp; Four people, never more</p>
+          <p className="eyebrow rv">A three day immersion &nbsp;·&nbsp; Small groups</p>
           <h1 className="rv">
             What if you could feel fully alive, fully present, and <i>fully yourself</i>?
           </h1>
           <p className="lede rv">
             Highly successful people drift further and further off their center, and off their
-            core. Three days, never more than four people, and enough distance from your calendar
+            core. Three days, a small group, and enough distance from your calendar
             that the phone stops mattering. These immersions bring us back to the very essence of
             ourselves.
           </p>
           <div className="facts rv">
             <span>Three days</span>
-            <span>Never more than four people</span>
+            <span>Small groups</span>
             <span>Hudson Valley in the fall</span>
             <span>Roatán in the spring</span>
           </div>
@@ -145,8 +145,8 @@ export default function Immersion() {
                 Find the current. Power the current. <i>Become the current</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Mornings are the work. Afternoons are for getting back in your body. Four people at
-                most, so everyone gets real time.
+                Mornings are the work. Afternoons are for getting back in your body. A small group,
+                so everyone gets real time.
               </p>
             </div>
           </div>
@@ -451,7 +451,7 @@ export default function Immersion() {
               </figure>
             </div>
             <figcaption className="cap" style={{ textAlign: "center" }}>
-              Inside. One long table, and room for four.
+              Inside. One long table, and room for a few.
             </figcaption>
           </div>
         </div>
