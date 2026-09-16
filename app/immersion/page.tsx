@@ -478,10 +478,10 @@ export default function Immersion() {
               stop.
             </p>
             <p className="dim">
-              It also taught me the thing I use most in the actual work. I trained as a rescue
-              diver. When someone else is in trouble, the job is not to fix it fast. It is to stay
-              calm, and stay with them, and hold space at the bottom while they find their way back
-              up.
+              It also taught me the thing I use most in the actual work. I am a rescue diver and a
+              deep sea wreck diver, trained to go down to the wrecks where the light does not reach.
+              When someone else is in trouble, the job is not to fix it fast. It is to stay calm, and
+              stay with them, and hold space at the bottom while they find their way back up.
             </p>
             <p className="dim">
               My best friend calls me a pearl diver into other people. A <i>deep dive master</i>,

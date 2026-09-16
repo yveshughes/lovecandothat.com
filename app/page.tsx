@@ -470,23 +470,24 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Why me</p>
             <h2 style={{ marginTop: 22 }}>
-              This is about <i>leadership outcomes</i>.
+              The range is <i>the credential</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              Twenty five years operating across five continents. A P&amp;L, a franchise, eight
-              years as a private equity Operating Partner, five board seats. I coach from lived
-              experience, my failures as much as the things that worked.
+              Twenty five years operating across five continents. An MBA in French and Finance. A
+              P&amp;L, a franchise, eight years as a private equity Operating Partner, five board
+              seats. I coach from lived experience, my failures as much as the things that worked.
             </p>
             <p className="dim">
-              I am a certified leadership coach, trained at Georgetown and credentialed through the
-              International Coaching Federation. So this is not only instinct. It is a discipline,
-              and I have put in the hours.
+              And the training under the instinct. An executive coaching certification from
+              Georgetown, credentialed through the International Coaching Federation, and the program
+              at InnerTrek.
             </p>
             <p className="dim">
               What you get is a partner who stays, questions that go where analysis cannot, and
               confidentiality that is not negotiable. And enough respect for you to say no when no is
               the right answer.
             </p>
+            <p className="dim">I do not promise outcomes. Anyone who does is selling something.</p>
           </div>
           <figure className="fig rv">
             <img
