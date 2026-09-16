@@ -19,7 +19,7 @@ const sans = Jost({
 export const metadata: Metadata = {
   title: "Love Can Do That",
   description:
-    "Licensed psilocybin facilitation. Private sessions with preparation, supervised administration, and integration.",
+    "Executive coaching, development, and three day immersions for leaders in the middle of something.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,11 +1,11 @@
 /* Shared header menu. Colors come from each page's own CSS variables,
-   so it runs earth tones on the home and reading pages and the cool
-   blue palette on the Roatán page without any page-specific styling. */
+   so it runs earth tones on the home page and the cool blue palette on
+   the immersion page without any page-specific styling. The private
+   page is deliberately not listed here. */
 
 const LINKS = [
-  { href: "/", label: "Hudson Valley", key: "hudson" },
-  { href: "/roatan", label: "Roatán", key: "roatan" },
-  { href: "/reading", label: "Research", key: "research" },
+  { href: "/", label: "Home", key: "home" },
+  { href: "/immersion", label: "Immersion", key: "immersion" },
 ] as const;
 
 export type NavKey = (typeof LINKS)[number]["key"];

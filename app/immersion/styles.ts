@@ -1,7 +1,8 @@
-/* Water page stylesheet — ported verbatim from original/roatan.html.
+/* Immersion page stylesheet — the water page, ported verbatim from original/roatan.html.
    This is a finished design: do not restructure or "clean up" these rules.
    Only the --serif/--sans definitions changed, to use the self-hosted
-   next/font versions of the same typefaces. */
+   next/font versions of the same typefaces. The doors and settings blocks at the
+   bottom were added for the three-day framework and the two-settings section. */
 
 export const css = `
   :root{
@@ -22,6 +23,7 @@ export const css = `
   h1,h2{font-family:var(--sans);font-weight:300;letter-spacing:-.02em;line-height:1.08}
   h1{font-size:clamp(2.4rem,6vw,4.6rem);max-width:17ch}
   h2{font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.14}
+  h3{font-family:var(--sans);font-size:1.02rem;font-weight:400;letter-spacing:.02em;line-height:1.4}
   i,em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;font-size:1.09em}
   p{max-width:60ch}p+p{margin-top:1.3em}
   a{color:inherit}
@@ -77,6 +79,29 @@ export const css = `
   .pair .fig img{object-position:center 30%}
   @media(max-width:700px){.pair{grid-template-columns:1fr;gap:44px}}
 
+  /* ---------- the three days ---------- */
+  .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--line)}
+  .door{padding:40px 36px 46px;border-right:1px solid var(--line)}
+  .door:last-child{border-right:0}
+  .door .n{font-family:var(--serif);font-style:italic;font-size:2.5rem;color:var(--clay);line-height:1;display:block;margin-bottom:16px}
+  .door h3{margin-bottom:14px;font-size:1.22rem;font-weight:400}
+  .door p{font-size:.95rem;color:var(--muted);max-width:40ch;line-height:1.75}
+  @media(max-width:880px){
+    .doors{grid-template-columns:1fr;margin-top:46px}
+    .door{border-right:0;border-bottom:1px solid var(--line);padding:34px 0 36px}
+    .door:last-child{border-bottom:0}
+  }
+
+  /* ---------- two settings ---------- */
+  .settings{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,64px);margin-top:clamp(46px,7vh,80px)}
+  @media(max-width:820px){.settings{grid-template-columns:1fr;gap:52px}}
+  .setting .fig{aspect-ratio:4/3;margin-bottom:26px}
+  .setting h3{font-size:1.3rem;font-weight:400;margin-bottom:6px}
+  .setting .where{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);margin-bottom:16px}
+  .setting p{font-size:.95rem;color:var(--muted);line-height:1.75;max-width:46ch}
+  .setting .pair{margin-top:30px}
+  .setting .pair .fig{aspect-ratio:1/1;margin-bottom:0}
+
   /* ---------- the pearl dive ---------- */
   .gift{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1fr);gap:clamp(34px,5vw,72px);align-items:center;margin-top:clamp(40px,6vh,64px)}
   .gift .cover{border:1px solid var(--line);background:var(--linen)}
@@ -95,6 +120,29 @@ export const css = `
   .pull{text-align:center;padding:clamp(86px,14vh,160px) 0}
   .pull p{font-family:var(--serif);font-size:clamp(1.8rem,4.2vw,2.9rem);line-height:1.3;max-width:22ch;margin:0 auto;color:var(--bark);font-weight:300}
   .pull .attrib{margin-top:26px;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);font-family:var(--sans);font-style:normal;max-width:none}
+
+  /* ---------- form ---------- */
+  .formcard{margin-top:48px;max-width:660px}
+  .field{margin-bottom:30px}
+  label{display:block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
+  input,textarea,select{
+    width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);
+    color:var(--ink);font-family:var(--sans);font-size:1.02rem;font-weight:300;
+    padding:11px 0;border-radius:0;transition:border-color .35s ease;
+  }
+  select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--cocoa) 50%),linear-gradient(135deg,var(--cocoa) 50%,transparent 50%);background-position:calc(100% - 13px) 20px,calc(100% - 8px) 20px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  textarea{resize:vertical;min-height:120px;line-height:1.7}
+  input:focus,textarea:focus,select:focus{outline:none;border-bottom-color:var(--clay)}
+  input::placeholder,textarea::placeholder{color:#8FA5B2}
+  .btn{
+    display:inline-block;margin-top:14px;background:var(--bark);cursor:pointer;
+    border:1px solid var(--bark);color:var(--paper);
+    font-family:var(--sans);font-size:.73rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
+    padding:19px 46px;transition:background .4s ease,color .4s ease;
+  }
+  .btn:hover{background:transparent;color:var(--bark)}
+  .note{margin-top:26px;font-size:.87rem;color:var(--muted);max-width:48ch}
+  .note a{color:var(--clay);text-decoration:none;border-bottom:1px solid var(--tan)}
 
   .close{text-align:center;padding:clamp(80px,13vh,150px) 0 0}
   .close .mark{font-family:var(--serif);font-style:italic;font-size:clamp(2.2rem,6vw,4.2rem);color:var(--clay);font-weight:300}

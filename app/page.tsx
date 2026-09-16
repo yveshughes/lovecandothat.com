@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Reveal from "./components/Reveal";
 import InquiryForm from "./components/InquiryForm";
 import SiteNav from "./components/SiteNav";
@@ -8,11 +8,11 @@ import { css } from "./styles";
 export const metadata: Metadata = {
   title: "Love Can Do That",
   description:
-    "Licensed psilocybin facilitation. Private sessions with preparation, supervised administration, and integration.",
+    "Executive coaching, development, and three day immersions for leaders in the middle of something.",
   openGraph: {
     title: "Love Can Do That",
     description:
-      "Licensed psilocybin facilitation. Doorways to possibility you could not see before.",
+      "Coaching, development, and three day immersions. Doorways to possibility you could not see before.",
     type: "website",
   },
 };
@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <style dangerouslySetInnerHTML={{ __html: css }} />
 
-      <SiteNav current="hudson" />
+      <SiteNav current="home" />
 
       {/* ============ HERO ============ */}
       <header className="hero">
@@ -42,15 +42,14 @@ export default function Home() {
             the world told us who to become.
           </p>
           <p className="dim rv" style={{ marginTop: 26, maxWidth: "58ch" }}>
-            Licensed psilocybin facilitation. Private and prepared. The container is the safety.
-            Integration is the work.
+            Private coaching and three day immersions for leaders in the middle of something. The
+            container is the safety. Integration is the work.
           </p>
           <div className="facts rv">
-            <span>State licensed</span>
-            <span>InnerTrek trained</span>
-            <span>Adults 21 and over</span>
-            <span>No diagnosis required</span>
-            <span>Private &amp; small group sessions</span>
+            <span>One to one</span>
+            <span>Immersions of four, never more</span>
+            <span>Roatán and the Hudson Valley</span>
+            <span>By conversation only</span>
           </div>
           <div
             className="rv"
@@ -106,11 +105,11 @@ export default function Home() {
             <p className="dim">
               I know that place because I have stood in it. In the summer of 2024 my partner went
               into heart failure and my mother was sick at the same time. I could not be at work the
-              way I needed to be, and everything was coming down at once. It was after a psychedelic
-              session that I sat down and wrote the plan for my life. It is the plan I am living now.
+              way I needed to be, and everything was coming down at once. That summer I sat down and
+              wrote the plan for my life. It is the plan I am living now.
             </p>
             <p className="dim">
-              I spent nearly thirty years advising leaders before I ever trained for this. That is
+              I spent nearly thirty years advising leaders before I ever did this work. That is
               not why you are here. It is why I can sit across from you and already know what this is
               costing you.
             </p>
@@ -175,12 +174,7 @@ export default function Home() {
               set down. The healing starts the moment the mask comes off. I have lived that too.
             </p>
             <p className="dim">
-              Psilocybin services are legal here under the country&apos;s first state regulated
-              model. A supervised session with a licensed facilitator, at a licensed service
-              center. Real preparation before. Real integration after.
-            </p>
-            <p className="dim">
-              I do not fix anyone. I hold the container, and I am the catalyst. The medicine is the
+              I do not fix anyone. I hold the container, and I am the catalyst. The insight is the
               short part. The healing is yours.
             </p>
           </div>
@@ -215,16 +209,12 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Behind the veil</p>
             <h2 style={{ marginTop: 22 }}>
-              Every tradition that has taken this seriously describes the same thing. A veil, and
-              the moment it <i>thins</i>.
+              There is a version of you that is <i>less defended</i> and more alive. Most people
+              met her once and have been looking for the door ever since.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              For a few hours, the part of you that manages and edits and defends gets quiet. What
-              is behind it was always there.
-            </p>
-            <p className="dim">
-              There is a version of you that is less defended and more alive. Most people met her
-              once and have been looking for the door ever since.
+              In the right room, the part of you that manages and edits and defends gets quiet.
+              What is behind it was always there.
             </p>
             <p className="dim">
               Jung called it the collective unconscious. I did not study psychology to believe it.
@@ -232,7 +222,7 @@ export default function Home() {
               older than their own biography.
             </p>
             <p className="dim">
-              I studied Chinese medicine before I trained for this, and the oldest idea in it is the
+              I studied Chinese medicine before I did any of this, and the oldest idea in it is the
               one I kept. Balance, and impermanence. Nothing in you is fixed. Yin turns into yang,
               the tide goes out and comes back, and the heaviest thing you carry is already moving
               whether you touch it or not. This work just lets you be there when it turns.
@@ -251,7 +241,7 @@ export default function Home() {
             <p className="dim">The veil is not hiding a different you. It is hiding this one.</p>
             <p style={{ marginTop: 26 }}>
               <a
-                href="/roatan"
+                href="/immersion"
                 style={{
                   fontSize: ".74rem",
                   letterSpacing: ".2em",
@@ -269,78 +259,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ THE ARC ============ */}
+      {/* ============ HOW IT RUNS ============ */}
       <section className="band">
         <div className="wrap">
           <div className="split">
             <div className="rv">
-              <p className="eyebrow">The arc</p>
+              <p className="eyebrow">How it runs</p>
             </div>
             <div className="rv">
               <h2>
-                How it works. Three meetings, and only one of them <i>involves medicine</i>.
+                Nothing starts from a form. <i>We talk first</i>.
               </h2>
-              <p style={{ marginTop: 26 }} className="dim">
-                It always starts the same way, with a conversation. No commitment, no medicine, just
-                the two of us deciding together whether this is right for you.
-              </p>
             </div>
           </div>
           <div className="doors">
             <div className="door rv">
               <span className="n">i</span>
-              <h3>Preparation</h3>
+              <h3>The conversation</h3>
               <p>
-                We meet before there is any medicine in the room. Health screening, medications,
-                history. Then the first real work: setting your intention for the session. We build
-                a safety and support plan and a plan for getting you home. Either of us can decide
-                not to go forward, and that decision costs you nothing.
+                It always starts the same way. No commitment, just the two of us deciding together
+                whether this is right for you. Either of us can decide not to go forward, and that
+                decision costs you nothing.
               </p>
             </div>
             <div className="door rv">
               <span className="n">ii</span>
-              <h3>The session</h3>
+              <h3>The work</h3>
               <p>
-                Administration happens at a licensed service center. Several hours. Eye shades,
-                music, a blanket, a facilitator who stays. My job in that room is intuition,
-                sensing how to best hold the space for you. Mostly I am quiet. You do not drive
-                yourself anywhere afterward.
+                Standing sessions, and real access between them. You text before a board meeting,
+                I respond. You need to think out loud after a hard conversation with your CFO, I am
+                there. Depth over breadth.
               </p>
             </div>
             <div className="door rv">
               <span className="n">iii</span>
               <h3>Integration</h3>
               <p>
-                I follow up within seventy two hours, and we meet again. The session is not the
-                work. The work is what you do with it on an ordinary Tuesday, in your kitchen, in
-                your relationships, in your company. That is where it lands or evaporates.
+                Insight is the cheap part. The work is what you do with it on an ordinary Tuesday,
+                in your kitchen, in your relationships, in your company. That is where it lands or
+                evaporates.
               </p>
             </div>
           </div>
-          <figure
-            className="rv"
-            style={{ margin: "clamp(64px,9vh,100px) auto 0", maxWidth: 720 }}
-          >
-            <div style={{ borderRadius: 30, overflow: "hidden", aspectRatio: "3/2" }}>
-              <img
-                src="/images/service-center-room.jpg"
-                alt="A one-on-one session room at the licensed service center: a made bed under a hand-painted owl mural and hanging lanterns"
-                loading="lazy"
-              />
-            </div>
-            <figcaption
-              style={{
-                marginTop: 14,
-                fontSize: ".74rem",
-                letterSpacing: ".14em",
-                textTransform: "uppercase",
-                color: "var(--muted)",
-                textAlign: "center",
-              }}
-            >
-              Where the one-on-one work happens
-            </figcaption>
-          </figure>
           <div className="rv" style={{ marginTop: "clamp(48px,7vh,84px)", textAlign: "center" }}>
             <a className="cta" href="#inquire">
               Start with a conversation
@@ -371,13 +331,13 @@ export default function Home() {
               once everyone is confirmed. Integration continues after everyone goes home.
             </p>
             <p className="dim">
-              Up to eight people. Never more. Past eight, a room becomes an audience, and this work
+              Never more than four people. Past four, a room becomes an audience, and this work
               does not survive an audience.
             </p>
             <p className="dim">
               Start tonight if you want.{" "}
               <a
-                href="/roatan#pearldive"
+                href="/immersion#pearldive"
                 style={{
                   color: "var(--clay)",
                   textDecoration: "none",
@@ -390,19 +350,18 @@ export default function Home() {
               of you, not even an email.
             </p>
             <p className="dim">
-              And for groups who want to go further, I lead small retreats on{" "}
+              And for teams who want to go further, there is{" "}
               <a
-                href="/roatan"
+                href="/immersion"
                 style={{
                   color: "var(--clay)",
                   textDecoration: "none",
                   borderBottom: "1px solid var(--tan)",
                 }}
               >
-                Roatán
+                the three day immersion
               </a>
-
-              . The medicine stays where it is licensed. The integration does not.
+              , on Roatán or in my woods in the Hudson Valley.
             </p>
           </div>
           <div
@@ -462,7 +421,7 @@ export default function Home() {
       <div className="pull rv">
         <div className="wrap">
           <p>Hurt people hurt people. Healed people heal people.</p>
-          <p className="attrib">The whole reason I trained</p>
+          <p className="attrib">The whole reason I do this</p>
         </div>
       </div>
 
@@ -512,15 +471,12 @@ export default function Home() {
               <h3 style={{ fontSize: "1.2rem" }}>Who I turn away</h3>
               <ul className="plain">
                 <li>
-                  Anyone with a personal or family history of psychosis, schizophrenia, or bipolar
-                  I.
+                  Anyone who wants a strategy deck. There are people who are better at that than I
+                  am.
                 </li>
-                <li>
-                  Certain cardiac conditions, and certain medications including lithium and some
-                  antidepressants.
-                </li>
-                <li>Pregnancy or nursing. Anyone under twenty one.</li>
-                <li>Anyone in acute crisis who needs clinical care first, not a journey.</li>
+                <li>Anyone sent here by their board who does not want to be here.</li>
+                <li>Anyone in acute crisis who needs clinical care first, not coaching.</li>
+                <li>Anyone where the power dynamic feels off in the first conversation.</li>
                 <li>Anyone looking for a guarantee. I will tell you no, and I will mean it kindly.</li>
               </ul>
             </div>
@@ -528,144 +484,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ EVIDENCE ============ */}
-      <section className="band">
-        <div className="wrap">
-          <div className="duo wide-l mid">
-            <figure className="fig rv">
-              <img
-                src="/images/portraits/tracey-stripes.jpg"
-                alt="Tracey Abbott crouched among desert plants in a striped sweater"
-                loading="lazy"
-              />
-            </figure>
-            <div className="rv">
-              <p className="eyebrow">The evidence</p>
-              <h2 style={{ marginTop: 22 }}>
-                I do not promise outcomes. Here is what is <i>actually known</i>, including the
-                parts that complicate it.
-              </h2>
-              <p style={{ marginTop: 32 }} className="dim">
-                This is the first place on earth where the work has run at scale in public view,
-                which means there are finally real numbers instead of anecdotes. I read all of it. I
-                would rather you did too.
-              </p>
-            </div>
-          </div>
-
-          <p className="rv" style={{ marginTop: 30 }}>
-            <a
-              href="/reading"
-              style={{
-                fontSize: ".74rem",
-                letterSpacing: ".2em",
-                textTransform: "uppercase",
-                color: "var(--clay)",
-                textDecoration: "none",
-                borderBottom: "1px solid var(--tan)",
-                paddingBottom: 4,
-              }}
-            >
-              The full reading list
-            </a>
-          </p>
-
-          <ul className="cites">
-            <li className="rv">
-              <a
-                href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1777387/full"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="t">
-                  Inaugural year of regulated psilocybin services in Oregon: safety, motivations,
-                  and utilization
-                </span>
-                <span className="s">Frontiers in Psychiatry &nbsp;·&nbsp; May 2026</span>
-                <span className="f">
-                  5,935 clients across 5,375 sessions in 2025. Serious adverse events were rare:
-                  2.42 behavioral and 2.79 medical per 1,000 sessions, with seven hospitalizations
-                  in the entire state across the year.
-                </span>
-              </a>
-            </li>
-            <li className="rv">
-              <a
-                href="https://www.medrxiv.org/content/10.64898/2026.02.18.26346580v1"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="t">
-                  Psilocybin services and mental health outcomes within Oregon&apos;s
-                  state-regulated model
-                </span>
-                <span className="s">
-                  Gow, Carhart-Harris, Davis et al. &nbsp;·&nbsp; February 2026, preprint
-                </span>
-                <span className="f">
-                  The first real-world outcome study inside this exact model. 88 participants showed
-                  clinically meaningful improvement in depression, anxiety, and well-being at thirty
-                  days, including people who stayed on their psychiatric medication.
-                </span>
-              </a>
-            </li>
-            <li className="rv">
-              <a
-                href="https://www.psychiatrictimes.com/view/phase-3-program-investigating-comp360-psilocybin-for-treatment-resistant-depression-breaking-poster-data-from-the-2026-ascp-annual-meeting"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="t">COMP360 psilocybin in treatment resistant depression, phase 3</span>
-                <span className="s">Compass Pathways &nbsp;·&nbsp; six month data, July 2026</span>
-                <span className="f">
-                  581 participants. Thirty nine percent of the 25 mg arm reached a clinically
-                  meaningful drop in depression scores by week six, and separation held through week
-                  twenty six. This is a controlled trial, not a service center, and the difference
-                  matters.
-                </span>
-              </a>
-            </li>
-            <li className="rv">
-              <a
-                href="https://jamanetwork.com/journals/jama/fullarticle/2808950"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="t">
-                  Single-dose psilocybin for major depressive disorder: a randomized clinical trial
-                </span>
-                <span className="s">JAMA &nbsp;·&nbsp; 2023</span>
-                <span className="f">
-                  One of the trials that moved this from fringe to serious. Useful if you want to
-                  see the method rather than the headline.
-                </span>
-              </a>
-            </li>
-            <li className="rv">
-              <a
-                href="https://oregoncapitalchronicle.com/2026/06/30/growing-scope-of-oregon-psilocybin-program-raises-safety-concerns-study-says/"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="t">Growing scope of Oregon&apos;s program raises safety concerns</span>
-                <span className="s">
-                  Johns Hopkins, International Journal of Drug Policy &nbsp;·&nbsp; June 2026
-                </span>
-                <span className="f">
-                  The uncomfortable one. Most people using Oregon&apos;s program are seeking
-                  wellness rather than treatment, and they skew high income and out of state.
-                  Researchers flagged real concern about people bringing serious psychiatric
-                  conditions into a supported adult use model that was not built for them. This is
-                  exactly why I screen the way I do.
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       {/* ============ SAY IT STRAIGHT ============ */}
-      <section>
+      <section className="band">
         <div className="wrap duo wide-r">
           <div className="rv">
             <p className="eyebrow">Say it straight</p>
@@ -678,15 +498,15 @@ export default function Home() {
               Anyone who promises you an outcome is selling something.
             </p>
             <p className="dim">
-              Here is what I am. I trained at InnerTrek, the program founded by Tom Eckert, who
-              architected Measure 109 and the first state regulated model of psychedelic care in the
-              country. Over a hundred and fifty hours of coursework, forty hours of supervised
-              practicum, and fifty hours of consultation. I am licensed by the Oregon Health
-              Authority. And I sat in my own hard chair before I ever asked anyone to sit in theirs.
+              Here is what I am. Twenty five years operating across five continents. A P&amp;L, a
+              franchise, eight years as a private equity Operating Partner, five board seats. I do
+              not come from HR, psychology, academia, or consulting. I respect those fields, it is
+              just not where I bled. I coach from my lived experience. My failures as much as the
+              things that worked.
             </p>
             <p className="dim">
-              What you will get is careful screening, preparation that takes your questions
-              seriously, a facilitator who stays, and confidentiality that is not negotiable.
+              What you will get is a partner who stays, questions that go where the deck cannot,
+              and confidentiality that is not negotiable.
             </p>
             <p className="dim">And enough respect for you to say no when no is the right answer.</p>
           </div>
@@ -747,7 +567,7 @@ export default function Home() {
       <footer>
         <div className="wrap">
           <div className="fgrid">
-            <span>Licensed psilocybin facilitator, Oregon &nbsp;·&nbsp; InnerTrek trained</span>
+            <span>Executive coaching and immersions</span>
             <span>Tracey Abbott</span>
             <span>&copy; 2026 Leadership Current</span>
           </div>
@@ -762,11 +582,8 @@ export default function Home() {
               textTransform: "uppercase",
             }}
           >
-            <a href="/roatan" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Retreats
-            </a>
-            <a href="/reading" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
-              Research
+            <a href="/immersion" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Immersion
             </a>
           </nav>
           <div
@@ -821,13 +638,13 @@ export default function Home() {
             </a>
           </div>
           <p className="disclaimer">
-            Psilocybin services are legal for adults twenty one and over in Oregon under Oregon
-            Psilocybin Services, established by Measure 109 and administered by the Oregon Health
-            Authority. Administration takes place only at a licensed service center. Psilocybin
-            remains a Schedule I substance under federal law. Nothing on this page is medical
-            advice, a diagnosis, a treatment claim, or a substitute for care from a licensed medical
-            or mental health professional. No psilocybin product is sold or provided through this
-            website. If you are in crisis, call or text 988.
+            Coaching is not therapy, medical care, or mental health treatment, and nothing on this
+            page is medical advice, a diagnosis, or a treatment claim. Coaching is not a substitute
+            for care from a licensed medical or mental health professional. If you are in crisis,
+            call or text 988.{" "}
+            <a href="/private" style={{ color: "#8B7F75" }}>
+              Client materials
+            </a>
           </p>
         </div>
       </footer>
