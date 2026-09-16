@@ -82,14 +82,7 @@ export default function Home() {
 
       {/* ============ WHO'S ASKING ============ */}
       <section style={{ paddingTop: "clamp(120px,17vh,200px)" }}>
-        <div className="wrap duo wide-l">
-          <figure className="fig rv">
-            <img
-              src="/images/portraits/tracey-stevie-tee.jpg"
-              alt="Tracey Abbott at home in a Stevie Nicks t-shirt and tulle skirt"
-              loading="lazy"
-            />
-          </figure>
+        <div className="wrap duo wide-r">
           <div className="rv">
             <p className="eyebrow">Who&apos;s asking</p>
             <h2 style={{ marginTop: 22 }}>
@@ -118,6 +111,13 @@ export default function Home() {
               everything is, <i>the world changes</i>. That is the whole mission.
             </p>
           </div>
+          <figure className="fig rv">
+            <img
+              src="/images/portraits/tracey-stevie-tee.jpg"
+              alt="Tracey Abbott at home in a Stevie Nicks t-shirt and tulle skirt"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
 
@@ -470,11 +470,7 @@ export default function Home() {
             <div className="rv">
               <h3 style={{ fontSize: "1.2rem" }}>Who I turn away</h3>
               <ul className="plain">
-                <li>
-                  Anyone who wants a strategy deck. There are people who are better at that than I
-                  am.
-                </li>
-                <li>Anyone sent here by their board who does not want to be here.</li>
+                <li>Anyone looking for a quick fix.</li>
                 <li>Anyone in acute crisis who needs clinical care first, not coaching.</li>
                 <li>Anyone where the power dynamic feels off in the first conversation.</li>
                 <li>Anyone looking for a guarantee. I will tell you no, and I will mean it kindly.</li>
@@ -490,25 +486,22 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Say it straight</p>
             <h2 style={{ marginTop: 22 }}>
-              What I am <i>not</i>.
+              What I <i>do</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              I am not a therapist and this is not therapy. I am not a physician and this is not
-              medical treatment. I do not diagnose, I do not treat, and I do not promise outcomes.
-              Anyone who promises you an outcome is selling something.
+              Twenty five years operating across five continents. A P&amp;L, a franchise, eight
+              years as a private equity Operating Partner, five board seats. I coach from my lived
+              experience. My failures as much as the things that worked.
             </p>
             <p className="dim">
-              Here is what I am. Twenty five years operating across five continents. A P&amp;L, a
-              franchise, eight years as a private equity Operating Partner, five board seats. I do
-              not come from HR, psychology, academia, or consulting. I respect those fields, it is
-              just not where I bled. I coach from my lived experience. My failures as much as the
-              things that worked.
+              What you will get is a partner who stays, questions that go where analysis cannot,
+              and confidentiality that is not negotiable. And enough respect for you to say no when
+              no is the right answer.
             </p>
             <p className="dim">
-              What you will get is a partner who stays, questions that go where the deck cannot,
-              and confidentiality that is not negotiable.
+              I am not a therapist and this is not therapy. I do not diagnose, I do not treat, and I
+              do not promise outcomes. Anyone who promises you an outcome is selling something.
             </p>
-            <p className="dim">And enough respect for you to say no when no is the right answer.</p>
           </div>
           <figure className="fig rv">
             <img src="/images/tank.jpg" alt="" loading="lazy" />
@@ -528,8 +521,8 @@ export default function Home() {
                 Start with a conversation. Not a booking, <i>just a conversation</i>.
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
-                Tell me a little about what brings you here. It goes nowhere but to me, and I answer
-                everything personally, usually within a few days. Nothing is scheduled from a form.
+                Tell me a little about what brings you here. I hold this confidentially, and I
+                answer everything personally, usually within a few days. Nothing is scheduled from a form.
                 We talk first, and only if it is right for you does anything happen after that.
               </p>
             </div>
