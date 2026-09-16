@@ -97,8 +97,8 @@ function Content() {
             </p>
             <p className="dim">
               I am not a therapist and this is not therapy. I do not diagnose, I do not treat, and I
-              do not promise outcomes. I hold the container, and I am the catalyst. The medicine is
-              the short part. The transformation is yours.
+              do not promise outcomes. I hold the container, and I am the facilitator. The medicine
+              is the short part. The transformation is yours.
             </p>
             <p className="dim">
               Two different things, and I keep them clear. The three day immersions are
@@ -258,8 +258,8 @@ function Content() {
             <p style={{ marginTop: 34 }} className="dim">
               Preparation is a quarter. The session is a quarter. What you do afterward is the other
               half, and it is the part people skip and then wonder why nothing changed. Insight on
-              the day is easy. Insight on an ordinary Tuesday, in your kitchen, in your marriage, in
-              your company, is the only kind that counts.
+              the day is easy. Insight on an ordinary Tuesday, in how you lead and the decisions
+              only you can make, is the only kind that counts.
             </p>
             <p className="dim">
               The first night, your only job is to be kind to yourself. Low light, a good meal,

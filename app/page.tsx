@@ -94,12 +94,15 @@ export default function Home() {
           <div className="rv">
             <p className="eyebrow">Follow the white rabbit</p>
             <h2 style={{ marginTop: 22 }}>
-              I am still the girl who loved <i>Alice in Wonderland</i>.
+              I am still the girl who <i>lived in Wonderland</i>.
             </h2>
             <p style={{ marginTop: 32 }} className="dim">
-              Following the white rabbit is not a slogan for me. It is a method. That book was my
-              favorite as a child, and letting my curiosity lead has never once taken me somewhere
-              worse.
+              Alice in Wonderland&apos;s magic is how I live my life. Full of curiosity, and wonder
+              at what is possible.
+            </p>
+            <p className="dim">
+              Following the white rabbit is not a method. It is a way of seeing the world, with
+              curiosity and wonder, and trusting where that leads.
             </p>
             <p className="dim">
               Most people brace for something solemn, and meet, instead, their own wonder. Play.
@@ -177,10 +180,12 @@ export default function Home() {
               describe perfectly. You are not in crisis. You are not fine either.
             </p>
             <p className="dim">
-              I know that place because I have stood in it. In the summer of 2024 my partner went
-              into heart failure and my mother was sick at the same time. I could not be at work the
-              way I needed to be, and everything was coming down at once. That summer I sat down and
-              wrote the plan for my life. It is the plan I am living now.
+              I know that place because I have stood in it. In the summer of 2024 I was in the
+              biggest, hardest job of my career, a senior seat in private equity, with expectations
+              coming from every direction. At the same time my partner went into heart failure and
+              my mother was sick. I could not be at work the way I needed to be, and everything was
+              coming down at once. That summer I sat down and wrote the plan for my life. It is the
+              plan I am living now.
             </p>
             <p className="dim">
               And I do this for one reason. When people in real power wake up to how connected
@@ -200,24 +205,20 @@ export default function Home() {
       {/* ============ IDENTITY WHEEL ============ */}
       <section className="band">
         <div className="wrap">
-          <div className="split">
-            <div className="rv">
-              <p className="eyebrow">Identity wheel</p>
-            </div>
-            <div className="rv">
-              <h2>
-                Who am I? It is <i>the hardest question</i> you will ever wrestle with.
-              </h2>
-              <p style={{ marginTop: 30 }} className="dim">
-                These are the nine that keep showing up for work. They are why I can sit with a CEO
-                at nine and someone taking the mask off at two, and never become a different person
-                in between.
-              </p>
-              <p className="dim">
-                Touch a word and it will tell you its story. Then the real question is not mine. It
-                is yours. <i>What are yours?</i>
-              </p>
-            </div>
+          <div className="rv" style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
+            <p className="eyebrow">Identity wheel</p>
+            <h2 style={{ marginTop: 18 }}>
+              Who am I? It is <i>the hardest question</i> you will ever wrestle with.
+            </h2>
+            <p style={{ marginTop: 24, marginInline: "auto" }} className="dim">
+              These are the nine that keep showing up for work. They are why I can sit with a CEO
+              at nine and someone taking the mask off at two, and never become a different person
+              in between.
+            </p>
+            <p className="dim" style={{ marginInline: "auto" }}>
+              Touch a word and it will tell you its story. Then the real question is not mine. It
+              is yours. <i>What are yours?</i>
+            </p>
           </div>
 
           <IdentityWheel />
@@ -250,8 +251,8 @@ export default function Home() {
               set down. The healing starts the moment the mask comes off. I have lived that too.
             </p>
             <p className="dim">
-              I do not fix anyone. I hold the container, and I am the catalyst. The transformation
-              is yours.
+              I do not fix anyone. I hold the container, and I am the facilitator. The
+              transformation is yours.
             </p>
           </div>
         </div>
@@ -293,9 +294,9 @@ export default function Home() {
               <span className="n">iii</span>
               <h3>Integration</h3>
               <p>
-                This is where it becomes real. I give you the tools to take what opens up in a
-                session and live it, in the boardroom, in your marriage, on an ordinary day. That is
-                the part that actually changes your life, and the part I will not let you skip.
+                This is where it becomes real. I give you the tools to take what opens up and put it
+                to work in how you lead. This is the internal work that unlocks the next level of
+                leadership, by realigning you with your values and your purpose.
               </p>
             </div>
           </div>
@@ -446,6 +447,7 @@ export default function Home() {
             <h3 style={{ fontSize: "1.2rem" }}>Who tends to find me</h3>
             <ul className="plain">
               <li>People in the middle of feeling stuck, and hesitating.</li>
+              <li>People who are lonely in the roles they play.</li>
               <li>
                 Founders and operators who are very good at holding it together, and are tired.
               </li>

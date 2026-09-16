@@ -23,8 +23,7 @@ export default function InquiryForm({
   selectLabel = "What you are looking for",
   selectOptions = [
     "One to one coaching",
-    "A three day immersion",
-    "Something for my leadership team",
+    "Small group",
     "Not sure yet",
   ],
   messageLabel = "What brings you here",

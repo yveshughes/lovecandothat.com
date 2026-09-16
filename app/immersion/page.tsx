@@ -186,8 +186,8 @@ export default function Immersion() {
             <div>
               <p className="dim">
                 Everyone gets follow up sessions once they are home. Integration is where it becomes
-                real. I give you the tools to take what opened up here and live it, in the boardroom,
-                in your marriage, on an ordinary day. That is the part that actually changes
+                real. I give you the tools to take what opened up here and put it to work in how you
+                lead, and in the decisions only you can make. That is the part that actually changes
                 anything.
               </p>
             </div>
@@ -271,10 +271,10 @@ export default function Immersion() {
           <div className="duo wide-l mid">
             <figure className="fig rv">
               <img
-                src="/images/roatan-driftwood-beach.jpg"
-                alt="A quiet beach with driftwood at the waterline and a green island across turquoise water"
+                src="/images/roatan-water.jpg"
+                alt="A scuba diver hovering over the coral wall on the Roatan reef, deep blue water above"
                 loading="lazy"
-                style={{ objectPosition: "center 55%" }}
+                style={{ objectPosition: "center 45%" }}
               />
             </figure>
             <div className="rv">
@@ -371,15 +371,6 @@ export default function Immersion() {
               <figure style={{ margin: 0 }}>
                 <div className="fig" style={{ aspectRatio: "1/1" }}>
                   <img
-                    src="/images/gypsys-jewel-buoy.jpg"
-                    alt="A white mooring buoy with Gypsy's Jewel hand painted on it, floating on turquoise water"
-                    loading="lazy"
-                  />
-                </div>
-              </figure>
-              <figure style={{ margin: 0 }}>
-                <div className="fig" style={{ aspectRatio: "1/1" }}>
-                  <img
                     src="/images/gypsys-jewel-dive.jpg"
                     alt="Tracey at the surface in scuba gear, smiling in her mask, one arm over the Gypsy's Jewel mooring buoy"
                     loading="lazy"
@@ -387,9 +378,19 @@ export default function Immersion() {
                   />
                 </div>
               </figure>
+              <figure style={{ margin: 0 }}>
+                <div className="fig" style={{ aspectRatio: "1/1" }}>
+                  <img
+                    src="/images/gypsys-jewel-plaque.jpg"
+                    alt="The Roatan Marine Park carving of the island in relief, marked Gypsy's Jewel with its coordinates"
+                    loading="lazy"
+                  />
+                </div>
+              </figure>
             </div>
             <figcaption className="cap" style={{ textAlign: "center" }}>
-              Gypsy&apos;s Jewel, the dive site she named. On her water.
+              Gypsy&apos;s Jewel, the dive site she named, on her water, and the carving with its
+              coordinates.
             </figcaption>
           </div>
 
@@ -493,7 +494,10 @@ export default function Immersion() {
 
       <div className="pull rv">
         <div className="wrap">
-          <p>I can hold space at the bottom of the ocean, safely, while my clients explore.</p>
+          <p>
+            I hold space for my clients at the bottom of the ocean of emotion, and help them safely
+            back to the surface.
+          </p>
           <p className="attrib">What diving taught me about sitting with people</p>
         </div>
       </div>
