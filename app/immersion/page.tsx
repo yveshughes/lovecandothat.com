@@ -622,6 +622,9 @@ export default function Immersion() {
             <a href="/" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Home
             </a>
+            <a href="/private" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Client materials
+            </a>
           </nav>
           <div
             style={{
@@ -679,10 +682,7 @@ export default function Immersion() {
             medical care, or mental health treatment, and no controlled substance of any kind is
             offered, arranged, provided, or permitted at any immersion. Nothing on this page is
             medical advice, a diagnosis, a treatment claim, or a substitute for care from a licensed
-            medical or mental health professional. If you are in crisis, call or text 988.{" "}
-            <a href="/private" style={{ color: "#8B7F75" }}>
-              Client materials
-            </a>
+            medical or mental health professional. If you are in crisis, call or text 988.
           </p>
         </div>
       </footer>

@@ -72,8 +72,8 @@ export default function Home() {
         <div className="wrap">
           <figure className="herofig rv">
             <img
-              src="/images/wonderland.jpg"
-              alt="Tracey Abbott seated on a brick path inside a glasshouse, brown tulle skirt spread around her"
+              src="/images/door.jpg"
+              alt="Tracey Abbott at a dark barn door, arms open in a cream fringe poncho"
               loading="eager"
             />
           </figure>
@@ -85,9 +85,10 @@ export default function Home() {
         <div className="wrap duo wide-l">
           <figure className="fig rv">
             <img
-              src="/images/portraits/tracey-greenhouse-walk.jpg"
-              alt="Tracey Abbott in a glasshouse, brown tulle sweeping up past her face"
+              src="/images/wonderland.jpg"
+              alt="Tracey Abbott seated in a glasshouse among cacti, brown tulle skirt spread around her, smiling"
               loading="lazy"
+              style={{ objectPosition: "center 30%" }}
             />
           </figure>
           <div className="rv">
@@ -127,6 +128,38 @@ export default function Home() {
           </ul>
         </div>
       </div>
+
+      {/* ============ BEHIND THE VEIL ============ */}
+      <section>
+        <div className="wrap duo wide-l">
+          <figure className="fig rv">
+            <img
+              src="/images/portraits/tracey-greenhouse-walk.jpg"
+              alt="Tracey Abbott in a glasshouse, brown tulle sweeping out beside her like a veil"
+              loading="lazy"
+            />
+          </figure>
+          <div className="rv">
+            <p className="eyebrow">Behind the veil</p>
+            <h2 style={{ marginTop: 22 }}>
+              The closer you get to nature, the more the veil <i>thins</i>.
+            </h2>
+            <p style={{ marginTop: 32 }} className="dim">
+              Out here, away from the noise and the managing and the performing, something quiets.
+              The part of you that edits and defends gets still, and what is behind it was always
+              there.
+            </p>
+            <p className="dim">
+              That is where you start to hear it again. Your own intuition. Your own voice. Not the
+              one the world handed you, the one that was yours before any of it.
+            </p>
+            <p className="dim">
+              Analysis will only ever take you so far. The rest you have to feel. The veil is not
+              hiding a different you. It is hiding this one.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* ============ WHO'S ASKING ============ */}
       <section>
@@ -379,8 +412,11 @@ export default function Home() {
       {/* ============ PULL ============ */}
       <div className="pull rv">
         <div className="wrap">
-          <p>Hurt people hurt people. Healed people heal people.</p>
-          <p className="attrib">The whole reason I do this</p>
+          <p>
+            When people in power reconnect to their values and their own voice, we have the power to
+            change the world.
+          </p>
+          <p className="attrib">Why I do this</p>
         </div>
       </div>
 
@@ -487,8 +523,8 @@ export default function Home() {
       <div className="wrap" style={{ marginTop: "clamp(20px,4vh,50px)" }}>
         <figure className="herofig rv" style={{ marginTop: 0 }}>
           <img
-            src="/images/door.jpg"
-            alt="Tracey Abbott standing in front of a dark barn door with her arms open"
+            src="/images/portraits/tracey-poncho.jpg"
+            alt="Tracey Abbott at a dark barn door, arms wide open in a cream fringe poncho, smiling"
             loading="lazy"
           />
         </figure>
@@ -528,6 +564,9 @@ export default function Home() {
           >
             <a href="/immersion" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
               Immersion
+            </a>
+            <a href="/private" style={{ color: "var(--cocoa)", textDecoration: "none", borderBottom: "1px solid var(--tan)" }}>
+              Client materials
             </a>
           </nav>
           <div
@@ -585,10 +624,7 @@ export default function Home() {
             Coaching is not therapy, medical care, or mental health treatment, and nothing on this
             page is medical advice, a diagnosis, or a treatment claim. Coaching is not a substitute
             for care from a licensed medical or mental health professional. If you are in crisis,
-            call or text 988.{" "}
-            <a href="/private" style={{ color: "#8B7F75" }}>
-              Client materials
-            </a>
+            call or text 988.
           </p>
         </div>
       </footer>
