@@ -331,8 +331,8 @@ export default function Home() {
               once everyone is confirmed. Integration continues after everyone goes home.
             </p>
             <p className="dim">
-              Never more than four people. Past four, a room becomes an audience, and this work
-              does not survive an audience.
+              Never more than four people. Small enough that everyone gets real time, and everyone
+              leaves knowing something real about the others.
             </p>
             <p className="dim">
               Start tonight if you want.{" "}

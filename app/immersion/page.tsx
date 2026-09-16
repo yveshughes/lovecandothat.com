@@ -142,7 +142,7 @@ export default function Immersion() {
               </h2>
               <p style={{ marginTop: 30 }} className="dim">
                 Mornings are the work. Afternoons are for getting back in your body. Four people at
-                most, so nobody performs for the room.
+                most, so everyone gets real time.
               </p>
             </div>
           </div>
